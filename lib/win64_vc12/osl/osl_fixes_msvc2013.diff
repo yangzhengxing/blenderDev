@@ -1,0 +1,60 @@
+diff --git a/src/liboslcomp/oslcomp_pvt.h b/src/liboslcomp/oslcomp_pvt.h
+index 614632d..a6af201 100644
+--- a/src/liboslcomp/oslcomp_pvt.h
++++ b/src/liboslcomp/oslcomp_pvt.h
+@@ -107,7 +107,7 @@ public:
+     bool error_encountered () const { return m_err; }
+ 
+     /// Has a shader already been defined?
+-    bool shader_is_defined () const { return m_shader; }
++    bool shader_is_defined () const { return (bool)m_shader; }
+ 
+     /// Define the shader we're compiling with the given AST root.
+     ///
+diff --git a/src/liboslexec/llvm_ops.cpp b/src/liboslexec/llvm_ops.cpp
+index 909d1ec..6f21dd2 100644
+--- a/src/liboslexec/llvm_ops.cpp
++++ b/src/liboslexec/llvm_ops.cpp
+@@ -105,9 +105,12 @@ using namespace OSL;
+ 
+ using OIIO::safe_asinf;
+ using OIIO::safe_acosf;
++
++#if defined(_MSC_VER) && _MSC_VER < 1700
+ using OIIO::isinf;
++#endif
+ 
+-#ifdef _WIN32
++#if defined(_MSC_VER) && _MSC_VER < 1800
+ using OIIO::roundf;
+ using OIIO::truncf;
+ using OIIO::expm1f;
+diff --git a/src/liboslexec/opcolor.cpp b/src/liboslexec/opcolor.cpp
+index 641f640..9cd885e 100644
+--- a/src/liboslexec/opcolor.cpp
++++ b/src/liboslexec/opcolor.cpp
+@@ -42,7 +42,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #include "oslexec_pvt.h"
+ #include "OSL/dual.h"
+ 
+-#ifdef _MSC_VER
++#if defined(_MSC_VER) && _MSC_VER < 1800
+ using OIIO::expm1;
+ #endif
+ 
+--- OpenShadingLanguage-Release-1.5.10.orig/src/shaders/CMakeLists.txt	Wed Jul 30 19:38:26 2014
++++ OpenShadingLanguage-Release-1.5.10/src/shaders/CMakeLists.txt	Mon Aug  4 15:55:45 2014
+@@ -3,6 +3,12 @@
+     MAIN_DEPENDENCY "${CMAKE_CURRENT_SOURCE_DIR}/stdosl.h"
+     WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}")
+ 
++if(${CMAKE_GENERATOR} MATCHES "(Visual Studio.*)") #Work around visual studio outputting oslc.exe in a subfolder
++	add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/../oslc/oslc"
++		COMMAND ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/../oslc/${CMAKE_BUILD_TYPE}/oslc.exe" "${CMAKE_CURRENT_BINARY_DIR}/../oslc/"
++		DEPENDS oslc)
++endif()		
++	
+ macro (osl_compile oslsrc objlist headers)
+     # message (STATUS "OSL_COMPILE src=${oslsrc}")
+     # message (STATUS "  src ${CMAKE_CURRENT_SOURCE_DIR}")
+ 

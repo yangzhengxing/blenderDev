@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2D602761-5714-4B65-A24B-CAEFE046EA66}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_compositor</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_compositor.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_compositor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_compositor.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_compositor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_compositor.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_compositor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_compositor.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_compositor</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;CL_USE_DEPRECATED_OPENCL_1_1_APIS;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\source\blender\compositor\intern;D:\blenderDev\blender\source\blender\compositor\nodes;D:\blenderDev\blender\source\blender\compositor\operations;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\clew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\atomic;D:\blenderDev\product\source\blender\compositor\operations;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/compositor/CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;D:\blenderDev\blender\source\blender\compositor\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\compositor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\3bfef7f5581ef32ca7d5348028af1658\COM_OpenCLKernels.cl.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating operations/COM_OpenCLKernels.cl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/compositor/operations
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/compositor/operations/COM_OpenCLKernels.cl D:/blenderDev/product/source/blender/compositor/operations/COM_OpenCLKernels.cl.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/3bfef7f5581ef32ca7d5348028af1658/COM_OpenCLKernels.cl.h.rule;D:\blenderDev\blender\source\blender\compositor\operations\COM_OpenCLKernels.cl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\compositor\operations\COM_OpenCLKernels.cl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating operations/COM_OpenCLKernels.cl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/compositor/operations
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/compositor/operations/COM_OpenCLKernels.cl D:/blenderDev/product/source/blender/compositor/operations/COM_OpenCLKernels.cl.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/3bfef7f5581ef32ca7d5348028af1658/COM_OpenCLKernels.cl.h.rule;D:\blenderDev\blender\source\blender\compositor\operations\COM_OpenCLKernels.cl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\compositor\operations\COM_OpenCLKernels.cl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating operations/COM_OpenCLKernels.cl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/compositor/operations
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/compositor/operations/COM_OpenCLKernels.cl D:/blenderDev/product/source/blender/compositor/operations/COM_OpenCLKernels.cl.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/3bfef7f5581ef32ca7d5348028af1658/COM_OpenCLKernels.cl.h.rule;D:\blenderDev\blender\source\blender\compositor\operations\COM_OpenCLKernels.cl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\compositor\operations\COM_OpenCLKernels.cl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating operations/COM_OpenCLKernels.cl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/compositor/operations
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/compositor/operations/COM_OpenCLKernels.cl D:/blenderDev/product/source/blender/compositor/operations/COM_OpenCLKernels.cl.h
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/3bfef7f5581ef32ca7d5348028af1658/COM_OpenCLKernels.cl.h.rule;D:\blenderDev\blender\source\blender\compositor\operations\COM_OpenCLKernels.cl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\compositor\operations\COM_OpenCLKernels.cl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\COM_compositor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\COM_defines.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ExecutionSystem.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeConverter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeOperationBuilder.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeGraph.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Converter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ExecutionGroup.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Node.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_SocketReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_MemoryProxy.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_MemoryBuffer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_WorkScheduler.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_WorkPackage.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ChunkOrder.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ChunkOrderHotspot.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Device.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_CPUDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_OpenCLDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_CompositorContext.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_SingleThreadedOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Debug.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_QualityStepHelper.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SocketProxyNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_RenderLayersNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ImageNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TextureNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BokehImageNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ValueNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TimeNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SwitchNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SwitchViewNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MovieClipNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_OutputFileNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MaskNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CompositorNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ViewerNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SplitViewerNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ViewLevelsNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CalculateStandardDeviationOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CalculateMeanOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TranslateNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ScaleNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_RotateNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_FlipNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapUVNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DisplaceNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DifferenceMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_LuminanceMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DistanceMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ChromaMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ChannelMatteNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_LensDistortionNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_GlareNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SunBeamsNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SunBeamsOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CornerPinNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_PlaneTrackDeformNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CropNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CropOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TransformNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_Stabilize2dNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MovieDistortionNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DefocusNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_VectorCurveNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorCurveNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorToBWNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorRampNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MixNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_AlphaOverNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ZCombineNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BrightnessNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorBalanceNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_InvertNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_GammaNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SetAlphaNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ConvertAlphaNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_HueSaturationValueNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_HueSaturationValueCorrectNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorCorrectionNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TonemapNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TonemapOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_IDMaskNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SeparateColorNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CombineColorNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_NormalNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_NormalizeNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MathNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapValueNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapRangeNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_NormalizeOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_PixelateNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PixelateOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BilateralBlurNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BilateralBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_VectorBlurNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VectorBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_FilterNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DespeckleNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DilateErodeNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_InpaintNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BlurNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BokehBlurNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DirectionalBlurNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianAlphaXBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianAlphaYBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianXBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianYBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianBokehBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BokehBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VariableSizeBokehBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_FastGaussianBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BlurBaseOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DirectionalBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieClipAttributeOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieDistortionOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GammaCorrectOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BoxMaskNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_EllipseMaskNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorSpillNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DoubleEdgeMaskNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DoubleEdgeMaskOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_KeyingScreenNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingScreenOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TrackPositionNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TrackPositionOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_KeyingNode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingBlurOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingDespillOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingClipOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorSpillOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_RenderLayersProg.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ImageOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MultilayerImageOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TextureOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BokehImageOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SocketProxyOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CompositorOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_OutputFileOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_OutputFileMultiViewOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ViewerOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PreviewOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SplitOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertDepthToRadiusOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ZCombineOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChangeHSVOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorCurveOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorRampOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VectorCurveOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CurveBaseOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_HueSaturationValueCorrectOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DifferenceMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_LuminanceMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DistanceRGBMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DistanceYCCMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChromaMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChannelMatteOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ReadBufferOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_WriteBufferOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MixOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BrightnessOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GammaOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorCorrectionOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetValueOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetColorOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetVectorOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MathBaseOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverMixedOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverPremultiplyOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverKeyOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorBalanceLGGOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorBalanceASCCDLOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_InvertOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetAlphaOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapValueOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapRangeOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TranslateOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_WrapOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_RotateOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ScaleOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapUVOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DisplaceOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DisplaceSimpleOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_FlipOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ProjectorLensDistortionOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ScreenLensDistortionOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneDistortCommonOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneTrackOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneCornerPinOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvolutionFilterOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvolutionEdgeFilterOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DespeckleOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DilateErodeOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_InpaintOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareThresholdOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareBaseOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareSimpleStarOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareStreaksOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareGhostOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareFogGlowOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetSamplerOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_IDMaskOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DotproductOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BoxMaskOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_EllipseMaskOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieClipOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertColorProfileOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AntiAliasOperation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MaskOperation.h" />
+    <ClInclude Include="operations\COM_OpenCLKernels.cl.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_compositor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ExecutionSystem.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeConverter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeOperationBuilder.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeGraph.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Converter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ExecutionGroup.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Node.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_NodeOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_SocketReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_MemoryProxy.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_MemoryBuffer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_WorkScheduler.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_WorkPackage.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ChunkOrder.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_ChunkOrderHotspot.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Device.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_CPUDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_OpenCLDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_CompositorContext.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_SingleThreadedOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\intern\COM_Debug.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_QualityStepHelper.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SocketProxyNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_RenderLayersNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ImageNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TextureNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BokehImageNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ValueNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TimeNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SwitchNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SwitchViewNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MovieClipNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_OutputFileNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MaskNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CompositorNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ViewerNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SplitViewerNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ViewLevelsNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CalculateStandardDeviationOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CalculateMeanOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TranslateNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ScaleNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_RotateNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_FlipNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapUVNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DisplaceNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DifferenceMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_LuminanceMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DistanceMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ChromaMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ChannelMatteNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_LensDistortionNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_GlareNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SunBeamsNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SunBeamsOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CornerPinNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_PlaneTrackDeformNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CropNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CropOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TransformNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_Stabilize2dNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MovieDistortionNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DefocusNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_VectorCurveNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorCurveNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorToBWNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorRampNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MixNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_AlphaOverNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ZCombineNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BrightnessNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorBalanceNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_InvertNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_GammaNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SetAlphaNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ConvertAlphaNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_HueSaturationValueNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_HueSaturationValueCorrectNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorCorrectionNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TonemapNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TonemapOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_IDMaskNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_SeparateColorNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_CombineColorNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_NormalNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_NormalizeNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MathNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapValueNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_MapRangeNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_NormalizeOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_PixelateNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PixelateOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BilateralBlurNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BilateralBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_VectorBlurNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VectorBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_FilterNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DespeckleNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DilateErodeNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_InpaintNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BlurNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BokehBlurNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DirectionalBlurNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianAlphaXBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianAlphaYBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianXBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianYBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GaussianBokehBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BokehBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VariableSizeBokehBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_FastGaussianBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BlurBaseOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DirectionalBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieClipAttributeOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieDistortionOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GammaCorrectOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_BoxMaskNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_EllipseMaskNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_ColorSpillNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_DoubleEdgeMaskNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DoubleEdgeMaskOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_KeyingScreenNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingScreenOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_TrackPositionNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TrackPositionOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\nodes\COM_KeyingNode.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingBlurOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingDespillOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_KeyingClipOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorSpillOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_RenderLayersProg.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ImageOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MultilayerImageOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TextureOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BokehImageOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SocketProxyOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CompositorOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_OutputFileOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_OutputFileMultiViewOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ViewerOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PreviewOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SplitOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertDepthToRadiusOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ZCombineOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChangeHSVOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorCurveOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorRampOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_VectorCurveOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_CurveBaseOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_HueSaturationValueCorrectOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DifferenceMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_LuminanceMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DistanceRGBMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DistanceYCCMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChromaMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ChannelMatteOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ReadBufferOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_WriteBufferOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MixOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BrightnessOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GammaOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorCorrectionOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetValueOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetColorOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetVectorOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MathBaseOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverMixedOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverPremultiplyOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AlphaOverKeyOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorBalanceLGGOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ColorBalanceASCCDLOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_InvertOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetAlphaOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapValueOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapRangeOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_TranslateOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_WrapOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_RotateOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ScaleOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MapUVOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DisplaceOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DisplaceSimpleOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_FlipOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ProjectorLensDistortionOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ScreenLensDistortionOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneDistortCommonOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneTrackOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_PlaneCornerPinOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvolutionFilterOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvolutionEdgeFilterOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DespeckleOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DilateErodeOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_InpaintOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareThresholdOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareBaseOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareSimpleStarOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareStreaksOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareGhostOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_GlareFogGlowOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_SetSamplerOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_IDMaskOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_DotproductOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_BoxMaskOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_EllipseMaskOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MovieClipOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_ConvertColorProfileOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_AntiAliasOperation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\compositor\operations\COM_MaskOperation.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/datatoc/datatoc.vcxproj">
+      <Project>ECF6F94A-F017-4A42-8A03-4291CE3966C3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\BlockDXT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\ColorBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\DirectDrawSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\FlipDXT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\dds_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\BlockDXT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\ColorBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\DirectDrawSurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\FlipDXT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\PixelFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\Stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\dds_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\imbuf\intern\dds\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2DF88026-B793-4931-819F-9C4E565EB817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

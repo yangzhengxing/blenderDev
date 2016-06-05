@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_add.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_bevel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_bisect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_extrude.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_inset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_intersect.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_knife.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_knife_project.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_loopcut.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_path.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_rip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_rip_edge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_select.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\editmesh_utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\mesh_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\mesh_ops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\meshtools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\editors\mesh\mesh_navmesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\editors\mesh\mesh_intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\editors\mesh\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2DF88026-B793-4931-819F-9C4E565EB817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

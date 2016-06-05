@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{86A3C204-9D3A-4285-A514-186D14F848B5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_render</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_render.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_render</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_render.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_render</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_render.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_render</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_render.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_render</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_OPENEXR;WITH_SMOKE;WITH_FREESTYLE;WITH_GAMEENGINE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\freestyle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\render\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/render/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/render/CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/render/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/render/CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/render/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/render/CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/render/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/render/CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;D:\blenderDev\blender\source\blender\render\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\render\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_engine.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_bake.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_multires_bake.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_pipeline.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_render_ext.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\extern\include\RE_shader_ext.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\envmap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\initrender.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\occlusion.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\pixelblending.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\pixelshading.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\pointdensity.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\raycounter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\rayobject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\rayintersection.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\render_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\render_result.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\rendercore.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\renderdatabase.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\renderpipeline.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\shadbuf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\shading.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\sss.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\strand.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\sunsky.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\texture.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\texture_ocean.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\volume_precache.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\volumetric.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\voxeldata.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\include\zbuf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\bvh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_hint.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_internal.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_rtbuild.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\reorganize.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\svbvh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\vbvh.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_empty.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_octree.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_raycounter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_svbvh.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_instance.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_qbvh.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_rtbuild.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\raytrace\rayobject_vbvh.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\bake.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\bake_api.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\convertblender.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\envmap.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\external_engine.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\imagetexture.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\initrender.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\multires_bake.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\occlusion.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\pipeline.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\pixelblending.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\pixelshading.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\pointdensity.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\rayshade.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\rendercore.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\render_result.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\render_texture.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\renderdatabase.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\shadbuf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\shadeinput.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\shadeoutput.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\sss.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\strand.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\sunsky.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\texture_ocean.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\volume_precache.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\volumetric.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\voxeldata.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\blender\render\intern\source\zbuf.c" >
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

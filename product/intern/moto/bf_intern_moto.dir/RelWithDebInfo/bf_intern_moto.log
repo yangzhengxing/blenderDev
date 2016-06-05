@@ -1,0 +1,36 @@
+﻿Build started 2016/4/2 9:25:33.
+     1>Project "D:\blenderDev\product\intern\moto\bf_intern_moto.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/moto/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\moto\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\intern\moto\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"bf_intern_moto.dir\RelWithDebInfo\\" /Fd"bf_intern_moto.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\moto\intern\MT_Assert.cpp D:\blenderDev\blender\intern\moto\intern\MT_CmMatrix4x4.cpp D:\blenderDev\blender\intern\moto\intern\MT_Matrix3x3.cpp D:\blenderDev\blender\intern\moto\intern\MT_Matrix4x4.cpp D:\blenderDev\blender\intern\moto\intern\MT_Point3.cpp D:\blenderDev\blender\intern\moto\intern\MT_Quaternion.cpp D:\blenderDev\blender\intern\moto\intern\MT_Transform.cpp D:\blenderDev\blender\intern\moto\intern\MT_Vector2.cpp D:\blenderDev\blender\intern\moto\intern\MT_Vector3.cpp D:\blenderDev\blender\intern\moto\intern\MT_Vector4.cpp D:\blenderDev\blender\intern\moto\intern\MT_random.cpp
+         MT_Assert.cpp
+         MT_CmMatrix4x4.cpp
+         MT_Matrix3x3.cpp
+         MT_Matrix4x4.cpp
+         MT_Point3.cpp
+         MT_Quaternion.cpp
+         MT_Transform.cpp
+         MT_Vector2.cpp
+         MT_Vector3.cpp
+         MT_Vector4.cpp
+         MT_random.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_intern_moto.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_intern_moto.dir\RelWithDebInfo\MT_Assert.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_CmMatrix4x4.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Matrix3x3.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Matrix4x4.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Point3.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Quaternion.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Transform.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Vector2.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Vector3.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_Vector4.obj
+         bf_intern_moto.dir\RelWithDebInfo\MT_random.obj
+         bf_intern_moto.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_intern_moto.lib
+     1>Done Building Project "D:\blenderDev\product\intern\moto\bf_intern_moto.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.33

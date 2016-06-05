@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ActionActuator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureActuator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureConstraint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_BlenderDataConversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_DeformableGameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_MeshDeformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ModifierDeformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ShapeActionActuator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ShapeDeformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\BL_SkinDeformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_BlenderScalarInterpolator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_BlenderSceneConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertActuators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertControllers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertProperties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertSensors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_LibLoadStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Converter\KX_SoftBodyDeformer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ActionActuator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureActuator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureChannel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureConstraint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ArmatureObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_BlenderDataConversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_DeformableGameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_MeshDeformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ModifierDeformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ShapeActionActuator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_ShapeDeformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\BL_SkinDeformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_BlenderScalarInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_BlenderSceneConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertActuators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertControllers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_ConvertSensors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_LibLoadStatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Converter\KX_SoftBodyDeformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\gameengine\Converter\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2DF88026-B793-4931-819F-9C4E565EB817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

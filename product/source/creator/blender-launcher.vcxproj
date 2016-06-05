@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{F83000EF-6239-449C-97FE-0D788D612D44}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>blender-launcher</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">blender-launcher.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">blender</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">blender-launcher.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">blender</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">blender-launcher.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">blender</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">blender-launcher.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">blender</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM="Windows";BUILD_TYPE="";BUILD_CFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     ";BUILD_CXXFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     ";BUILD_LINKFLAGS="/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221";BUILD_SYSTEM="CMake";DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM=\"Windows\";BUILD_TYPE=\"\";BUILD_CFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     \";BUILD_CXXFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     \";BUILD_LINKFLAGS=\"/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221\";BUILD_SYSTEM=\"CMake\";DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 /debug /IGNORE:4099 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>;..\..\lib\Debug\bf_intern_utfconv.lib;ws2_32.lib;vfw32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shfolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;psapi.lib;Dbghelp.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/blenderDev/blender/../lib/win64_vc12/sdl/lib;D:/blenderDev/blender/../lib/win64_vc12/sdl/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib/$(Configuration);;D:/blenderDev/lib/win64_vc12/boost/lib;D:/blenderDev/lib/win64_vc12/boost/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openal/lib;D:/blenderDev/blender/../lib/win64_vc12/openal/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib;libcmt.lib;libc.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/blenderDev/product/bin/Debug/blender.lib</ImportLibrary>
+      <OptimizeReferences>false</OptimizeReferences>
+      <ProgramDataBaseFile>D:/blenderDev/product/bin/Debug/blender.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM="Windows";BUILD_TYPE="";BUILD_CFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     ";BUILD_CXXFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     ";BUILD_LINKFLAGS="/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221";BUILD_SYSTEM="CMake";NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM=\"Windows\";BUILD_TYPE=\"\";BUILD_CFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     \";BUILD_CXXFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     \";BUILD_LINKFLAGS=\"/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221\";BUILD_SYSTEM=\"CMake\";NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>;..\..\lib\Release\bf_intern_utfconv.lib;ws2_32.lib;vfw32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shfolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;psapi.lib;Dbghelp.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/blenderDev/blender/../lib/win64_vc12/sdl/lib;D:/blenderDev/blender/../lib/win64_vc12/sdl/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib/$(Configuration);;D:/blenderDev/lib/win64_vc12/boost/lib;D:/blenderDev/lib/win64_vc12/boost/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openal/lib;D:/blenderDev/blender/../lib/win64_vc12/openal/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/blenderDev/product/bin/Release/blender.lib</ImportLibrary>
+      <OptimizeReferences>false</OptimizeReferences>
+      <ProgramDataBaseFile>D:/blenderDev/product/bin/Release/blender.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM="Windows";BUILD_TYPE="";BUILD_CFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     ";BUILD_CXXFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     ";BUILD_LINKFLAGS="/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221";BUILD_SYSTEM="CMake";NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM=\"Windows\";BUILD_TYPE=\"\";BUILD_CFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     \";BUILD_CXXFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     \";BUILD_LINKFLAGS=\"/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221\";BUILD_SYSTEM=\"CMake\";NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>;..\..\lib\MinSizeRel\bf_intern_utfconv.lib;ws2_32.lib;vfw32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shfolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;psapi.lib;Dbghelp.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/blenderDev/blender/../lib/win64_vc12/sdl/lib;D:/blenderDev/blender/../lib/win64_vc12/sdl/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib/$(Configuration);;D:/blenderDev/lib/win64_vc12/boost/lib;D:/blenderDev/lib/win64_vc12/boost/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openal/lib;D:/blenderDev/blender/../lib/win64_vc12/openal/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/blenderDev/product/bin/MinSizeRel/blender.lib</ImportLibrary>
+      <OptimizeReferences>false</OptimizeReferences>
+      <ProgramDataBaseFile>D:/blenderDev/product/bin/MinSizeRel/blender.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM="Windows";BUILD_TYPE="";BUILD_CFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     ";BUILD_CXXFLAGS="/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     ";BUILD_LINKFLAGS="/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221";BUILD_SYSTEM="CMake";NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_LIBMV;WITH_CYCLES_LOGGING;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_GAMEENGINE;WITH_SDL;WITH_FREESTYLE;BLEN_VER_RC_STR=2.77;BLEN_VER_RC_1=2;BLEN_VER_RC_2=7;BLEN_VER_RC_3=7;BLEN_VER_RC_4=0;WITH_BUILDINFO;WITH_BUILDINFO_HEADER;BUILD_PLATFORM=\"Windows\";BUILD_TYPE=\"\";BUILD_CFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /openmp     \";BUILD_CXXFLAGS=\"/W3 /w34062 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /we4013 /we4431  /DWIN32 /D_WINDOWS /W3 /GR /EHsc /nologo /J /Gd /MP /EHsc /openmp     \";BUILD_LINKFLAGS=\"/MACHINE:X64 /OPT:NOREF /SUBSYSTEM:CONSOLE /STACK:2097152 /INCREMENTAL:NO /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /ignore:4049 /ignore:4217 /ignore:4221\";BUILD_SYSTEM=\"CMake\";NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>;..\..\lib\RelWithDebInfo\bf_intern_utfconv.lib;ws2_32.lib;vfw32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;advapi32.lib;shfolder.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;psapi.lib;Dbghelp.lib;imm32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/blenderDev/blender/../lib/win64_vc12/sdl/lib;D:/blenderDev/blender/../lib/win64_vc12/sdl/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib;D:/blenderDev/blender/../lib/win64_vc12/openexr/lib/$(Configuration);;D:/blenderDev/lib/win64_vc12/boost/lib;D:/blenderDev/lib/win64_vc12/boost/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib;D:/blenderDev/blender/../lib/win64_vc12/openimageio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib;D:/blenderDev/blender/../lib/win64_vc12/opencolorio/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/openal/lib;D:/blenderDev/blender/../lib/win64_vc12/openal/lib/$(Configuration);;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib;D:/blenderDev/blender/../lib/win64_vc12/fftw3/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;msvcmrt.lib;msvcurt.lib;msvcrtd.lib</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/blenderDev/product/bin/RelWithDebInfo/blender.lib</ImportLibrary>
+      <OptimizeReferences>false</OptimizeReferences>
+      <ProgramDataBaseFile>D:/blenderDev/product/bin/RelWithDebInfo/blender.pdb</ProgramDataBaseFile>
+      <StackReserveSize>2097152</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\creator\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\source\creator\creator_launch_win.c"  />
+    <ResourceCompile Include="D:\blenderDev\blender\release\windows\icons\winblender.rc"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/utfconv/bf_intern_utfconv.vcxproj">
+      <Project>0BC746E9-8F9A-419D-8816-64B6F264A700</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

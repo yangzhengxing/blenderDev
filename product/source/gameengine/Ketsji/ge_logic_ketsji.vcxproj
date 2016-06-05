@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{408402D3-5378-4B57-A314-4034159E6786}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ge_logic_ketsji</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ge_logic_ketsji.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ge_logic_ketsji</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ge_logic_ketsji.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ge_logic_ketsji</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ge_logic_ketsji.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ge_logic_ketsji</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ge_logic_ketsji.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ge_logic_ketsji</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;WITH_SDL;WITH_FFMPEG;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;D:\blenderDev\blender\source\gameengine\Ketsji;D:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\gameengine\Converter;D:\blenderDev\blender\source\gameengine\Expressions;D:\blenderDev\blender\source\gameengine\GameLogic;D:\blenderDev\blender\source\gameengine\Network;D:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork;D:\blenderDev\blender\source\gameengine\Physics\common;D:\blenderDev\blender\source\gameengine\Rasterizer;D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer;D:\blenderDev\blender\source\gameengine\SceneGraph;D:\blenderDev\blender\source\blender;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\generic;D:\blenderDev\blender\source\blender\python\mathutils;D:\blenderDev\blender\intern\container;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\string;D:\blenderDev\blender\source\gameengine\Physics\Bullet;D:\blenderDev\blender\intern\moto\include;D:\blenderDev\blender\extern\recastnavigation\Recast\Include;D:\blenderDev\blender\extern\recastnavigation\Detour\Include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;D:\blenderDev\blender\source\gameengine\Ketsji\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Action.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_ActionManager.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_BlenderShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Material.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Shader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Texture.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ArmatureSensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_BlenderMaterial.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Camera.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraIpoSGController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CharacterWrapper.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ClientObjectInfo.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintWrapper.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Dome.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_EmptyObject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_FontObject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameObject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IpoConvert.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IPOTransform.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IPO_SGController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IScalarInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ISceneConverter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ISystem.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_KetsjiEngine.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Light.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_LightIpoSGController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MaterialIpoController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MeshProxy.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MotionState.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseFocusSensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_NavMeshObject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_NearSensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObColorIpoSGController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObjectActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObstacleSimulation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_OrientationInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ParentActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PhysicsEngineEnums.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PolyProxy.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PositionInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyConstraintBinding.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyMath.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInit.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInitTypes.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonMain.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RadarSensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayCast.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayEventManager.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RaySensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_AddObjectActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_DynamicActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_EndObjectActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_ReplaceMeshActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_BoneParentNodeRelationship.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_NodeRelationships.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalarInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalingInterpolator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Scene.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SceneActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SoundActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_StateActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SteeringActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeCategoryLogger.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeLogger.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchEventManager.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchSensor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TrackToActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VehicleWrapper.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VertexProxy.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VisibilityActuator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldInfo.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldIpoController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_DynamicTypes.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_ICharacter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IGraphicController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IMotionState.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IPhysicsController.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IPhysicsEnvironment.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_IVehicle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\Physics\common\PHY_Pro.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Action.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_ActionManager.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_BlenderShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Material.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Shader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\BL_Texture.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ArmatureSensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_BlenderMaterial.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Camera.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraIpoSGController.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_CharacterWrapper.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintWrapper.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Dome.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_EmptyObject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_FontObject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameObject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IpoConvert.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_IPO_SGController.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_KetsjiEngine.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Light.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_LightIpoSGController.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MaterialIpoController.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MeshProxy.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MotionState.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseFocusSensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_NavMeshObject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_NearSensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObColorIpoSGController.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObjectActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObstacleSimulation.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_OrientationInterpolator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ParentActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PolyProxy.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PositionInterpolator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyConstraintBinding.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyMath.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInit.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInitTypes.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonMain.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RadarSensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayCast.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayEventManager.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_RaySensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_AddObjectActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_DynamicActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_EndObjectActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_ReplaceMeshActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_BoneParentNodeRelationship.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_NodeRelationships.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalarInterpolator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalingInterpolator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_Scene.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SceneActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SoundActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_StateActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_SteeringActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeCategoryLogger.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeLogger.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchEventManager.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchSensor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_TrackToActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VehicleWrapper.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VertexProxy.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_VisibilityActuator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldInfo.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldIpoController.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

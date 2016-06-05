@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_KetsjiEmbedStart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderCanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderInputDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderKeyboardDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderMouseDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderCanvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderInputDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderKeyboardDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderMouseDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\gameengine\BlenderRoutines\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2DF88026-B793-4931-819F-9C4E565EB817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

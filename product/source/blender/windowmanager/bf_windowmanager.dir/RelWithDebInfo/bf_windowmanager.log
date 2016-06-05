@@ -1,0 +1,46 @@
+﻿Build started 2016/4/2 9:26:22.
+     1>Project "D:\blenderDev\product\source\blender\windowmanager\bf_windowmanager.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/windowmanager/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\windowmanager\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenloader /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\compositor /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\nodes /ID:\blenderDev\blender\source\blender\render\extern\include /ID:\blenderDev\blender\source\gameengine\BlenderRoutines /ID:\blenderDev\blender\intern\ghost /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\memutil /ID:\blenderDev\blender\source\blender\python /ID:\blenderDev\lib\win64_vc12\zlib\include /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\blender\intern\audaspace\intern /ID:\blenderDev\lib\win64_vc12\ffmpeg\include /ID:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_AUDASPACE /D "AUD_DEVICE_H=<AUD_C-API.h>" /D "AUD_SPECIAL_H=<AUD_C-API.h>" /D "AUD_SOUND_H=<AUD_C-API.h>" /D "AUD_HANDLE_H=<AUD_C-API.h>" /D "AUD_SEQUENCE_H=<AUD_C-API.h>" /D "AUD_TYPES_H=<AUD_Space.h>" /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_INTERNATIONAL /D WITH_COLLADA /D WITH_FFMPEG /D WITH_PYTHON /D WITH_PYTHON_SECURITY /D WITH_GAMEENGINE /D WITH_BUILDINFO /D WITH_INPUT_IME /D WITH_COMPOSITOR /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_windowmanager.dir\RelWithDebInfo\\" /Fd"bf_windowmanager.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\windowmanager\intern\wm.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_playanim.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_cursors.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_dragdrop.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_draw.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_event_system.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_files.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_gesture.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_init_exit.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_jobs.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_keymap.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_operator_props.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_operators.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_subwindow.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_window.c D:\blenderDev\blender\source\blender\windowmanager\intern\wm_stereo.c
+         wm.c
+         wm_playanim.c
+         wm_cursors.c
+         wm_dragdrop.c
+         wm_draw.c
+         wm_event_system.c
+         wm_files.c
+         wm_gesture.c
+         wm_init_exit.c
+         wm_jobs.c
+         wm_keymap.c
+         wm_operator_props.c
+         wm_operators.c
+         wm_subwindow.c
+         wm_window.c
+         wm_stereo.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_windowmanager.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_windowmanager.dir\RelWithDebInfo\wm.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_playanim.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_cursors.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_dragdrop.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_draw.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_event_system.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_files.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_gesture.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_init_exit.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_jobs.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_keymap.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_operator_props.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_operators.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_subwindow.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_window.obj
+         bf_windowmanager.dir\RelWithDebInfo\wm_stereo.obj
+         bf_windowmanager.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_windowmanager.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\windowmanager\bf_windowmanager.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.88

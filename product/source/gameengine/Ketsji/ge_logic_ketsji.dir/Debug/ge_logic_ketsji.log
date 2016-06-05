@@ -1,0 +1,168 @@
+﻿Build started 2016/4/2 8:28:51.
+     1>Project "D:\blenderDev\product\source\gameengine\Ketsji\ge_logic_ketsji.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/Ketsji/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\Ketsji\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\Ketsji /ID:\blenderDev\blender\source\gameengine\Ketsji\KXNetwork /ID:\blenderDev\blender\source\gameengine\BlenderRoutines /ID:\blenderDev\blender\source\gameengine\Converter /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\GameLogic /ID:\blenderDev\blender\source\gameengine\Network /ID:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork /ID:\blenderDev\blender\source\gameengine\Physics\common /ID:\blenderDev\blender\source\gameengine\Rasterizer /ID:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenloader /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\python /ID:\blenderDev\blender\source\blender\python\generic /ID:\blenderDev\blender\source\blender\python\mathutils /ID:\blenderDev\blender\intern\container /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\source\gameengine\Physics\Bullet /ID:\blenderDev\blender\intern\moto\include /ID:\blenderDev\blender\extern\recastnavigation\Recast\Include /ID:\blenderDev\blender\extern\recastnavigation\Detour\Include /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\lib\win64_vc12\sdl\include /ID:\blenderDev\blender\intern\audaspace\intern /ID:\blenderDev\blender\extern\bullet2\src /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_DDS /D WITH_SDL /D WITH_FFMPEG /D WITH_AUDASPACE /D "AUD_DEVICE_H=<AUD_C-API.h>" /D "AUD_SPECIAL_H=<AUD_C-API.h>" /D "AUD_SOUND_H=<AUD_C-API.h>" /D "AUD_HANDLE_H=<AUD_C-API.h>" /D "AUD_SEQUENCE_H=<AUD_C-API.h>" /D "AUD_TYPES_H=<AUD_Space.h>" /D WITH_BULLET /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_logic_ketsji.dir\Debug\\" /Fd"ge_logic_ketsji.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\Ketsji\BL_Action.cpp D:\blenderDev\blender\source\gameengine\Ketsji\BL_ActionManager.cpp D:\blenderDev\blender\source\gameengine\Ketsji\BL_BlenderShader.cpp D:\blenderDev\blender\source\gameengine\Ketsji\BL_Material.cpp D:\blenderDev\blender\source\gameengine\Ketsji\BL_Shader.cpp D:\blenderDev\blender\source\gameengine\Ketsji\BL_Texture.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ArmatureSensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_BlenderMaterial.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_Camera.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_CameraIpoSGController.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_CharacterWrapper.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ConstraintWrapper.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_Dome.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_EmptyObject.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_FontObject.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_GameObject.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_IpoConvert.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_IPO_SGController.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_KetsjiEngine.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_Light.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_LightIpoSGController.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_MaterialIpoController.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_MeshProxy.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_MotionState.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_MouseFocusSensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_NavMeshObject.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_NearSensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObColorIpoSGController.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObjectActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ObstacleSimulation.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_OrientationInterpolator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ParentActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PolyProxy.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PositionInterpolator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyConstraintBinding.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PyMath.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInit.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInitTypes.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonMain.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_RadarSensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayCast.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_RayEventManager.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_RaySensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_AddObjectActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_DynamicActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_EndObjectActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SCA_ReplaceMeshActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_BoneParentNodeRelationship.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SG_NodeRelationships.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalarInterpolator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_ScalingInterpolator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_Scene.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SceneActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SoundActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_StateActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_SteeringActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeCategoryLogger.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_TimeLogger.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchEventManager.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_TouchSensor.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_TrackToActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_VehicleWrapper.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_VertexProxy.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_VisibilityActuator.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldInfo.cpp D:\blenderDev\blender\source\gameengine\Ketsji\KX_WorldIpoController.cpp
+         BL_Action.cpp
+         BL_ActionManager.cpp
+         BL_BlenderShader.cpp
+         BL_Material.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\BL_BlenderShader.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         BL_Shader.cpp
+         BL_Texture.cpp
+         KX_ArmatureSensor.cpp
+         KX_BlenderMaterial.cpp
+         KX_Camera.cpp
+         KX_CameraActuator.cpp
+         KX_CameraIpoSGController.cpp
+         KX_CharacterWrapper.cpp
+         KX_ConstraintActuator.cpp
+         KX_ConstraintWrapper.cpp
+         KX_Dome.cpp
+         KX_EmptyObject.cpp
+         KX_FontObject.cpp
+         KX_GameActuator.cpp
+     1>D:\blenderDev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_FontObject.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_FontObject.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         KX_GameObject.cpp
+         KX_IpoConvert.cpp
+         KX_IPO_SGController.cpp
+         KX_KetsjiEngine.cpp
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_IpoConvert.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_IPO_SGController.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         KX_Light.cpp
+         KX_LightIpoSGController.cpp
+         KX_MaterialIpoController.cpp
+         KX_MeshProxy.cpp
+         KX_MotionState.cpp
+         KX_MouseActuator.cpp
+         KX_MouseFocusSensor.cpp
+         KX_NavMeshObject.cpp
+         KX_NearSensor.cpp
+         KX_ObColorIpoSGController.cpp
+         KX_ObjectActuator.cpp
+         KX_ObstacleSimulation.cpp
+         KX_OrientationInterpolator.cpp
+         KX_ParentActuator.cpp
+         KX_PolyProxy.cpp
+         KX_PositionInterpolator.cpp
+         KX_PyConstraintBinding.cpp
+         KX_PyMath.cpp
+         KX_PythonInit.cpp
+         KX_PythonInitTypes.cpp
+         KX_PythonMain.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonMain.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         KX_RadarSensor.cpp
+         KX_RayCast.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Ketsji\KX_PythonInit.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         KX_RayEventManager.cpp
+         KX_RaySensor.cpp
+         KX_SCA_AddObjectActuator.cpp
+         KX_SCA_DynamicActuator.cpp
+         KX_SCA_EndObjectActuator.cpp
+         KX_SCA_ReplaceMeshActuator.cpp
+         KX_SG_BoneParentNodeRelationship.cpp
+         KX_SG_NodeRelationships.cpp
+         KX_ScalarInterpolator.cpp
+         KX_ScalingInterpolator.cpp
+         KX_Scene.cpp
+         KX_SceneActuator.cpp
+         KX_SoundActuator.cpp
+         KX_StateActuator.cpp
+         KX_SteeringActuator.cpp
+         KX_TimeCategoryLogger.cpp
+         KX_TimeLogger.cpp
+         KX_TouchEventManager.cpp
+         KX_TouchSensor.cpp
+         KX_TrackToActuator.cpp
+         KX_VehicleWrapper.cpp
+         KX_VertexProxy.cpp
+         KX_VisibilityActuator.cpp
+         KX_WorldInfo.cpp
+         KX_WorldIpoController.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\ge_logic_ketsji.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_logic_ketsji.dir\Debug\BL_Action.obj
+         ge_logic_ketsji.dir\Debug\BL_ActionManager.obj
+         ge_logic_ketsji.dir\Debug\BL_BlenderShader.obj
+         ge_logic_ketsji.dir\Debug\BL_Material.obj
+         ge_logic_ketsji.dir\Debug\BL_Shader.obj
+         ge_logic_ketsji.dir\Debug\BL_Texture.obj
+         ge_logic_ketsji.dir\Debug\KX_ArmatureSensor.obj
+         ge_logic_ketsji.dir\Debug\KX_BlenderMaterial.obj
+         ge_logic_ketsji.dir\Debug\KX_Camera.obj
+         ge_logic_ketsji.dir\Debug\KX_CameraActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_CameraIpoSGController.obj
+         ge_logic_ketsji.dir\Debug\KX_CharacterWrapper.obj
+         ge_logic_ketsji.dir\Debug\KX_ConstraintActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_ConstraintWrapper.obj
+         ge_logic_ketsji.dir\Debug\KX_Dome.obj
+         ge_logic_ketsji.dir\Debug\KX_EmptyObject.obj
+         ge_logic_ketsji.dir\Debug\KX_FontObject.obj
+         ge_logic_ketsji.dir\Debug\KX_GameActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_GameObject.obj
+         ge_logic_ketsji.dir\Debug\KX_IpoConvert.obj
+         ge_logic_ketsji.dir\Debug\KX_IPO_SGController.obj
+         ge_logic_ketsji.dir\Debug\KX_KetsjiEngine.obj
+         ge_logic_ketsji.dir\Debug\KX_Light.obj
+         ge_logic_ketsji.dir\Debug\KX_LightIpoSGController.obj
+         ge_logic_ketsji.dir\Debug\KX_MaterialIpoController.obj
+         ge_logic_ketsji.dir\Debug\KX_MeshProxy.obj
+         ge_logic_ketsji.dir\Debug\KX_MotionState.obj
+         ge_logic_ketsji.dir\Debug\KX_MouseActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_MouseFocusSensor.obj
+         ge_logic_ketsji.dir\Debug\KX_NavMeshObject.obj
+         ge_logic_ketsji.dir\Debug\KX_NearSensor.obj
+         ge_logic_ketsji.dir\Debug\KX_ObColorIpoSGController.obj
+         ge_logic_ketsji.dir\Debug\KX_ObjectActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_ObstacleSimulation.obj
+         ge_logic_ketsji.dir\Debug\KX_OrientationInterpolator.obj
+         ge_logic_ketsji.dir\Debug\KX_ParentActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_PolyProxy.obj
+         ge_logic_ketsji.dir\Debug\KX_PositionInterpolator.obj
+         ge_logic_ketsji.dir\Debug\KX_PyConstraintBinding.obj
+         ge_logic_ketsji.dir\Debug\KX_PyMath.obj
+         ge_logic_ketsji.dir\Debug\KX_PythonInit.obj
+         ge_logic_ketsji.dir\Debug\KX_PythonInitTypes.obj
+         ge_logic_ketsji.dir\Debug\KX_PythonMain.obj
+         ge_logic_ketsji.dir\Debug\KX_RadarSensor.obj
+         ge_logic_ketsji.dir\Debug\KX_RayCast.obj
+         ge_logic_ketsji.dir\Debug\KX_RayEventManager.obj
+         ge_logic_ketsji.dir\Debug\KX_RaySensor.obj
+         ge_logic_ketsji.dir\Debug\KX_SCA_AddObjectActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SCA_DynamicActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SCA_EndObjectActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SCA_ReplaceMeshActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SG_BoneParentNodeRelationship.obj
+         ge_logic_ketsji.dir\Debug\KX_SG_NodeRelationships.obj
+         ge_logic_ketsji.dir\Debug\KX_ScalarInterpolator.obj
+         ge_logic_ketsji.dir\Debug\KX_ScalingInterpolator.obj
+         ge_logic_ketsji.dir\Debug\KX_Scene.obj
+         ge_logic_ketsji.dir\Debug\KX_SceneActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SoundActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_StateActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_SteeringActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_TimeCategoryLogger.obj
+         ge_logic_ketsji.dir\Debug\KX_TimeLogger.obj
+         ge_logic_ketsji.dir\Debug\KX_TouchEventManager.obj
+         ge_logic_ketsji.dir\Debug\KX_TouchSensor.obj
+         ge_logic_ketsji.dir\Debug\KX_TrackToActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_VehicleWrapper.obj
+         ge_logic_ketsji.dir\Debug\KX_VertexProxy.obj
+         ge_logic_ketsji.dir\Debug\KX_VisibilityActuator.obj
+         ge_logic_ketsji.dir\Debug\KX_WorldInfo.obj
+         ge_logic_ketsji.dir\Debug\KX_WorldIpoController.obj
+         ge_logic_ketsji.vcxproj -> D:\blenderDev\product\lib\Debug\ge_logic_ketsji.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\Ketsji\ge_logic_ketsji.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:32.28

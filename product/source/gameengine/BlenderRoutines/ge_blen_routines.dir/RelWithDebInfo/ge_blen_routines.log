@@ -1,0 +1,30 @@
+﻿Build started 2016/4/2 9:34:41.
+     1>Project "D:\blenderDev\product\source\gameengine\BlenderRoutines\ge_blen_routines.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/BlenderRoutines/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\BlenderRoutines\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\BlenderRoutines /ID:\blenderDev\blender\source\gameengine\Converter /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\GameLogic /ID:\blenderDev\blender\source\gameengine\Ketsji /ID:\blenderDev\blender\source\gameengine\Network /ID:\blenderDev\blender\source\gameengine\Network\LoopBackNetwork /ID:\blenderDev\blender\source\gameengine\Physics\Bullet /ID:\blenderDev\blender\source\gameengine\Physics\common /ID:\blenderDev\blender\source\gameengine\Rasterizer /ID:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenloader /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\container /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\intern\moto\include /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\blender\intern\audaspace\intern /ID:\blenderDev\blender\extern\bullet2\src /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_AUDASPACE /D "AUD_DEVICE_H=<AUD_C-API.h>" /D "AUD_SPECIAL_H=<AUD_C-API.h>" /D "AUD_SOUND_H=<AUD_C-API.h>" /D "AUD_HANDLE_H=<AUD_C-API.h>" /D "AUD_SEQUENCE_H=<AUD_C-API.h>" /D "AUD_TYPES_H=<AUD_Space.h>" /D WITH_FFMPEG /D WITH_BULLET /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_blen_routines.dir\RelWithDebInfo\\" /Fd"ge_blen_routines.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_KetsjiEmbedStart.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_System.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderCanvas.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderInputDevice.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderKeyboardDevice.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderMouseDevice.cpp D:\blenderDev\blender\source\gameengine\BlenderRoutines\KX_BlenderSystem.cpp
+         BL_KetsjiEmbedStart.cpp
+         BL_System.cpp
+         KX_BlenderCanvas.cpp
+         KX_BlenderInputDevice.cpp
+         KX_BlenderKeyboardDevice.cpp
+         KX_BlenderMouseDevice.cpp
+         KX_BlenderSystem.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\BlenderRoutines\BL_KetsjiEmbedStart.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\ge_blen_routines.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_blen_routines.dir\RelWithDebInfo\BL_KetsjiEmbedStart.obj
+         ge_blen_routines.dir\RelWithDebInfo\BL_System.obj
+         ge_blen_routines.dir\RelWithDebInfo\KX_BlenderCanvas.obj
+         ge_blen_routines.dir\RelWithDebInfo\KX_BlenderInputDevice.obj
+         ge_blen_routines.dir\RelWithDebInfo\KX_BlenderKeyboardDevice.obj
+         ge_blen_routines.dir\RelWithDebInfo\KX_BlenderMouseDevice.obj
+         ge_blen_routines.dir\RelWithDebInfo\KX_BlenderSystem.obj
+         ge_blen_routines.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\ge_blen_routines.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\BlenderRoutines\ge_blen_routines.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:02.75

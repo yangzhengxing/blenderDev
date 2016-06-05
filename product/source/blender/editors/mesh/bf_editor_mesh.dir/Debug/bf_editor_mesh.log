@@ -1,0 +1,54 @@
+﻿Build started 2016/4/2 8:22:53.
+     1>Project "D:\blenderDev\product\source\blender\editors\mesh\bf_editor_mesh.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/mesh/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\mesh\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\editors\uvedit /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\bmesh /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\render\extern\include /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\recastnavigation /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_GAMEENGINE /D WITH_INTERNATIONAL /D WITH_FREESTYLE /D WITH_BULLET /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_mesh.dir\Debug\\" /Fd"bf_editor_mesh.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\mesh\editface.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_add.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_bevel.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_bisect.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_extrude.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_inset.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_intersect.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_knife.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_knife_project.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_loopcut.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_path.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_rip.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_rip_edge.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_select.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_tools.c D:\blenderDev\blender\source\blender\editors\mesh\editmesh_utils.c D:\blenderDev\blender\source\blender\editors\mesh\mesh_data.c D:\blenderDev\blender\source\blender\editors\mesh\mesh_ops.c D:\blenderDev\blender\source\blender\editors\mesh\meshtools.c D:\blenderDev\blender\source\blender\editors\mesh\mesh_navmesh.c
+         editface.c
+         editmesh_add.c
+         editmesh_bevel.c
+         editmesh_bisect.c
+         editmesh_extrude.c
+         editmesh_inset.c
+         editmesh_intersect.c
+         editmesh_knife.c
+         editmesh_knife_project.c
+         editmesh_loopcut.c
+         editmesh_path.c
+         editmesh_rip.c
+         editmesh_rip_edge.c
+         editmesh_select.c
+         editmesh_tools.c
+         editmesh_utils.c
+         mesh_data.c
+         mesh_ops.c
+         meshtools.c
+         mesh_navmesh.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_editor_mesh.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_mesh.dir\Debug\editface.obj
+         bf_editor_mesh.dir\Debug\editmesh_add.obj
+         bf_editor_mesh.dir\Debug\editmesh_bevel.obj
+         bf_editor_mesh.dir\Debug\editmesh_bisect.obj
+         bf_editor_mesh.dir\Debug\editmesh_extrude.obj
+         bf_editor_mesh.dir\Debug\editmesh_inset.obj
+         bf_editor_mesh.dir\Debug\editmesh_intersect.obj
+         bf_editor_mesh.dir\Debug\editmesh_knife.obj
+         bf_editor_mesh.dir\Debug\editmesh_knife_project.obj
+         bf_editor_mesh.dir\Debug\editmesh_loopcut.obj
+         bf_editor_mesh.dir\Debug\editmesh_path.obj
+         bf_editor_mesh.dir\Debug\editmesh_rip.obj
+         bf_editor_mesh.dir\Debug\editmesh_rip_edge.obj
+         bf_editor_mesh.dir\Debug\editmesh_select.obj
+         bf_editor_mesh.dir\Debug\editmesh_tools.obj
+         bf_editor_mesh.dir\Debug\editmesh_utils.obj
+         bf_editor_mesh.dir\Debug\mesh_data.obj
+         bf_editor_mesh.dir\Debug\mesh_ops.obj
+         bf_editor_mesh.dir\Debug\meshtools.obj
+         bf_editor_mesh.dir\Debug\mesh_navmesh.obj
+         bf_editor_mesh.vcxproj -> D:\blenderDev\product\lib\Debug\bf_editor_mesh.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\mesh\bf_editor_mesh.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.05

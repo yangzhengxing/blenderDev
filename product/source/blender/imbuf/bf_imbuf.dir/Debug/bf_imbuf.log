@@ -1,0 +1,76 @@
+﻿Build started 2016/4/2 8:23:31.
+     1>Project "D:\blenderDev\product\source\blender\imbuf\bf_imbuf.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenloader /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\memutil /ID:\blenderDev\blender\source\blender\avi /ID:\blenderDev\blender\intern\ffmpeg /ID:\blenderDev\blender\intern\opencolorio /ID:\blenderDev\blender\intern\utfconv /ID:\blenderDev\lib\win64_vc12\jpeg\include /ID:\blenderDev\lib\win64_vc12\png\include /ID:\blenderDev\lib\win64_vc12\zlib\include /ID:\blenderDev\lib\win64_vc12\tiff\include /ID:\blenderDev\blender\extern\libopenjpeg /ID:\blenderDev\lib\win64_vc12\ffmpeg\include /ID:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_OPENEXR /D WITH_TIFF /D WITH_OPENIMAGEIO /D WITH_OPENJPEG /D OPJ_STATIC /D WITH_AVI /D WITH_FFMPEG /D WITH_DDS /D WITH_CINEON /D WITH_HDR /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_imbuf.dir\Debug\\" /Fd"bf_imbuf.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\imbuf\intern\allocimbuf.c D:\blenderDev\blender\source\blender\imbuf\intern\anim_movie.c D:\blenderDev\blender\source\blender\imbuf\intern\bmp.c D:\blenderDev\blender\source\blender\imbuf\intern\cache.c D:\blenderDev\blender\source\blender\imbuf\intern\colormanagement.c D:\blenderDev\blender\source\blender\imbuf\intern\divers.c D:\blenderDev\blender\source\blender\imbuf\intern\filetype.c D:\blenderDev\blender\source\blender\imbuf\intern\filter.c D:\blenderDev\blender\source\blender\imbuf\intern\imageprocess.c D:\blenderDev\blender\source\blender\imbuf\intern\indexer.c D:\blenderDev\blender\source\blender\imbuf\intern\iris.c D:\blenderDev\blender\source\blender\imbuf\intern\jpeg.c D:\blenderDev\blender\source\blender\imbuf\intern\metadata.c D:\blenderDev\blender\source\blender\imbuf\intern\module.c D:\blenderDev\blender\source\blender\imbuf\intern\moviecache.c D:\blenderDev\blender\source\blender\imbuf\intern\png.c D:\blenderDev\blender\source\blender\imbuf\intern\readimage.c D:\blenderDev\blender\source\blender\imbuf\intern\rectop.c D:\blenderDev\blender\source\blender\imbuf\intern\rotate.c D:\blenderDev\blender\source\blender\imbuf\intern\scaling.c D:\blenderDev\blender\source\blender\imbuf\intern\stereoimbuf.c D:\blenderDev\blender\source\blender\imbuf\intern\targa.c D:\blenderDev\blender\source\blender\imbuf\intern\thumbs.c D:\blenderDev\blender\source\blender\imbuf\intern\thumbs_blend.c D:\blenderDev\blender\source\blender\imbuf\intern\thumbs_font.c D:\blenderDev\blender\source\blender\imbuf\intern\util.c D:\blenderDev\blender\source\blender\imbuf\intern\writeimage.c D:\blenderDev\blender\source\blender\imbuf\intern\tiff.c D:\blenderDev\blender\source\blender\imbuf\intern\jp2.c D:\blenderDev\blender\source\blender\imbuf\intern\radiance_hdr.c
+         allocimbuf.c
+         anim_movie.c
+         bmp.c
+         cache.c
+         colormanagement.c
+         divers.c
+         filetype.c
+         filter.c
+         imageprocess.c
+         indexer.c
+         iris.c
+         jpeg.c
+         metadata.c
+     1>D:\blenderDev\blender\source\blender\imbuf\intern\anim_movie.c(680): warning C4996: 'avpicture_deinterlace': was declared deprecated
+                 D:\blenderDev\lib\win64_vc12\ffmpeg\include\libavcodec/avcodec.h(4505) : see declaration of 'avpicture_deinterlace'
+         module.c
+         moviecache.c
+         png.c
+         readimage.c
+         rectop.c
+         rotate.c
+         scaling.c
+         stereoimbuf.c
+         targa.c
+         thumbs.c
+         thumbs_blend.c
+         thumbs_font.c
+         util.c
+         writeimage.c
+         tiff.c
+         jp2.c
+         radiance_hdr.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_imbuf.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_imbuf.dir\Debug\allocimbuf.obj
+         bf_imbuf.dir\Debug\anim_movie.obj
+         bf_imbuf.dir\Debug\bmp.obj
+         bf_imbuf.dir\Debug\cache.obj
+         bf_imbuf.dir\Debug\colormanagement.obj
+         bf_imbuf.dir\Debug\divers.obj
+         bf_imbuf.dir\Debug\filetype.obj
+         bf_imbuf.dir\Debug\filter.obj
+         bf_imbuf.dir\Debug\imageprocess.obj
+         bf_imbuf.dir\Debug\indexer.obj
+         bf_imbuf.dir\Debug\iris.obj
+         bf_imbuf.dir\Debug\jpeg.obj
+         bf_imbuf.dir\Debug\metadata.obj
+         bf_imbuf.dir\Debug\module.obj
+         bf_imbuf.dir\Debug\moviecache.obj
+         bf_imbuf.dir\Debug\png.obj
+         bf_imbuf.dir\Debug\readimage.obj
+         bf_imbuf.dir\Debug\rectop.obj
+         bf_imbuf.dir\Debug\rotate.obj
+         bf_imbuf.dir\Debug\scaling.obj
+         bf_imbuf.dir\Debug\stereoimbuf.obj
+         bf_imbuf.dir\Debug\targa.obj
+         bf_imbuf.dir\Debug\thumbs.obj
+         bf_imbuf.dir\Debug\thumbs_blend.obj
+         bf_imbuf.dir\Debug\thumbs_font.obj
+         bf_imbuf.dir\Debug\util.obj
+         bf_imbuf.dir\Debug\writeimage.obj
+         bf_imbuf.dir\Debug\tiff.obj
+         bf_imbuf.dir\Debug\jp2.obj
+         bf_imbuf.dir\Debug\radiance_hdr.obj
+         bf_imbuf.vcxproj -> D:\blenderDev\product\lib\Debug\bf_imbuf.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\imbuf\bf_imbuf.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.48

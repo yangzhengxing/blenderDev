@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\blenderDev\blender\intern\guardedalloc\intern\mallocn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\intern\guardedalloc\intern\mallocn_guarded_impl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\intern\guardedalloc\intern\mallocn_lockfree_impl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\blenderDev\blender\intern\guardedalloc\intern\mmap_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\intern\guardedalloc\MEM_guardedalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\intern\guardedalloc\intern\mallocn_intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\intern\atomic\atomic_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\blenderDev\blender\intern\guardedalloc\mmap_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\intern\guardedalloc\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2DF88026-B793-4931-819F-9C4E565EB817}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

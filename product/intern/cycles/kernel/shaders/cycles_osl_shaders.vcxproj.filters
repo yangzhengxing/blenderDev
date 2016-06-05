@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\intern\cycles\kernel\shaders\CMakeLists.txt" />
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_add_closure.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_ambient_occlusion.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_anisotropic_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_attribute.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_background.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_brick_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_brightness.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_bump.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_camera.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_checker_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_combine_rgb.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_combine_hsv.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_combine_xyz.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_color.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_float.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_int.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_normal.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_point.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_convert_from_vector.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_diffuse_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_emission.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_environment_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_fresnel.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_gamma.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_geometry.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_glass_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_glossy_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_gradient_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_hair_info.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_scatter_volume.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_absorption_volume.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_holdout.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_hsv.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_image_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_invert.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_layer_weight.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_light_falloff.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_light_path.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_magic_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_mapping.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_math.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_mix.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_mix_closure.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_musgrave_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_noise_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_normal.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_normal_map.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_object_info.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_output_displacement.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_output_surface.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_output_volume.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_particle_info.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_refraction_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_rgb_curves.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_rgb_ramp.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_separate_rgb.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_separate_hsv.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_separate_xyz.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_set_normal.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_sky_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_subsurface_scattering.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_tangent.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_texture_coordinate.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_toon_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_translucent_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_transparent_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_value.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_vector_curves.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_vector_math.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_vector_transform.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_velvet_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_voronoi_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_voxel_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_wavelength.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_blackbody.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_wave_texture.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_wireframe.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_hair_bsdf.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\ae4bfaeeedcdea3bd6e508f0448603b6\node_uv_map.oso.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\2ae1ccc9aaac5044c9862a731ae508e8\cycles_osl_shaders.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\cycles_osl_shaders" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3A18D33A-727F-462F-97E0-6F4F89D3B75E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

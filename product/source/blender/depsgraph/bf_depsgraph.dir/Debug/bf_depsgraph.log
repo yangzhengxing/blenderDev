@@ -1,0 +1,64 @@
+﻿Build started 2016/4/2 8:22:32.
+     1>Project "D:\blenderDev\product\source\blender\depsgraph\bf_depsgraph.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/depsgraph/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\depsgraph\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\depsgraph /ID:\blenderDev\blender\source\blender\depsgraph\intern /ID:\blenderDev\blender\source\blender\depsgraph\util /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\bmesh /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\modifiers /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\atomic /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\lib\win64_vc12\boost\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D DEG_STD_UNORDERED_MAP /D WITH_LEGACY_DEPSGRAPH /D HAVE_BOOST_FUNCTION_BINDINGS /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"bf_depsgraph.dir\Debug\\" /Fd"bf_depsgraph.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsnode.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsnode_component.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsnode_operation.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_nodes.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_relations.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_debug.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_eval.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_query.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_queue.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_tag.cc D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_type_defines.cc D:\blenderDev\blender\source\blender\depsgraph\util\depsgraph_util_cycle.cc D:\blenderDev\blender\source\blender\depsgraph\util\depsgraph_util_pchanmap.cc D:\blenderDev\blender\source\blender\depsgraph\util\depsgraph_util_transitive.cc
+         depsgraph.cc
+         depsnode.cc
+         depsnode_component.cc
+         depsnode_operation.cc
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsnode.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         depsgraph_build.cc
+         depsgraph_build_nodes.cc
+         depsgraph_build_relations.cc
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_nodes.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_relations.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_nodes.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build_relations.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_build.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         depsgraph_debug.cc
+         depsgraph_eval.cc
+         depsgraph_query.cc
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_query.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         depsgraph_queue.cc
+         depsgraph_tag.cc
+         depsgraph_type_defines.cc
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\depsgraph\intern\depsgraph_tag.cc)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         depsgraph_util_cycle.cc
+         depsgraph_util_pchanmap.cc
+         depsgraph_util_transitive.cc
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_depsgraph.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_depsgraph.dir\Debug\depsgraph.obj
+         bf_depsgraph.dir\Debug\depsnode.obj
+         bf_depsgraph.dir\Debug\depsnode_component.obj
+         bf_depsgraph.dir\Debug\depsnode_operation.obj
+         bf_depsgraph.dir\Debug\depsgraph_build.obj
+         bf_depsgraph.dir\Debug\depsgraph_build_nodes.obj
+         bf_depsgraph.dir\Debug\depsgraph_build_relations.obj
+         bf_depsgraph.dir\Debug\depsgraph_debug.obj
+         bf_depsgraph.dir\Debug\depsgraph_eval.obj
+         bf_depsgraph.dir\Debug\depsgraph_query.obj
+         bf_depsgraph.dir\Debug\depsgraph_queue.obj
+         bf_depsgraph.dir\Debug\depsgraph_tag.obj
+         bf_depsgraph.dir\Debug\depsgraph_type_defines.obj
+         bf_depsgraph.dir\Debug\depsgraph_util_cycle.obj
+         bf_depsgraph.dir\Debug\depsgraph_util_pchanmap.obj
+         bf_depsgraph.dir\Debug\depsgraph_util_transitive.obj
+         bf_depsgraph.vcxproj -> D:\blenderDev\product\lib\Debug\bf_depsgraph.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\depsgraph\bf_depsgraph.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.84

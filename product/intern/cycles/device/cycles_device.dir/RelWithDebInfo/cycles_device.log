@@ -1,0 +1,26 @@
+﻿Build started 2016/4/2 9:26:28.
+     1>Project "D:\blenderDev\product\intern\cycles\device\cycles_device.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/cycles/device/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\cycles\device\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\osl\include /ID:\blenderDev\blender\extern\glog\src\windows /ID:\blenderDev\blender\extern\gflags\src /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include\OpenImageIO /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include\OpenEXR /ID:\blenderDev\blender\intern\cycles\..\atomic /ID:\blenderDev\blender\intern\cycles\device\. /ID:\blenderDev\blender\intern\cycles\device\..\kernel /ID:\blenderDev\blender\intern\cycles\device\..\kernel\svm /ID:\blenderDev\blender\intern\cycles\device\..\kernel\osl /ID:\blenderDev\blender\intern\cycles\device\..\util /ID:\blenderDev\blender\intern\cycles\device\..\render /I"D:\blenderDev\blender\intern\cycles\device\..\..\glew-mx" /ID:\blenderDev\blender\intern\cycles\device\..\..\..\extern\cuew\include /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\blender\intern\cycles\device\..\..\..\extern\clew\include /Zi /nologo /W3 /WX- /MP /Ox /Ob1 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_KERNEL_SSE2 /D WITH_KERNEL_SSE3 /D WITH_KERNEL_SSE41 /D WITH_KERNEL_AVX /D WITH_KERNEL_AVX2 /D BOOST_ALL_NO_LIB /D USE_TBB=0 /D "CCL_NAMESPACE_BEGIN=namespace ccl {" /D "CCL_NAMESPACE_END=}" /D WITH_OSL /D OSL_STATIC_LIBRARY /D CYCLES_STD_UNORDERED_MAP /D WITH_CYCLES_LOGGING /D GOOGLE_GLOG_DLL_DECL= /D CYCLES_GFLAGS_NAMESPACE=gflags /D WITH_BLENDER_GUARDEDALLOC /D WITH_CUDA_DYNLOAD /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_OPENCL /D WITH_CUDA /D WITH_MULTI /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS- /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"cycles_device.dir\RelWithDebInfo\\" /Fd"cycles_device.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\cycles\device\device.cpp D:\blenderDev\blender\intern\cycles\device\device_cpu.cpp D:\blenderDev\blender\intern\cycles\device\device_cuda.cpp D:\blenderDev\blender\intern\cycles\device\device_multi.cpp D:\blenderDev\blender\intern\cycles\device\device_opencl.cpp D:\blenderDev\blender\intern\cycles\device\device_task.cpp
+         device.cpp
+         device_cpu.cpp
+         device_cuda.cpp
+         device_multi.cpp
+         device_opencl.cpp
+         device_task.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\cycles_device.lib" /NOLOGO /MACHINE:X64  /ignore:4221 cycles_device.dir\RelWithDebInfo\device.obj
+         cycles_device.dir\RelWithDebInfo\device_cpu.obj
+         cycles_device.dir\RelWithDebInfo\device_cuda.obj
+         cycles_device.dir\RelWithDebInfo\device_multi.obj
+         cycles_device.dir\RelWithDebInfo\device_opencl.obj
+         cycles_device.dir\RelWithDebInfo\device_task.obj
+         cycles_device.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\cycles_device.lib
+     1>Done Building Project "D:\blenderDev\product\intern\cycles\device\cycles_device.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:39.13

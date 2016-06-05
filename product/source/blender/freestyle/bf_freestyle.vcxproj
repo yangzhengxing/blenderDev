@@ -1,0 +1,826 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{8A655590-32A0-4FB3-8D67-7BD4ED4A39E1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_freestyle</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_freestyle.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_freestyle</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_freestyle.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_freestyle</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_freestyle.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_freestyle</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_freestyle.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_freestyle</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FREESTYLE;WITH_INTERNATIONAL;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\python\intern;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\render\intern\include;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/freestyle/CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;D:\blenderDev\blender\source\blender\freestyle\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\freestyle\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\FRS_freestyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppCanvas.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppConfig.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppView.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\Controller.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\BlenderFileLoader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\BlenderStrokeRenderer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\BlenderStyleModule.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\BBox.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Bezier.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\FastGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\FitCurve.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Geom.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GeomCleaner.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GeomUtils.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Grid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GridHelpers.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\HashGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Noise.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Polygon.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\SweepLine.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\VecMat.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\matrix_util.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\normal_cycle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\image\GaussianFilter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\image\Image.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\image\ImagePyramid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BBox.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BinaryPredicate0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BinaryPredicate1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ContextFunctions.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Convert.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Freestyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_FrsMaterial.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_FrsNoise.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Id.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_IntegrationType.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Interface0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Interface1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Iterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_MediumType.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Nature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Operators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_SShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_StrokeAttribute.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_StrokeShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryFunction0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryFunction1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryPredicate0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryPredicate1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ViewMap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ViewShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_FalseBP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_Length2DBP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_SameShapeIdBP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_TrueBP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_ViewMapGradientNormBP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Director.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_CurvePoint.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_SVertex.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_ViewVertex.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\CurvePoint\BPy_StrokeVertex.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\ViewVertex\BPy_NonTVertex.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\ViewVertex\BPy_TVertex.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_FEdge.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_FrsCurve.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_Stroke.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_ViewEdge.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\Curve\BPy_Chain.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\FEdge\BPy_FEdgeSharp.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\FEdge\BPy_FEdgeSmooth.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_AdjacencyIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainPredicateIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainSilhouetteIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainingIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_CurvePointIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_Interface0DIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_SVertexIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_StrokeVertexIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ViewEdgeIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_orientedViewEdgeIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BackboneStretcherShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BezierCurveShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BlenderTextureShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_CalligraphicShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ColorNoiseShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstantColorShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstantThicknessShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstrainedIncreasingThicknessShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_GuidingLinesShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_IncreasingColorShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_IncreasingThicknessShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_PolygonalizationShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SamplingShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SmoothingShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SpatialNoiseShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_StrokeTextureStepShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ThicknessNoiseShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_TipRemoverShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DDouble.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DEdgeNature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DFloat.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DId.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DMaterial.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DUnsigned.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVec2f.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVec3f.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVectorViewShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DViewShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Id\BPy_ShapeIdF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Material\BPy_MaterialF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Nature_EdgeNature\BPy_CurveNatureF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec2f\BPy_Normal2DF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec2f\BPy_VertexOrientation2DF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec3f\BPy_VertexOrientation3DF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_ViewShape\BPy_GetOccludeeF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_ViewShape\BPy_GetShapeF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_Curvature2DAngleF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_DensityF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedXF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedYF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedZF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetXF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetYF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetZF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_LocalAverageDepthF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_ZDiscontinuityF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetCurvilinearAbscissaF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetParameterF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetViewMapGradientNormF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadCompleteViewMapPixelF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadMapPixelF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadSteerableViewMapPixelF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_unsigned_int\BPy_QuantitativeInvisibilityF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_vector_ViewShape\BPy_GetOccludersF0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DDouble.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DEdgeNature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DFloat.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DUnsigned.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVec2f.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVec3f.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVectorViewShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVoid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Nature_EdgeNature\BPy_CurveNatureF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec2f\BPy_Normal2DF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec2f\BPy_Orientation2DF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec3f\BPy_Orientation3DF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_Curvature2DAngleF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_DensityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetCompleteViewMapDensityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetDirectionalViewMapDensityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedXF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedYF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedZF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetSteerableViewMapDensityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetViewMapGradientNormF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetXF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetYF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetZF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_LocalAverageDepthF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_ZDiscontinuityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_unsigned_int\BPy_QuantitativeInvisibilityF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetOccludeeF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetOccludersF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetShapeF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_ChainingTimeStampF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_IncrementChainingTimeStampF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_TimeStampF1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate0D\BPy_FalseUP0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate0D\BPy_TrueUP0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ContourUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_DensityLowerThanUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_EqualToChainingTimeStampUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_EqualToTimeStampUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ExternalContourUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_FalseUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_QuantitativeInvisibilityUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ShapeUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_TrueUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_WithinImageBoundaryUP1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\DrawingStyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\FrsMaterial.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\IndexedFaceSet.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\LineRep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\Node.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeCamera.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeDrawingStyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeGroup.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeLight.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeSceneRenderLayer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeShape.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeTransform.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\OrientedLineRep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\Rep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\SceneHash.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\ScenePrettyPrinter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\SceneVisitor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\TriangleRep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\VertexRep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedFunctions0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedFunctions1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedPredicates1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedStrokeShaders.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\BasicStrokeShaders.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Canvas.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Chain.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\ChainingIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\ContextFunctions.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Curve.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\CurveAdvancedIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\CurveIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Modifiers.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Module.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Operators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\PSStrokeRenderer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Predicates0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Predicates1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\QInformationMap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Stroke.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeAdvancedIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeIO.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeLayer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeRenderer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeRep.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeShader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeTesselator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StyleModule.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\TextStrokeRenderer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\BaseIterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\BaseObject.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Cast.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Exception.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\FreestyleConfig.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Id.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Interpreter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Iterator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\PointerSequence.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Precision.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\ProgressBar.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\PseudoNoise.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\PythonInterpreter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\RandGen.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\RenderMonitor.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\StringUtils.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\TimeStamp.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\TimeUtils.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ArbitraryGridDensityProvider.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\AutoPtrHelper.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\AverageAreaGridDensityProvider.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\BoxGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\CulledOccluderSource.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\FEdgeXDetector.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Functions0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Functions1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\GridDensityProvider.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\HeuristicGridDensityProviderFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Interface0D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Interface1D.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\OccluderSource.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Pow23GridDensityProvider.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Silhouette.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SilhouetteGeomEngine.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SphericalGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SteerableViewMap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewEdgeXBuilder.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapAdvancedIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapBuilder.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapIO.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapIterators.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapTesselator.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\Curvature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\Nature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WEdge.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WFillGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WSFillGrid.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WXEdge.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WXEdgeBuilder.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WingedEdgeBuilder.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppCanvas.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppConfig.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\AppView.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\application\Controller.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\BlenderFileLoader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\BlenderStrokeRenderer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\blender_interface\FRS_freestyle.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Bezier.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\FastGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\FitCurve.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GeomCleaner.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GeomUtils.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Grid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\GridHelpers.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\HashGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\Noise.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\matrix_util.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\geometry\normal_cycle.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\image\GaussianFilter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\image\ImagePyramid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BBox.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BinaryPredicate0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_BinaryPredicate1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ContextFunctions.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Convert.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Freestyle.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_FrsMaterial.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_FrsNoise.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Id.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_IntegrationType.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Interface0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Interface1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Iterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_MediumType.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Nature.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_Operators.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_SShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_StrokeAttribute.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_StrokeShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryFunction0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryFunction1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryPredicate0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_UnaryPredicate1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ViewMap.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BPy_ViewShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_FalseBP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_Length2DBP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_SameShapeIdBP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_TrueBP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\BinaryPredicate1D\BPy_ViewMapGradientNormBP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Director.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_CurvePoint.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_SVertex.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\BPy_ViewVertex.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\CurvePoint\BPy_StrokeVertex.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\ViewVertex\BPy_NonTVertex.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface0D\ViewVertex\BPy_TVertex.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_FEdge.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_FrsCurve.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_Stroke.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\BPy_ViewEdge.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\Curve\BPy_Chain.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\FEdge\BPy_FEdgeSharp.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Interface1D\FEdge\BPy_FEdgeSmooth.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_AdjacencyIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainPredicateIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainSilhouetteIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ChainingIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_CurvePointIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_Interface0DIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_SVertexIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_StrokeVertexIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_ViewEdgeIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\Iterator\BPy_orientedViewEdgeIterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BackboneStretcherShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BezierCurveShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_BlenderTextureShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_CalligraphicShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ColorNoiseShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstantColorShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstantThicknessShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ConstrainedIncreasingThicknessShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_GuidingLinesShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_IncreasingColorShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_IncreasingThicknessShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_PolygonalizationShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SamplingShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SmoothingShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_SpatialNoiseShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_StrokeTextureStepShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_ThicknessNoiseShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\StrokeShader\BPy_TipRemoverShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DDouble.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DEdgeNature.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DFloat.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DId.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DMaterial.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DUnsigned.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVec2f.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVec3f.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DVectorViewShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\BPy_UnaryFunction0DViewShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Id\BPy_ShapeIdF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Material\BPy_MaterialF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Nature_EdgeNature\BPy_CurveNatureF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec2f\BPy_Normal2DF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec2f\BPy_VertexOrientation2DF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_Vec3f\BPy_VertexOrientation3DF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_ViewShape\BPy_GetOccludeeF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_ViewShape\BPy_GetShapeF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_Curvature2DAngleF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_DensityF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedXF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedYF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetProjectedZF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetXF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetYF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_GetZF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_LocalAverageDepthF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_double\BPy_ZDiscontinuityF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetCurvilinearAbscissaF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetParameterF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_GetViewMapGradientNormF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadCompleteViewMapPixelF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadMapPixelF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_float\BPy_ReadSteerableViewMapPixelF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_unsigned_int\BPy_QuantitativeInvisibilityF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction0D\UnaryFunction0D_vector_ViewShape\BPy_GetOccludersF0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DDouble.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DEdgeNature.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DFloat.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DUnsigned.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVec2f.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVec3f.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVectorViewShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\BPy_UnaryFunction1DVoid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Nature_EdgeNature\BPy_CurveNatureF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec2f\BPy_Normal2DF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec2f\BPy_Orientation2DF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_Vec3f\BPy_Orientation3DF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_Curvature2DAngleF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_DensityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetCompleteViewMapDensityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetDirectionalViewMapDensityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedXF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedYF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetProjectedZF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetSteerableViewMapDensityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetViewMapGradientNormF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetXF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetYF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_GetZF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_LocalAverageDepthF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_double\BPy_ZDiscontinuityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_unsigned_int\BPy_QuantitativeInvisibilityF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetOccludeeF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetOccludersF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_vector_ViewShape\BPy_GetShapeF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_ChainingTimeStampF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_IncrementChainingTimeStampF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryFunction1D\UnaryFunction1D_void\BPy_TimeStampF1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate0D\BPy_FalseUP0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate0D\BPy_TrueUP0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ContourUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_DensityLowerThanUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_EqualToChainingTimeStampUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_EqualToTimeStampUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ExternalContourUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_FalseUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_QuantitativeInvisibilityUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_ShapeUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_TrueUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\python\UnaryPredicate1D\BPy_WithinImageBoundaryUP1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\IndexedFaceSet.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\LineRep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeCamera.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeDrawingStyle.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeGroup.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeLight.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeSceneRenderLayer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeShape.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\NodeTransform.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\OrientedLineRep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\Rep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\SceneHash.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\ScenePrettyPrinter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\SceneVisitor.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\TriangleRep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\scene_graph\VertexRep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedFunctions0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedFunctions1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\AdvancedStrokeShaders.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\BasicStrokeShaders.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Canvas.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Chain.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\ChainingIterators.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\ContextFunctions.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Curve.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Operators.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\PSStrokeRenderer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Predicates0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Predicates1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\Stroke.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeIO.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeLayer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeRenderer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeRep.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeShader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\StrokeTesselator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\stroke\TextStrokeRenderer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\BaseObject.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Exception.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\Iterator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\PseudoNoise.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\PythonInterpreter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\RandGen.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\StringUtils.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\system\TimeStamp.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ArbitraryGridDensityProvider.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\AverageAreaGridDensityProvider.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\BoxGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\CulledOccluderSource.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\FEdgeXDetector.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Functions0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Functions1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\HeuristicGridDensityProviderFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Interface0D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Interface1D.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\OccluderSource.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Pow23GridDensityProvider.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\Silhouette.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SilhouetteGeomEngine.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SphericalGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\SteerableViewMap.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewEdgeXBuilder.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMap.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapBuilder.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapIO.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\view_map\ViewMapTesselator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\Curvature.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WEdge.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WFillGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WSFillGrid.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WXEdge.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WXEdgeBuilder.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\freestyle\intern\winged_edge\WingedEdgeBuilder.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

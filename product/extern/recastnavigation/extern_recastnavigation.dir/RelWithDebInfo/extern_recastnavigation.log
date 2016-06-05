@@ -1,0 +1,48 @@
+﻿Build started 2016/4/2 9:34:35.
+     1>Project "D:\blenderDev\product\extern\recastnavigation\extern_recastnavigation.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/extern/recastnavigation/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\extern\recastnavigation\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\extern\recastnavigation\Recast\Include /ID:\blenderDev\blender\extern\recastnavigation\Detour\Include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"extern_recastnavigation.dir\RelWithDebInfo\\" /Fd"extern_recastnavigation.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J "D:\blenderDev\blender\extern\recastnavigation\recast-capi.cpp" D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourCommon.cpp D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourNode.cpp D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourStatNavMesh.cpp D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourStatNavMeshBuilder.cpp D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourTileNavMesh.cpp D:\blenderDev\blender\extern\recastnavigation\Detour\Source\DetourTileNavMeshBuilder.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\Recast.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastAlloc.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastArea.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastContour.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastFilter.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastLayers.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastMesh.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastMeshDetail.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastRasterization.cpp D:\blenderDev\blender\extern\recastnavigation\Recast\Source\RecastRegion.cpp
+         recast-capi.cpp
+         DetourCommon.cpp
+         DetourNode.cpp
+         DetourStatNavMesh.cpp
+         DetourStatNavMeshBuilder.cpp
+         DetourTileNavMesh.cpp
+         DetourTileNavMeshBuilder.cpp
+         Recast.cpp
+         RecastAlloc.cpp
+         RecastArea.cpp
+         RecastContour.cpp
+         RecastFilter.cpp
+         RecastLayers.cpp
+         RecastMesh.cpp
+         RecastMeshDetail.cpp
+         RecastRasterization.cpp
+         RecastRegion.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\extern_recastnavigation.lib" /NOLOGO /MACHINE:X64  /ignore:4221 "extern_recastnavigation.dir\RelWithDebInfo\recast-capi.obj"
+         extern_recastnavigation.dir\RelWithDebInfo\DetourCommon.obj
+         extern_recastnavigation.dir\RelWithDebInfo\DetourNode.obj
+         extern_recastnavigation.dir\RelWithDebInfo\DetourStatNavMesh.obj
+         extern_recastnavigation.dir\RelWithDebInfo\DetourStatNavMeshBuilder.obj
+         extern_recastnavigation.dir\RelWithDebInfo\DetourTileNavMesh.obj
+         extern_recastnavigation.dir\RelWithDebInfo\DetourTileNavMeshBuilder.obj
+         extern_recastnavigation.dir\RelWithDebInfo\Recast.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastAlloc.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastArea.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastContour.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastFilter.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastLayers.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastMesh.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastMeshDetail.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastRasterization.obj
+         extern_recastnavigation.dir\RelWithDebInfo\RecastRegion.obj
+         extern_recastnavigation.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\extern_recastnavigation.lib
+     1>Done Building Project "D:\blenderDev\product\extern\recastnavigation\extern_recastnavigation.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.17

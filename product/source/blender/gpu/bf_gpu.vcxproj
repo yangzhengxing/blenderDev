@@ -1,0 +1,1715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B8677B4A-E88D-430B-B612-C976B60773E6}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_gpu</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_gpu.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_gpu</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_gpu.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_gpu</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_gpu.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_gpu</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_gpu.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_gpu</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GAMEENGINE;WITH_SMOKE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_DDS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/gpu/CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;D:\blenderDev\blender\source\blender\gpu\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_geometry.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_geometry.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_geometry.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_geometry.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_geometry.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_geometry.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_geometry.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_geometry.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_geometry.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_geometry.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_geometry.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_geometry.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_geometry.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_geometry.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_geometry.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_geometry.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_geometry.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_geometry.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_geometry.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_geometry.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_geometry.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_geometry.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_geometry.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_geometry.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_geometry.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_smoke_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_smoke_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_smoke_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_smoke_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_smoke_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_smoke_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_smoke_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_smoke_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_smoke_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_smoke_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_smoke_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_smoke_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_material.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_material.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_material.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_material.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_material.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_material.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_material.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_material.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_material.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_material.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_material.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_material.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_material.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_material.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_material.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_material.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_material.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_material.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_material.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_material.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_material.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_material.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_material.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_material.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_material.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_sep_gaussian_blur_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_sep_gaussian_blur_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_sep_gaussian_blur_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_sep_gaussian_blur_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_basic_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_basic_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_basic_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_basic_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_basic_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_basic_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_basic_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_basic_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_basic_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_basic_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_basic_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_basic_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_vertex.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_vertex.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_vertex.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_vertex.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_vertex.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_vertex_world.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_vertex_world.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex_world.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_vertex_world.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex_world.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_vertex_world.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex_world.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_vertex_world.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vertex_world.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vertex_world.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vertex_world.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_vsm_store_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_vsm_store_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_vsm_store_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_vsm_store_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_vsm_store_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_vsm_store_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_vsm_store_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_vsm_store_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_vsm_store_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_vsm_store_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_vsm_store_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_vsm_store_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_ssao_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_ssao_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_ssao_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_ssao_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_ssao_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_ssao_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_ssao_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_ssao_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_ssao_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_ssao_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_dof_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_dof_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_dof_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_dof_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_dof_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_dof_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_dof_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_dof_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_dof_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_dof_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_dof_hq_frag.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_dof_hq_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_dof_hq_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_dof_hq_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_dof_hq_frag.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_frag.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_frag.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_dof_hq_vert.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_dof_hq_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_dof_hq_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_dof_hq_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_dof_hq_vert.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_vert.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_vert.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_dof_hq_geo.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_dof_hq_geo.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_geo.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_dof_hq_geo.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_geo.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_dof_hq_geo.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_geo.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_dof_hq_geo.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_dof_hq_geo.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_dof_hq_geo.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_depth_resolve.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_depth_resolve.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_depth_resolve.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_depth_resolve.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_depth_resolve.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_depth_resolve.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_depth_resolve.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_depth_resolve.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_depth_resolve.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_depth_resolve.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\c2ff7df5b8913bb0bc3d747b3197da12\gpu_shader_fx_lib.glsl.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating shaders/gpu_shader_fx_lib.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Debug\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_lib.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl;D:\blenderDev\product\bin\Debug\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating shaders/gpu_shader_fx_lib.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\Release\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_lib.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl;D:\blenderDev\product\bin\Release\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating shaders/gpu_shader_fx_lib.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\MinSizeRel\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_lib.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl;D:\blenderDev\product\bin\MinSizeRel\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating shaders/gpu_shader_fx_lib.glsl.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/blender/gpu/shaders
+if %errorlevel% neq 0 goto :cmEnd
+..\..\..\bin\RelWithDebInfo\datatoc.exe D:/blenderDev/blender/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl D:/blenderDev/product/source/blender/gpu/shaders/gpu_shader_fx_lib.glsl.c
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/c2ff7df5b8913bb0bc3d747b3197da12/gpu_shader_fx_lib.glsl.c.rule;D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl;D:\blenderDev\product\bin\RelWithDebInfo\datatoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_basic_shader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_buffers.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_compositing.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_debug.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_draw.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_extensions.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_framebuffer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_glew.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_init_exit.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_material.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_select.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_shader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\GPU_texture.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_codegen.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_private.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_basic_shader.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_buffers.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_codegen.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_compositing.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_debug.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_draw.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_extensions.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_framebuffer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_init_exit.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_material.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_select.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_shader.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\gpu\intern\gpu_texture.c"  />
+    <ClCompile Include="shaders\gpu_shader_geometry.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_smoke_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_smoke_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_material.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_basic_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_basic_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_vertex.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_vertex_world.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_vsm_store_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_vsm_store_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_ssao_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_dof_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_dof_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_dof_hq_frag.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_dof_hq_vert.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_dof_hq_geo.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_depth_resolve.glsl.c"  />
+    <ClCompile Include="shaders\gpu_shader_fx_lib.glsl.c"  />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_lib.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_ssao_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_dof_hq_geo.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_material.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_sep_gaussian_blur_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_basic_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vertex.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_vsm_store_vert.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_fx_depth_resolve.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_frag.glsl" />
+    <None Include="D:\blenderDev\blender\source\blender\gpu\shaders\gpu_shader_smoke_vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/datatoc/datatoc.vcxproj">
+      <Project>ECF6F94A-F017-4A42-8A03-4291CE3966C3</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

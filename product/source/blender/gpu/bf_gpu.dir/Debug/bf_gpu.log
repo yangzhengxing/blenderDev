@@ -1,0 +1,66 @@
+﻿Build started 2016/4/3 16:34:09.
+     1>Project "D:\blenderDev\product\source\blender\gpu\bf_gpu.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\bmesh /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\nodes /ID:\blenderDev\blender\source\blender\nodes\intern /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\smoke\extern /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_GAMEENGINE /D WITH_SMOKE /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_DDS /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_gpu.dir\Debug\\" /Fd"bf_gpu.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J shaders\gpu_shader_basic_frag.glsl.c shaders\gpu_shader_basic_vert.glsl.c shaders\gpu_shader_fx_depth_resolve.glsl.c shaders\gpu_shader_fx_dof_frag.glsl.c shaders\gpu_shader_fx_dof_hq_frag.glsl.c shaders\gpu_shader_fx_dof_hq_geo.glsl.c shaders\gpu_shader_fx_dof_hq_vert.glsl.c shaders\gpu_shader_fx_dof_vert.glsl.c shaders\gpu_shader_fx_lib.glsl.c shaders\gpu_shader_fx_ssao_frag.glsl.c shaders\gpu_shader_fx_vert.glsl.c shaders\gpu_shader_geometry.glsl.c shaders\gpu_shader_material.glsl.c shaders\gpu_shader_sep_gaussian_blur_frag.glsl.c shaders\gpu_shader_sep_gaussian_blur_vert.glsl.c shaders\gpu_shader_smoke_frag.glsl.c shaders\gpu_shader_smoke_vert.glsl.c shaders\gpu_shader_vertex.glsl.c shaders\gpu_shader_vertex_world.glsl.c shaders\gpu_shader_vsm_store_frag.glsl.c shaders\gpu_shader_vsm_store_vert.glsl.c
+         gpu_shader_basic_frag.glsl.c
+         gpu_shader_basic_vert.glsl.c
+         gpu_shader_fx_depth_resolve.glsl.c
+         gpu_shader_fx_dof_frag.glsl.c
+         gpu_shader_fx_dof_hq_frag.glsl.c
+         gpu_shader_fx_dof_hq_geo.glsl.c
+         gpu_shader_fx_dof_hq_vert.glsl.c
+         gpu_shader_fx_dof_vert.glsl.c
+         gpu_shader_fx_lib.glsl.c
+         gpu_shader_fx_ssao_frag.glsl.c
+         gpu_shader_fx_vert.glsl.c
+         gpu_shader_geometry.glsl.c
+         gpu_shader_material.glsl.c
+         gpu_shader_sep_gaussian_blur_frag.glsl.c
+         gpu_shader_sep_gaussian_blur_vert.glsl.c
+         gpu_shader_smoke_frag.glsl.c
+         gpu_shader_smoke_vert.glsl.c
+         gpu_shader_vertex.glsl.c
+         gpu_shader_vertex_world.glsl.c
+         gpu_shader_vsm_store_frag.glsl.c
+         gpu_shader_vsm_store_vert.glsl.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_gpu.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_gpu.dir\Debug\gpu_basic_shader.obj
+         bf_gpu.dir\Debug\gpu_buffers.obj
+         bf_gpu.dir\Debug\gpu_codegen.obj
+         bf_gpu.dir\Debug\gpu_compositing.obj
+         bf_gpu.dir\Debug\gpu_debug.obj
+         bf_gpu.dir\Debug\gpu_draw.obj
+         bf_gpu.dir\Debug\gpu_extensions.obj
+         bf_gpu.dir\Debug\gpu_framebuffer.obj
+         bf_gpu.dir\Debug\gpu_init_exit.obj
+         bf_gpu.dir\Debug\gpu_material.obj
+         bf_gpu.dir\Debug\gpu_select.obj
+         bf_gpu.dir\Debug\gpu_shader.obj
+         bf_gpu.dir\Debug\gpu_texture.obj
+         bf_gpu.dir\Debug\gpu_shader_geometry.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_smoke_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_smoke_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_material.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_sep_gaussian_blur_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_sep_gaussian_blur_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_basic_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_basic_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_vertex.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_vertex_world.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_vsm_store_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_vsm_store_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_ssao_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_dof_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_dof_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_dof_hq_frag.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_dof_hq_vert.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_dof_hq_geo.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_depth_resolve.glsl.obj
+         bf_gpu.dir\Debug\gpu_shader_fx_lib.glsl.obj
+         bf_gpu.vcxproj -> D:\blenderDev\product\lib\Debug\bf_gpu.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\gpu\bf_gpu.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.85

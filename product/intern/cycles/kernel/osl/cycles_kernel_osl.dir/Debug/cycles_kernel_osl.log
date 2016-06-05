@@ -1,0 +1,30 @@
+﻿Build started 2016/4/2 8:26:04.
+     1>Project "D:\blenderDev\product\intern\cycles\kernel\osl\cycles_kernel_osl.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/cycles/kernel/osl/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\cycles\kernel\osl\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\osl\include /ID:\blenderDev\blender\extern\glog\src\windows /ID:\blenderDev\blender\extern\gflags\src /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include\OpenImageIO /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include\OpenEXR /ID:\blenderDev\blender\intern\cycles\..\atomic /ID:\blenderDev\blender\intern\cycles\kernel\osl\. /ID:\blenderDev\blender\intern\cycles\kernel\osl\.. /ID:\blenderDev\blender\intern\cycles\kernel\osl\..\svm /ID:\blenderDev\blender\intern\cycles\kernel\osl\..\..\render /ID:\blenderDev\blender\intern\cycles\kernel\osl\..\..\util /ID:\blenderDev\blender\intern\cycles\kernel\osl\..\..\device /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D BOOST_NO_RTTI /D BOOST_NO_TYPEID /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_KERNEL_SSE2 /D WITH_KERNEL_SSE3 /D WITH_KERNEL_SSE41 /D WITH_KERNEL_AVX /D WITH_KERNEL_AVX2 /D BOOST_ALL_NO_LIB /D USE_TBB=0 /D "CCL_NAMESPACE_BEGIN=namespace ccl {" /D "CCL_NAMESPACE_END=}" /D WITH_OSL /D OSL_STATIC_LIBRARY /D CYCLES_STD_UNORDERED_MAP /D WITH_CYCLES_LOGGING /D GOOGLE_GLOG_DLL_DECL= /D CYCLES_GFLAGS_NAMESPACE=gflags /D WITH_BLENDER_GUARDEDALLOC /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS- /fp:fast /Zc:wchar_t /Zc:forScope /GR- /openmp /Fo"cycles_kernel_osl.dir\Debug\\" /Fd"cycles_kernel_osl.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\cycles\kernel\osl\background.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\bsdf_diffuse_ramp.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\bsdf_phong_ramp.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\emissive.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\osl_bssrdf.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\osl_closures.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\osl_services.cpp D:\blenderDev\blender\intern\cycles\kernel\osl\osl_shader.cpp
+         background.cpp
+         bsdf_diffuse_ramp.cpp
+         bsdf_phong_ramp.cpp
+         emissive.cpp
+         osl_bssrdf.cpp
+         osl_closures.cpp
+         osl_services.cpp
+         osl_shader.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\cycles_kernel_osl.lib" /NOLOGO /MACHINE:X64  /ignore:4221 cycles_kernel_osl.dir\Debug\background.obj
+         cycles_kernel_osl.dir\Debug\bsdf_diffuse_ramp.obj
+         cycles_kernel_osl.dir\Debug\bsdf_phong_ramp.obj
+         cycles_kernel_osl.dir\Debug\emissive.obj
+         cycles_kernel_osl.dir\Debug\osl_bssrdf.obj
+         cycles_kernel_osl.dir\Debug\osl_closures.obj
+         cycles_kernel_osl.dir\Debug\osl_services.obj
+         cycles_kernel_osl.dir\Debug\osl_shader.obj
+         cycles_kernel_osl.vcxproj -> D:\blenderDev\product\lib\Debug\cycles_kernel_osl.lib
+     1>Done Building Project "D:\blenderDev\product\intern\cycles\kernel\osl\cycles_kernel_osl.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:28.17

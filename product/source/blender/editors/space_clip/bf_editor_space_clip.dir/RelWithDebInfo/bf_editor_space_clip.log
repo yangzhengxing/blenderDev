@@ -1,0 +1,54 @@
+﻿Build started 2016/4/2 9:22:07.
+     1>Project "D:\blenderDev\product\source\blender\editors\space_clip\bf_editor_space_clip.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/space_clip/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\space_clip\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_INTERNATIONAL /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_space_clip.dir\RelWithDebInfo\\" /Fd"bf_editor_space_clip.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\space_clip\clip_buttons.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_dopesheet_draw.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_dopesheet_ops.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_draw.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_editor.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_graph_draw.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_graph_ops.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_ops.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_toolbar.c D:\blenderDev\blender\source\blender\editors\space_clip\clip_utils.c D:\blenderDev\blender\source\blender\editors\space_clip\space_clip.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_detect.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_orient.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_plane.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_solve.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_track.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_stabilize.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_ops_utils.c D:\blenderDev\blender\source\blender\editors\space_clip\tracking_select.c
+         clip_buttons.c
+         clip_dopesheet_draw.c
+         clip_dopesheet_ops.c
+         clip_draw.c
+         clip_editor.c
+         clip_graph_draw.c
+         clip_graph_ops.c
+         clip_ops.c
+         clip_toolbar.c
+         clip_utils.c
+         space_clip.c
+         tracking_ops.c
+         tracking_ops_detect.c
+         tracking_ops_orient.c
+         tracking_ops_plane.c
+         tracking_ops_solve.c
+         tracking_ops_track.c
+         tracking_ops_stabilize.c
+         tracking_ops_utils.c
+         tracking_select.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_space_clip.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_space_clip.dir\RelWithDebInfo\clip_buttons.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_dopesheet_draw.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_dopesheet_ops.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_draw.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_editor.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_graph_draw.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_graph_ops.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_ops.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_toolbar.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\clip_utils.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\space_clip.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_detect.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_orient.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_plane.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_solve.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_track.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_stabilize.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_ops_utils.obj
+         bf_editor_space_clip.dir\RelWithDebInfo\tracking_select.obj
+         bf_editor_space_clip.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_space_clip.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\space_clip\bf_editor_space_clip.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.56

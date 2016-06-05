@@ -1,0 +1,16 @@
+﻿Build started 2016/4/2 8:28:24.
+     1>Project "D:\blenderDev\product\extern\rangetree\extern_rangetree.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/extern/rangetree/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\extern\rangetree\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\extern\rangetree /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"extern_rangetree.dir\Debug\\" /Fd"extern_rangetree.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\extern\rangetree\range_tree_c_api.cc
+         range_tree_c_api.cc
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\extern_rangetree.lib" /NOLOGO /MACHINE:X64  /ignore:4221 extern_rangetree.dir\Debug\range_tree_c_api.obj
+         extern_rangetree.vcxproj -> D:\blenderDev\product\lib\Debug\extern_rangetree.lib
+     1>Done Building Project "D:\blenderDev\product\extern\rangetree\extern_rangetree.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.36

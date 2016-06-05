@@ -1,0 +1,50 @@
+﻿Build started 2016/4/2 9:21:47.
+     1>Project "D:\blenderDev\product\source\blender\editors\interface\bf_editor_interface.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/interface/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\interface\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\python /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_INTERNATIONAL /D WITH_PYTHON /D WITH_INPUT_IME /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_interface.dir\RelWithDebInfo\\" /Fd"bf_editor_interface.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\interface\interface.c D:\blenderDev\blender\source\blender\editors\interface\interface_align.c D:\blenderDev\blender\source\blender\editors\interface\interface_anim.c D:\blenderDev\blender\source\blender\editors\interface\interface_draw.c D:\blenderDev\blender\source\blender\editors\interface\interface_eyedropper.c D:\blenderDev\blender\source\blender\editors\interface\interface_handlers.c D:\blenderDev\blender\source\blender\editors\interface\interface_icons.c D:\blenderDev\blender\source\blender\editors\interface\interface_layout.c D:\blenderDev\blender\source\blender\editors\interface\interface_ops.c D:\blenderDev\blender\source\blender\editors\interface\interface_panel.c D:\blenderDev\blender\source\blender\editors\interface\interface_regions.c D:\blenderDev\blender\source\blender\editors\interface\interface_style.c D:\blenderDev\blender\source\blender\editors\interface\interface_templates.c D:\blenderDev\blender\source\blender\editors\interface\interface_utils.c D:\blenderDev\blender\source\blender\editors\interface\interface_widgets.c D:\blenderDev\blender\source\blender\editors\interface\resources.c D:\blenderDev\blender\source\blender\editors\interface\view2d.c D:\blenderDev\blender\source\blender\editors\interface\view2d_ops.c
+         interface.c
+         interface_align.c
+         interface_anim.c
+         interface_draw.c
+         interface_eyedropper.c
+         interface_handlers.c
+         interface_icons.c
+         interface_layout.c
+         interface_ops.c
+         interface_panel.c
+         interface_regions.c
+         interface_style.c
+         interface_templates.c
+         interface_utils.c
+         interface_widgets.c
+         resources.c
+         view2d.c
+         view2d_ops.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_interface.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_interface.dir\RelWithDebInfo\interface.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_align.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_anim.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_draw.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_eyedropper.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_handlers.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_icons.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_layout.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_ops.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_panel.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_regions.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_style.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_templates.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_utils.obj
+         bf_editor_interface.dir\RelWithDebInfo\interface_widgets.obj
+         bf_editor_interface.dir\RelWithDebInfo\resources.obj
+         bf_editor_interface.dir\RelWithDebInfo\view2d.obj
+         bf_editor_interface.dir\RelWithDebInfo\view2d_ops.obj
+         bf_editor_interface.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_interface.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\interface\bf_editor_interface.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.30

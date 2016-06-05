@@ -1,0 +1,60 @@
+﻿Build started 2016/4/2 8:28:23.
+     1>Project "D:\blenderDev\product\extern\libopenjpeg\extern_openjpeg.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/extern/libopenjpeg/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\extern\libopenjpeg\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\extern\libopenjpeg /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D OPJ_STATIC /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"extern_openjpeg.dir\Debug\\" /Fd"extern_openjpeg.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\extern\libopenjpeg\bio.c D:\blenderDev\blender\extern\libopenjpeg\cio.c D:\blenderDev\blender\extern\libopenjpeg\dwt.c D:\blenderDev\blender\extern\libopenjpeg\event.c D:\blenderDev\blender\extern\libopenjpeg\image.c D:\blenderDev\blender\extern\libopenjpeg\j2k.c D:\blenderDev\blender\extern\libopenjpeg\j2k_lib.c D:\blenderDev\blender\extern\libopenjpeg\jp2.c D:\blenderDev\blender\extern\libopenjpeg\jpt.c D:\blenderDev\blender\extern\libopenjpeg\mct.c D:\blenderDev\blender\extern\libopenjpeg\mqc.c D:\blenderDev\blender\extern\libopenjpeg\openjpeg.c D:\blenderDev\blender\extern\libopenjpeg\pi.c D:\blenderDev\blender\extern\libopenjpeg\raw.c D:\blenderDev\blender\extern\libopenjpeg\t1.c D:\blenderDev\blender\extern\libopenjpeg\t2.c D:\blenderDev\blender\extern\libopenjpeg\tcd.c D:\blenderDev\blender\extern\libopenjpeg\tgt.c D:\blenderDev\blender\extern\libopenjpeg\cidx_manager.c D:\blenderDev\blender\extern\libopenjpeg\phix_manager.c D:\blenderDev\blender\extern\libopenjpeg\ppix_manager.c D:\blenderDev\blender\extern\libopenjpeg\thix_manager.c D:\blenderDev\blender\extern\libopenjpeg\tpix_manager.c
+         bio.c
+         cio.c
+         dwt.c
+         event.c
+         image.c
+         j2k.c
+         j2k_lib.c
+         jp2.c
+         jpt.c
+         mct.c
+         mqc.c
+         openjpeg.c
+         pi.c
+         raw.c
+         t1.c
+         t2.c
+         tcd.c
+         tgt.c
+         cidx_manager.c
+         phix_manager.c
+         ppix_manager.c
+         thix_manager.c
+         tpix_manager.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\extern_openjpeg.lib" /NOLOGO /MACHINE:X64  /ignore:4221 extern_openjpeg.dir\Debug\bio.obj
+         extern_openjpeg.dir\Debug\cio.obj
+         extern_openjpeg.dir\Debug\dwt.obj
+         extern_openjpeg.dir\Debug\event.obj
+         extern_openjpeg.dir\Debug\image.obj
+         extern_openjpeg.dir\Debug\j2k.obj
+         extern_openjpeg.dir\Debug\j2k_lib.obj
+         extern_openjpeg.dir\Debug\jp2.obj
+         extern_openjpeg.dir\Debug\jpt.obj
+         extern_openjpeg.dir\Debug\mct.obj
+         extern_openjpeg.dir\Debug\mqc.obj
+         extern_openjpeg.dir\Debug\openjpeg.obj
+         extern_openjpeg.dir\Debug\pi.obj
+         extern_openjpeg.dir\Debug\raw.obj
+         extern_openjpeg.dir\Debug\t1.obj
+         extern_openjpeg.dir\Debug\t2.obj
+         extern_openjpeg.dir\Debug\tcd.obj
+         extern_openjpeg.dir\Debug\tgt.obj
+         extern_openjpeg.dir\Debug\cidx_manager.obj
+         extern_openjpeg.dir\Debug\phix_manager.obj
+         extern_openjpeg.dir\Debug\ppix_manager.obj
+         extern_openjpeg.dir\Debug\thix_manager.obj
+         extern_openjpeg.dir\Debug\tpix_manager.obj
+         extern_openjpeg.vcxproj -> D:\blenderDev\product\lib\Debug\extern_openjpeg.lib
+     1>Done Building Project "D:\blenderDev\product\extern\libopenjpeg\extern_openjpeg.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.19

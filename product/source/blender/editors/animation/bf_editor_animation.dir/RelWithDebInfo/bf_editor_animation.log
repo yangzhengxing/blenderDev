@@ -1,0 +1,44 @@
+﻿Build started 2016/4/2 9:36:19.
+     1>Project "D:\blenderDev\product\source\blender\editors\animation\bf_editor_animation.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/animation/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\animation\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_INTERNATIONAL /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_animation.dir\RelWithDebInfo\\" /Fd"bf_editor_animation.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\animation\anim_channels_defines.c D:\blenderDev\blender\source\blender\editors\animation\anim_channels_edit.c D:\blenderDev\blender\source\blender\editors\animation\anim_deps.c D:\blenderDev\blender\source\blender\editors\animation\anim_draw.c D:\blenderDev\blender\source\blender\editors\animation\anim_filter.c D:\blenderDev\blender\source\blender\editors\animation\anim_ipo_utils.c D:\blenderDev\blender\source\blender\editors\animation\anim_markers.c D:\blenderDev\blender\source\blender\editors\animation\anim_ops.c D:\blenderDev\blender\source\blender\editors\animation\drivers.c D:\blenderDev\blender\source\blender\editors\animation\fmodifier_ui.c D:\blenderDev\blender\source\blender\editors\animation\keyframes_draw.c D:\blenderDev\blender\source\blender\editors\animation\keyframes_edit.c D:\blenderDev\blender\source\blender\editors\animation\keyframes_general.c D:\blenderDev\blender\source\blender\editors\animation\keyframing.c D:\blenderDev\blender\source\blender\editors\animation\keyingsets.c
+         anim_channels_defines.c
+         anim_channels_edit.c
+         anim_deps.c
+         anim_draw.c
+         anim_filter.c
+         anim_ipo_utils.c
+         anim_markers.c
+         anim_ops.c
+         drivers.c
+         fmodifier_ui.c
+         keyframes_draw.c
+         keyframes_edit.c
+         keyframes_general.c
+         keyframing.c
+         keyingsets.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_animation.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_animation.dir\RelWithDebInfo\anim_channels_defines.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_channels_edit.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_deps.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_draw.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_filter.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_ipo_utils.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_markers.obj
+         bf_editor_animation.dir\RelWithDebInfo\anim_ops.obj
+         bf_editor_animation.dir\RelWithDebInfo\drivers.obj
+         bf_editor_animation.dir\RelWithDebInfo\fmodifier_ui.obj
+         bf_editor_animation.dir\RelWithDebInfo\keyframes_draw.obj
+         bf_editor_animation.dir\RelWithDebInfo\keyframes_edit.obj
+         bf_editor_animation.dir\RelWithDebInfo\keyframes_general.obj
+         bf_editor_animation.dir\RelWithDebInfo\keyframing.obj
+         bf_editor_animation.dir\RelWithDebInfo\keyingsets.obj
+         bf_editor_animation.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_animation.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\animation\bf_editor_animation.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.93

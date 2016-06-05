@@ -1,0 +1,30 @@
+﻿Build started 2016/4/2 8:25:16.
+     1>Project "D:\blenderDev\product\intern\smoke\bf_intern_smoke.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/smoke/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\smoke\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\intern\smoke\intern /ID:\blenderDev\blender\intern\memutil /ID:\blenderDev\blender\extern\bullet2\src /ID:\blenderDev\lib\win64_vc12\png\include /ID:\blenderDev\lib\win64_vc12\zlib\include /ID:\blenderDev\lib\win64_vc12\fftw3\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D DDF_DEBUG=0 /D PARALLEL=1 /D WITH_FFTW3 /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"bf_intern_smoke.dir\Debug\\" /Fd"bf_intern_smoke.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\smoke\intern\EIGENVALUE_HELPER.cpp D:\blenderDev\blender\intern\smoke\intern\FLUID_3D.cpp D:\blenderDev\blender\intern\smoke\intern\FLUID_3D_SOLVERS.cpp D:\blenderDev\blender\intern\smoke\intern\FLUID_3D_STATIC.cpp D:\blenderDev\blender\intern\smoke\intern\LU_HELPER.cpp D:\blenderDev\blender\intern\smoke\intern\SPHERE.cpp D:\blenderDev\blender\intern\smoke\intern\WTURBULENCE.cpp D:\blenderDev\blender\intern\smoke\intern\smoke_API.cpp
+         EIGENVALUE_HELPER.cpp
+         FLUID_3D.cpp
+         FLUID_3D_SOLVERS.cpp
+         FLUID_3D_STATIC.cpp
+         LU_HELPER.cpp
+         SPHERE.cpp
+         WTURBULENCE.cpp
+         smoke_API.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_intern_smoke.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_intern_smoke.dir\Debug\EIGENVALUE_HELPER.obj
+         bf_intern_smoke.dir\Debug\FLUID_3D.obj
+         bf_intern_smoke.dir\Debug\FLUID_3D_SOLVERS.obj
+         bf_intern_smoke.dir\Debug\FLUID_3D_STATIC.obj
+         bf_intern_smoke.dir\Debug\LU_HELPER.obj
+         bf_intern_smoke.dir\Debug\SPHERE.obj
+         bf_intern_smoke.dir\Debug\WTURBULENCE.obj
+         bf_intern_smoke.dir\Debug\smoke_API.obj
+         bf_intern_smoke.vcxproj -> D:\blenderDev\product\lib\Debug\bf_intern_smoke.lib
+     1>Done Building Project "D:\blenderDev\product\intern\smoke\bf_intern_smoke.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.39

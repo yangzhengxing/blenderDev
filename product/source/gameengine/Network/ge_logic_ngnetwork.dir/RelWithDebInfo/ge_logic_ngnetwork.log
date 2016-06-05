@@ -1,0 +1,20 @@
+﻿Build started 2016/4/2 9:35:48.
+     1>Project "D:\blenderDev\product\source\gameengine\Network\ge_logic_ngnetwork.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/Network/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\Network\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\Network /ID:\blenderDev\blender\intern\container /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\intern\moto\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_logic_ngnetwork.dir\RelWithDebInfo\\" /Fd"ge_logic_ngnetwork.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\Network\NG_NetworkMessage.cpp D:\blenderDev\blender\source\gameengine\Network\NG_NetworkObject.cpp D:\blenderDev\blender\source\gameengine\Network\NG_NetworkScene.cpp
+         NG_NetworkMessage.cpp
+         NG_NetworkObject.cpp
+         NG_NetworkScene.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\ge_logic_ngnetwork.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_logic_ngnetwork.dir\RelWithDebInfo\NG_NetworkMessage.obj
+         ge_logic_ngnetwork.dir\RelWithDebInfo\NG_NetworkObject.obj
+         ge_logic_ngnetwork.dir\RelWithDebInfo\NG_NetworkScene.obj
+         ge_logic_ngnetwork.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\ge_logic_ngnetwork.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\Network\ge_logic_ngnetwork.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.83

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\creator\CMakeLists.txt" />
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\_buildinfo.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\CMakeFiles\e3f643136d585f0ddd2e7bc8b86e430f\buildinfo.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\buildinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3A18D33A-727F-462F-97E0-6F4F89D3B75E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

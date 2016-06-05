@@ -1,0 +1,76 @@
+﻿Build started 2016/4/2 8:25:36.
+     1>Project "D:\blenderDev\product\source\blender\python\intern\bf_python.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/python/intern/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\python\intern\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\python /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenloader /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\cycles\blender /ID:\blenderDev\blender\intern\opencolorio /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\source\blender\freestyle\intern\python /ID:\blenderDev\blender\source\blender\imbuf\intern\oiio /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\lib\win64_vc12\ffmpeg\include /ID:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc /ID:\blenderDev\lib\win64_vc12\sdl\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D BUILD_DATE /D WITH_AUDASPACE /D WITH_BULLET /D WITH_AVI /D WITH_FFMPEG /D WITH_COMPOSITOR /D WITH_CYCLES /D WITH_CYCLES_OSL /D WITH_FREESTYLE /D WITH_GAMEENGINE /D WITH_CINEON /D WITH_DDS /D WITH_FRAMESERVER /D WITH_HDR /D WITH_OPENEXR /D WITH_OPENIMAGEIO /D WITH_OPENJPEG /D WITH_TIFF /D WITH_INPUT_NDOF /D WITH_INTERNATIONAL /D WITH_OPENAL /D WITH_SDL /D WITH_LIBMV /D WITH_MOD_BOOLEAN /D WITH_MOD_FLUID /D WITH_MOD_REMESH /D WITH_SMOKE /D WITH_COLLADA /D WITH_OCIO /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_python.dir\Debug\\" /Fd"bf_python.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\python\intern\gpu.c D:\blenderDev\blender\source\blender\python\intern\gpu_offscreen.c D:\blenderDev\blender\source\blender\python\intern\bpy.c D:\blenderDev\blender\source\blender\python\intern\bpy_app.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_build_options.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_ffmpeg.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_handlers.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_ocio.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_oiio.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_openvdb.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_sdl.c D:\blenderDev\blender\source\blender\python\intern\bpy_app_translations.c D:\blenderDev\blender\source\blender\python\intern\bpy_driver.c D:\blenderDev\blender\source\blender\python\intern\bpy_interface.c D:\blenderDev\blender\source\blender\python\intern\bpy_interface_atexit.c D:\blenderDev\blender\source\blender\python\intern\bpy_intern_string.c D:\blenderDev\blender\source\blender\python\intern\bpy_library.c D:\blenderDev\blender\source\blender\python\intern\bpy_operator.c D:\blenderDev\blender\source\blender\python\intern\bpy_operator_wrap.c D:\blenderDev\blender\source\blender\python\intern\bpy_path.c D:\blenderDev\blender\source\blender\python\intern\bpy_props.c D:\blenderDev\blender\source\blender\python\intern\bpy_rna.c D:\blenderDev\blender\source\blender\python\intern\bpy_rna_anim.c D:\blenderDev\blender\source\blender\python\intern\bpy_rna_array.c D:\blenderDev\blender\source\blender\python\intern\bpy_rna_callback.c D:\blenderDev\blender\source\blender\python\intern\bpy_rna_id_collection.c D:\blenderDev\blender\source\blender\python\intern\bpy_traceback.c D:\blenderDev\blender\source\blender\python\intern\bpy_util.c D:\blenderDev\blender\source\blender\python\intern\bpy_utils_previews.c D:\blenderDev\blender\source\blender\python\intern\bpy_utils_units.c D:\blenderDev\blender\source\blender\python\intern\stubs.c
+         gpu.c
+         gpu_offscreen.c
+         bpy.c
+         bpy_app.c
+         bpy_app_build_options.c
+         bpy_app_ffmpeg.c
+         bpy_app_handlers.c
+         bpy_app_ocio.c
+         bpy_app_oiio.c
+         bpy_app_openvdb.c
+         bpy_app_sdl.c
+         bpy_app_translations.c
+         bpy_driver.c
+         bpy_interface.c
+         bpy_interface_atexit.c
+         bpy_intern_string.c
+         bpy_library.c
+         bpy_operator.c
+         bpy_operator_wrap.c
+         bpy_path.c
+         bpy_props.c
+         bpy_rna.c
+         bpy_rna_anim.c
+         bpy_rna_array.c
+         bpy_rna_callback.c
+         bpy_rna_id_collection.c
+         bpy_traceback.c
+         bpy_util.c
+         bpy_utils_previews.c
+         bpy_utils_units.c
+         stubs.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_python.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_python.dir\Debug\gpu.obj
+         bf_python.dir\Debug\gpu_offscreen.obj
+         bf_python.dir\Debug\bpy.obj
+         bf_python.dir\Debug\bpy_app.obj
+         bf_python.dir\Debug\bpy_app_build_options.obj
+         bf_python.dir\Debug\bpy_app_ffmpeg.obj
+         bf_python.dir\Debug\bpy_app_handlers.obj
+         bf_python.dir\Debug\bpy_app_ocio.obj
+         bf_python.dir\Debug\bpy_app_oiio.obj
+         bf_python.dir\Debug\bpy_app_openvdb.obj
+         bf_python.dir\Debug\bpy_app_sdl.obj
+         bf_python.dir\Debug\bpy_app_translations.obj
+         bf_python.dir\Debug\bpy_driver.obj
+         bf_python.dir\Debug\bpy_interface.obj
+         bf_python.dir\Debug\bpy_interface_atexit.obj
+         bf_python.dir\Debug\bpy_intern_string.obj
+         bf_python.dir\Debug\bpy_library.obj
+         bf_python.dir\Debug\bpy_operator.obj
+         bf_python.dir\Debug\bpy_operator_wrap.obj
+         bf_python.dir\Debug\bpy_path.obj
+         bf_python.dir\Debug\bpy_props.obj
+         bf_python.dir\Debug\bpy_rna.obj
+         bf_python.dir\Debug\bpy_rna_anim.obj
+         bf_python.dir\Debug\bpy_rna_array.obj
+         bf_python.dir\Debug\bpy_rna_callback.obj
+         bf_python.dir\Debug\bpy_rna_id_collection.obj
+         bf_python.dir\Debug\bpy_traceback.obj
+         bf_python.dir\Debug\bpy_util.obj
+         bf_python.dir\Debug\bpy_utils_previews.obj
+         bf_python.dir\Debug\bpy_utils_units.obj
+         bf_python.dir\Debug\stubs.obj
+         bf_python.vcxproj -> D:\blenderDev\product\lib\Debug\bf_python.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\python\intern\bf_python.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.78

@@ -1,0 +1,60 @@
+﻿Build started 2016/4/2 9:24:13.
+     1>Project "D:\blenderDev\product\intern\elbeem\bf_intern_elbeem.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/elbeem/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\elbeem\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\intern\elbeem\extern /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\lib\win64_vc12\png\include /ID:\blenderDev\lib\win64_vc12\zlib\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D NOGUI /D ELBEEM_BLENDER=1 /D LBM_PRECISION=1 /D LBM_INCLUDE_TESTSOLVERS=0 /D FSGR_STRICT_DEBUG=0 /D ELBEEM_MPI=0 /D NEWDIRVELMOTEST=0 /D PARALLEL=1 /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"bf_intern_elbeem.dir\RelWithDebInfo\\" /Fd"bf_intern_elbeem.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\elbeem\intern\attributes.cpp D:\blenderDev\blender\intern\elbeem\intern\controlparticles.cpp D:\blenderDev\blender\intern\elbeem\intern\elbeem.cpp D:\blenderDev\blender\intern\elbeem\intern\elbeem_control.cpp D:\blenderDev\blender\intern\elbeem\intern\isosurface.cpp D:\blenderDev\blender\intern\elbeem\intern\mvmcoords.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_blenderdumper.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_bsptree.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_geometrymodel.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_geometryobject.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_lighting.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_ray.cpp D:\blenderDev\blender\intern\elbeem\intern\ntl_world.cpp D:\blenderDev\blender\intern\elbeem\intern\parametrizer.cpp D:\blenderDev\blender\intern\elbeem\intern\particletracer.cpp D:\blenderDev\blender\intern\elbeem\intern\simulation_object.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_adap.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_control.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_init.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_interface.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_main.cpp D:\blenderDev\blender\intern\elbeem\intern\solver_util.cpp D:\blenderDev\blender\intern\elbeem\intern\utilities.cpp
+         attributes.cpp
+         controlparticles.cpp
+         elbeem.cpp
+         elbeem_control.cpp
+         isosurface.cpp
+         mvmcoords.cpp
+         ntl_blenderdumper.cpp
+         ntl_bsptree.cpp
+         ntl_geometrymodel.cpp
+         ntl_geometryobject.cpp
+         ntl_lighting.cpp
+         ntl_ray.cpp
+         ntl_world.cpp
+         parametrizer.cpp
+         particletracer.cpp
+         simulation_object.cpp
+         solver_adap.cpp
+         solver_control.cpp
+         solver_init.cpp
+         solver_interface.cpp
+         solver_main.cpp
+         solver_util.cpp
+         utilities.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_intern_elbeem.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_intern_elbeem.dir\RelWithDebInfo\attributes.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\controlparticles.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\elbeem.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\elbeem_control.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\isosurface.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\mvmcoords.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_blenderdumper.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_bsptree.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_geometrymodel.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_geometryobject.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_lighting.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_ray.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\ntl_world.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\parametrizer.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\particletracer.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\simulation_object.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_adap.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_control.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_init.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_interface.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_main.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\solver_util.obj
+         bf_intern_elbeem.dir\RelWithDebInfo\utilities.obj
+         bf_intern_elbeem.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_intern_elbeem.lib
+     1>Done Building Project "D:\blenderDev\product\intern\elbeem\bf_intern_elbeem.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:27.16

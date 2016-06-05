@@ -1,0 +1,148 @@
+﻿Build started 2016/4/2 8:22:13.
+     1>Project "D:\blenderDev\product\source\blender\collada\bf_collada.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/collada/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\collada\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\collada /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\source\blender\ikplugin /ID:\blenderDev\blender\intern\iksolver\extern /ID:\blenderDev\blender\source\blender\bmesh /ID:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAStreamWriter /ID:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADABaseUtils /ID:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework /ID:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADASaxFrameworkLoader /ID:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\GeneratedSaxParser /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_BUILDINFO /D WITH_INTERNATIONAL /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"bf_collada.dir\Debug\\" /Fd"bf_collada.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp D:\blenderDev\blender\source\blender\collada\AnimationExporter.cpp D:\blenderDev\blender\source\blender\collada\ArmatureExporter.cpp D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp D:\blenderDev\blender\source\blender\collada\CameraExporter.cpp D:\blenderDev\blender\source\blender\collada\ControllerExporter.cpp D:\blenderDev\blender\source\blender\collada\DocumentExporter.cpp D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp D:\blenderDev\blender\source\blender\collada\EffectExporter.cpp D:\blenderDev\blender\source\blender\collada\ErrorHandler.cpp D:\blenderDev\blender\source\blender\collada\ExportSettings.cpp D:\blenderDev\blender\source\blender\collada\ImportSettings.cpp D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp D:\blenderDev\blender\source\blender\collada\ExtraTags.cpp D:\blenderDev\blender\source\blender\collada\GeometryExporter.cpp D:\blenderDev\blender\source\blender\collada\ImageExporter.cpp D:\blenderDev\blender\source\blender\collada\InstanceWriter.cpp D:\blenderDev\blender\source\blender\collada\LightExporter.cpp D:\blenderDev\blender\source\blender\collada\MaterialExporter.cpp D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp D:\blenderDev\blender\source\blender\collada\SkinInfo.cpp D:\blenderDev\blender\source\blender\collada\SceneExporter.cpp D:\blenderDev\blender\source\blender\collada\TransformReader.cpp D:\blenderDev\blender\source\blender\collada\TransformWriter.cpp D:\blenderDev\blender\source\blender\collada\collada.cpp D:\blenderDev\blender\source\blender\collada\collada_internal.cpp D:\blenderDev\blender\source\blender\collada\collada_utils.cpp
+         AnimationImporter.cpp
+         AnimationExporter.cpp
+         ArmatureExporter.cpp
+         ArmatureImporter.cpp
+     1>D:\blenderDev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\AnimationExporter.cpp)
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ArmatureExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\AnimationExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureExporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\AnimationImporter.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ArmatureExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAStreamWriter\COLLADASWSurfaceInitOption.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ArmatureExporter.cpp)
+         CameraExporter.cpp
+         ControllerExporter.cpp
+         DocumentExporter.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ControllerExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ControllerExporter.cpp)
+         DocumentImporter.cpp
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ControllerExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAStreamWriter\COLLADASWSurfaceInitOption.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ControllerExporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAStreamWriter\COLLADASWSurfaceInitOption.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentExporter.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\DocumentExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         EffectExporter.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\DocumentExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentExporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\EffectExporter.cpp)
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         ErrorHandler.cpp
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWImage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\DocumentImporter.cpp)
+         ExportSettings.cpp
+         ImportSettings.cpp
+         ExtraHandler.cpp
+         ExtraTags.cpp
+         GeometryExporter.cpp
+         ImageExporter.cpp
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\GeometryExporter.cpp)
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\GeometryExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ImageExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWImage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ImageExporter.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\ExtraHandler.cpp)
+         InstanceWriter.cpp
+         LightExporter.cpp
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\InstanceWriter.cpp)
+         MaterialExporter.cpp
+         MeshImporter.cpp
+         SkinInfo.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\SkinInfo.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\MaterialExporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\MeshImporter.cpp)
+         SceneExporter.cpp
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\SceneExporter.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+         TransformReader.cpp
+         TransformWriter.cpp
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAStreamWriter\COLLADASWSurfaceInitOption.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\SceneExporter.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\SceneExporter.cpp)
+         collada.cpp
+         collada_internal.cpp
+         collada_utils.cpp
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada_utils.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWEffect.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWFloatOrParam.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWImage.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada_internal.cpp)
+     1>d:\blenderdev\blender\source\blender\makesdna\DNA_curve_types.h(92): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+     1>D:\blenderDev\lib\win64_vc12\opencollada\include\opencollada\COLLADAFramework\COLLADAFWMesh.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+     1>d:\blenderdev\lib\win64_vc12\opencollada\include\opencollada\colladaframework\COLLADAFWGeometry.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (D:\blenderDev\blender\source\blender\collada\collada.cpp)
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_collada.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_collada.dir\Debug\AnimationImporter.obj
+         bf_collada.dir\Debug\AnimationExporter.obj
+         bf_collada.dir\Debug\ArmatureExporter.obj
+         bf_collada.dir\Debug\ArmatureImporter.obj
+         bf_collada.dir\Debug\CameraExporter.obj
+         bf_collada.dir\Debug\ControllerExporter.obj
+         bf_collada.dir\Debug\DocumentExporter.obj
+         bf_collada.dir\Debug\DocumentImporter.obj
+         bf_collada.dir\Debug\EffectExporter.obj
+         bf_collada.dir\Debug\ErrorHandler.obj
+         bf_collada.dir\Debug\ExportSettings.obj
+         bf_collada.dir\Debug\ImportSettings.obj
+         bf_collada.dir\Debug\ExtraHandler.obj
+         bf_collada.dir\Debug\ExtraTags.obj
+         bf_collada.dir\Debug\GeometryExporter.obj
+         bf_collada.dir\Debug\ImageExporter.obj
+         bf_collada.dir\Debug\InstanceWriter.obj
+         bf_collada.dir\Debug\LightExporter.obj
+         bf_collada.dir\Debug\MaterialExporter.obj
+         bf_collada.dir\Debug\MeshImporter.obj
+         bf_collada.dir\Debug\SkinInfo.obj
+         bf_collada.dir\Debug\SceneExporter.obj
+         bf_collada.dir\Debug\TransformReader.obj
+         bf_collada.dir\Debug\TransformWriter.obj
+         bf_collada.dir\Debug\collada.obj
+         bf_collada.dir\Debug\collada_internal.obj
+         bf_collada.dir\Debug\collada_utils.obj
+         bf_collada.vcxproj -> D:\blenderDev\product\lib\Debug\bf_collada.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\collada\bf_collada.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.47

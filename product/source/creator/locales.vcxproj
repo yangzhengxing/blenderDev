@@ -1,0 +1,2271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{4DA92D28-A83F-4389-9201-08B81EEADA2A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>locales</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\gameengine\BlenderRoutines;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\product\source\creator;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\creator\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/creator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/creator/CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;D:\blenderDev\blender\source\creator\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ar.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ar.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ar.po D:/blenderDev/product/source/creator/ar.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ar.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ar.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ar.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ar.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ar.po D:/blenderDev/product/source/creator/ar.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ar.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ar.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ar.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ar.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ar.po D:/blenderDev/product/source/creator/ar.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ar.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ar.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ar.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ar.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ar.po D:/blenderDev/product/source/creator/ar.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ar.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ar.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ar.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ca.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ca.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ca.po D:/blenderDev/product/source/creator/ca.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ca.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ca.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ca.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ca.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ca.po D:/blenderDev/product/source/creator/ca.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ca.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ca.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ca.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ca.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ca.po D:/blenderDev/product/source/creator/ca.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ca.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ca.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ca.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ca.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ca.po D:/blenderDev/product/source/creator/ca.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ca.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ca.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ca.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\cs.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating cs.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/cs.po D:/blenderDev/product/source/creator/cs.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/cs.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\cs.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\cs.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating cs.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/cs.po D:/blenderDev/product/source/creator/cs.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/cs.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\cs.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\cs.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating cs.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/cs.po D:/blenderDev/product/source/creator/cs.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/cs.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\cs.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\cs.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating cs.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/cs.po D:/blenderDev/product/source/creator/cs.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/cs.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\cs.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\cs.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\de.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating de.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/de.po D:/blenderDev/product/source/creator/de.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/de.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\de.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\de.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating de.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/de.po D:/blenderDev/product/source/creator/de.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/de.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\de.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\de.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating de.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/de.po D:/blenderDev/product/source/creator/de.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/de.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\de.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\de.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating de.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/de.po D:/blenderDev/product/source/creator/de.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/de.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\de.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\de.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\eo.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating eo.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eo.po D:/blenderDev/product/source/creator/eo.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eo.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eo.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\eo.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating eo.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eo.po D:/blenderDev/product/source/creator/eo.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eo.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eo.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\eo.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating eo.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eo.po D:/blenderDev/product/source/creator/eo.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eo.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eo.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\eo.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating eo.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eo.po D:/blenderDev/product/source/creator/eo.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eo.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eo.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\eo.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\es.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating es.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es.po D:/blenderDev/product/source/creator/es.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\es.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating es.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es.po D:/blenderDev/product/source/creator/es.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\es.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating es.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es.po D:/blenderDev/product/source/creator/es.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\es.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating es.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es.po D:/blenderDev/product/source/creator/es.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\es.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\es_ES.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating es_ES.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es_ES.po D:/blenderDev/product/source/creator/es_ES.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es_ES.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es_ES.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\es_ES.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating es_ES.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es_ES.po D:/blenderDev/product/source/creator/es_ES.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es_ES.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es_ES.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\es_ES.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating es_ES.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es_ES.po D:/blenderDev/product/source/creator/es_ES.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es_ES.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es_ES.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\es_ES.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating es_ES.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/es_ES.po D:/blenderDev/product/source/creator/es_ES.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/es_ES.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\es_ES.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\es_ES.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\eu.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating eu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eu.po D:/blenderDev/product/source/creator/eu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eu.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\eu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating eu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eu.po D:/blenderDev/product/source/creator/eu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eu.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\eu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating eu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eu.po D:/blenderDev/product/source/creator/eu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eu.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\eu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating eu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/eu.po D:/blenderDev/product/source/creator/eu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/eu.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\eu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\eu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\fa.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fa.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fa.po D:/blenderDev/product/source/creator/fa.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fa.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fa.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\fa.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fa.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fa.po D:/blenderDev/product/source/creator/fa.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fa.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fa.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\fa.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fa.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fa.po D:/blenderDev/product/source/creator/fa.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fa.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fa.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\fa.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fa.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fa.po D:/blenderDev/product/source/creator/fa.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fa.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fa.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\fa.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\fr.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating fr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fr.po D:/blenderDev/product/source/creator/fr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fr.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\fr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating fr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fr.po D:/blenderDev/product/source/creator/fr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fr.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\fr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating fr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fr.po D:/blenderDev/product/source/creator/fr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fr.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\fr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating fr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/fr.po D:/blenderDev/product/source/creator/fr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/fr.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\fr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\fr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\he.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating he.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/he.po D:/blenderDev/product/source/creator/he.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/he.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\he.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\he.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating he.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/he.po D:/blenderDev/product/source/creator/he.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/he.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\he.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\he.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating he.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/he.po D:/blenderDev/product/source/creator/he.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/he.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\he.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\he.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating he.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/he.po D:/blenderDev/product/source/creator/he.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/he.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\he.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\he.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\hi.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hi.po D:/blenderDev/product/source/creator/hi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hi.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\hi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hi.po D:/blenderDev/product/source/creator/hi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hi.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\hi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hi.po D:/blenderDev/product/source/creator/hi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hi.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\hi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hi.po D:/blenderDev/product/source/creator/hi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hi.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\hi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\hr.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hr.po D:/blenderDev/product/source/creator/hr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hr.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\hr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hr.po D:/blenderDev/product/source/creator/hr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hr.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\hr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hr.po D:/blenderDev/product/source/creator/hr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hr.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\hr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hr.po D:/blenderDev/product/source/creator/hr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hr.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\hr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\hu.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating hu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hu.po D:/blenderDev/product/source/creator/hu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hu.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\hu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating hu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hu.po D:/blenderDev/product/source/creator/hu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hu.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\hu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating hu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hu.po D:/blenderDev/product/source/creator/hu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hu.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\hu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating hu.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/hu.po D:/blenderDev/product/source/creator/hu.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/hu.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\hu.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\hu.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\id.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating id.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/id.po D:/blenderDev/product/source/creator/id.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/id.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\id.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\id.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating id.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/id.po D:/blenderDev/product/source/creator/id.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/id.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\id.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\id.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating id.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/id.po D:/blenderDev/product/source/creator/id.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/id.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\id.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\id.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating id.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/id.po D:/blenderDev/product/source/creator/id.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/id.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\id.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\id.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\it.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating it.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/it.po D:/blenderDev/product/source/creator/it.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/it.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\it.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\it.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating it.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/it.po D:/blenderDev/product/source/creator/it.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/it.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\it.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\it.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating it.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/it.po D:/blenderDev/product/source/creator/it.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/it.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\it.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\it.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating it.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/it.po D:/blenderDev/product/source/creator/it.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/it.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\it.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\it.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ja.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ja.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ja.po D:/blenderDev/product/source/creator/ja.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ja.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ja.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ja.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ja.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ja.po D:/blenderDev/product/source/creator/ja.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ja.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ja.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ja.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ja.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ja.po D:/blenderDev/product/source/creator/ja.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ja.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ja.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ja.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ja.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ja.po D:/blenderDev/product/source/creator/ja.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ja.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ja.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ja.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ko.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ko.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ko.po D:/blenderDev/product/source/creator/ko.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ko.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ko.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ko.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ko.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ko.po D:/blenderDev/product/source/creator/ko.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ko.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ko.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ko.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ko.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ko.po D:/blenderDev/product/source/creator/ko.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ko.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ko.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ko.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ko.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ko.po D:/blenderDev/product/source/creator/ko.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ko.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ko.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ko.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ky.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ky.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ky.po D:/blenderDev/product/source/creator/ky.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ky.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ky.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ky.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ky.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ky.po D:/blenderDev/product/source/creator/ky.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ky.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ky.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ky.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ky.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ky.po D:/blenderDev/product/source/creator/ky.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ky.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ky.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ky.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ky.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ky.po D:/blenderDev/product/source/creator/ky.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ky.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ky.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ky.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\nl.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating nl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/nl.po D:/blenderDev/product/source/creator/nl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/nl.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\nl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\nl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating nl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/nl.po D:/blenderDev/product/source/creator/nl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/nl.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\nl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\nl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating nl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/nl.po D:/blenderDev/product/source/creator/nl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/nl.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\nl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\nl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating nl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/nl.po D:/blenderDev/product/source/creator/nl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/nl.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\nl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\nl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\pl.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pl.po D:/blenderDev/product/source/creator/pl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pl.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\pl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pl.po D:/blenderDev/product/source/creator/pl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pl.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\pl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pl.po D:/blenderDev/product/source/creator/pl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pl.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\pl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pl.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pl.po D:/blenderDev/product/source/creator/pl.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pl.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pl.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\pl.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\pt.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pt.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt.po D:/blenderDev/product/source/creator/pt.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\pt.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pt.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt.po D:/blenderDev/product/source/creator/pt.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\pt.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pt.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt.po D:/blenderDev/product/source/creator/pt.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\pt.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pt.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt.po D:/blenderDev/product/source/creator/pt.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\pt.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\pt_BR.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating pt_BR.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt_BR.po D:/blenderDev/product/source/creator/pt_BR.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt_BR.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt_BR.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\pt_BR.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating pt_BR.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt_BR.po D:/blenderDev/product/source/creator/pt_BR.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt_BR.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt_BR.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\pt_BR.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating pt_BR.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt_BR.po D:/blenderDev/product/source/creator/pt_BR.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt_BR.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt_BR.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\pt_BR.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating pt_BR.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/pt_BR.po D:/blenderDev/product/source/creator/pt_BR.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/pt_BR.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\pt_BR.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\pt_BR.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\ru.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ru.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ru.po D:/blenderDev/product/source/creator/ru.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ru.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ru.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\ru.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ru.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ru.po D:/blenderDev/product/source/creator/ru.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ru.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ru.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\ru.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ru.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ru.po D:/blenderDev/product/source/creator/ru.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ru.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ru.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\ru.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ru.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/ru.po D:/blenderDev/product/source/creator/ru.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/ru.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\ru.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\ru.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\sr.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating sr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr.po D:/blenderDev/product/source/creator/sr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\sr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating sr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr.po D:/blenderDev/product/source/creator/sr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\sr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating sr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr.po D:/blenderDev/product/source/creator/sr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\sr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating sr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr.po D:/blenderDev/product/source/creator/sr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\sr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\sr@latin.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating sr@latin.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr@latin.po D:/blenderDev/product/source/creator/sr@latin.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr@latin.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr@latin.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\sr@latin.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating sr@latin.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr@latin.po D:/blenderDev/product/source/creator/sr@latin.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr@latin.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr@latin.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\sr@latin.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating sr@latin.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr@latin.po D:/blenderDev/product/source/creator/sr@latin.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr@latin.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr@latin.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\sr@latin.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating sr@latin.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sr@latin.po D:/blenderDev/product/source/creator/sr@latin.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sr@latin.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sr@latin.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\sr@latin.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\sv.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating sv.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sv.po D:/blenderDev/product/source/creator/sv.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sv.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sv.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\sv.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating sv.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sv.po D:/blenderDev/product/source/creator/sv.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sv.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sv.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\sv.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating sv.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sv.po D:/blenderDev/product/source/creator/sv.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sv.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sv.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\sv.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating sv.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/sv.po D:/blenderDev/product/source/creator/sv.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/sv.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\sv.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\sv.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\tr.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating tr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/tr.po D:/blenderDev/product/source/creator/tr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/tr.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\tr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\tr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating tr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/tr.po D:/blenderDev/product/source/creator/tr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/tr.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\tr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\tr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating tr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/tr.po D:/blenderDev/product/source/creator/tr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/tr.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\tr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\tr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating tr.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/tr.po D:/blenderDev/product/source/creator/tr.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/tr.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\tr.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\tr.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\uk.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating uk.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/uk.po D:/blenderDev/product/source/creator/uk.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/uk.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\uk.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\uk.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating uk.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/uk.po D:/blenderDev/product/source/creator/uk.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/uk.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\uk.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\uk.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating uk.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/uk.po D:/blenderDev/product/source/creator/uk.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/uk.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\uk.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\uk.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating uk.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/uk.po D:/blenderDev/product/source/creator/uk.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/uk.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\uk.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\uk.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\vi.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating vi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/vi.po D:/blenderDev/product/source/creator/vi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/vi.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\vi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\vi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating vi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/vi.po D:/blenderDev/product/source/creator/vi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/vi.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\vi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\vi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating vi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/vi.po D:/blenderDev/product/source/creator/vi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/vi.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\vi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\vi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating vi.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/vi.po D:/blenderDev/product/source/creator/vi.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/vi.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\vi.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\vi.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\zh_CN.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating zh_CN.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_CN.po D:/blenderDev/product/source/creator/zh_CN.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_CN.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_CN.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\zh_CN.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating zh_CN.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_CN.po D:/blenderDev/product/source/creator/zh_CN.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_CN.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_CN.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\zh_CN.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating zh_CN.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_CN.po D:/blenderDev/product/source/creator/zh_CN.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_CN.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_CN.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\zh_CN.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating zh_CN.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_CN.po D:/blenderDev/product/source/creator/zh_CN.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_CN.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_CN.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\zh_CN.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\7f408499cf83c6c0df12d84b11fc08c8\zh_TW.mo.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating zh_TW.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Debug\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_TW.po D:/blenderDev/product/source/creator/zh_TW.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_TW.mo.rule;D:\blenderDev\product\bin\Debug\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_TW.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\zh_TW.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating zh_TW.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\Release\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_TW.po D:/blenderDev/product/source/creator/zh_TW.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_TW.mo.rule;D:\blenderDev\product\bin\Release\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_TW.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\zh_TW.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating zh_TW.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\MinSizeRel\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_TW.po D:/blenderDev/product/source/creator/zh_TW.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_TW.mo.rule;D:\blenderDev\product\bin\MinSizeRel\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_TW.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\zh_TW.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating zh_TW.mo</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -E make_directory D:/blenderDev/product/source/creator
+if %errorlevel% neq 0 goto :cmEnd
+..\..\bin\RelWithDebInfo\msgfmt.exe D:/blenderDev/blender/release/datafiles/locale/po/zh_TW.po D:/blenderDev/product/source/creator/zh_TW.mo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/7f408499cf83c6c0df12d84b11fc08c8/zh_TW.mo.rule;D:\blenderDev\product\bin\RelWithDebInfo\msgfmt.exe;D:\blenderDev\blender\release\datafiles\locale\po\zh_TW.po;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\zh_TW.mo</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\e3f643136d585f0ddd2e7bc8b86e430f\locales.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/e3f643136d585f0ddd2e7bc8b86e430f/locales.rule;D:\blenderDev\product\source\creator\ar.mo;D:\blenderDev\product\source\creator\ca.mo;D:\blenderDev\product\source\creator\cs.mo;D:\blenderDev\product\source\creator\de.mo;D:\blenderDev\product\source\creator\eo.mo;D:\blenderDev\product\source\creator\es.mo;D:\blenderDev\product\source\creator\es_ES.mo;D:\blenderDev\product\source\creator\eu.mo;D:\blenderDev\product\source\creator\fa.mo;D:\blenderDev\product\source\creator\fr.mo;D:\blenderDev\product\source\creator\he.mo;D:\blenderDev\product\source\creator\hi.mo;D:\blenderDev\product\source\creator\hr.mo;D:\blenderDev\product\source\creator\hu.mo;D:\blenderDev\product\source\creator\id.mo;D:\blenderDev\product\source\creator\it.mo;D:\blenderDev\product\source\creator\ja.mo;D:\blenderDev\product\source\creator\ko.mo;D:\blenderDev\product\source\creator\ky.mo;D:\blenderDev\product\source\creator\nl.mo;D:\blenderDev\product\source\creator\pl.mo;D:\blenderDev\product\source\creator\pt.mo;D:\blenderDev\product\source\creator\pt_BR.mo;D:\blenderDev\product\source\creator\ru.mo;D:\blenderDev\product\source\creator\sr.mo;D:\blenderDev\product\source\creator\sr@latin.mo;D:\blenderDev\product\source\creator\sv.mo;D:\blenderDev\product\source\creator\tr.mo;D:\blenderDev\product\source\creator\uk.mo;D:\blenderDev\product\source\creator\vi.mo;D:\blenderDev\product\source\creator\zh_CN.mo;D:\blenderDev\product\source\creator\zh_TW.mo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\creator\CMakeFiles\locales</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/e3f643136d585f0ddd2e7bc8b86e430f/locales.rule;D:\blenderDev\product\source\creator\ar.mo;D:\blenderDev\product\source\creator\ca.mo;D:\blenderDev\product\source\creator\cs.mo;D:\blenderDev\product\source\creator\de.mo;D:\blenderDev\product\source\creator\eo.mo;D:\blenderDev\product\source\creator\es.mo;D:\blenderDev\product\source\creator\es_ES.mo;D:\blenderDev\product\source\creator\eu.mo;D:\blenderDev\product\source\creator\fa.mo;D:\blenderDev\product\source\creator\fr.mo;D:\blenderDev\product\source\creator\he.mo;D:\blenderDev\product\source\creator\hi.mo;D:\blenderDev\product\source\creator\hr.mo;D:\blenderDev\product\source\creator\hu.mo;D:\blenderDev\product\source\creator\id.mo;D:\blenderDev\product\source\creator\it.mo;D:\blenderDev\product\source\creator\ja.mo;D:\blenderDev\product\source\creator\ko.mo;D:\blenderDev\product\source\creator\ky.mo;D:\blenderDev\product\source\creator\nl.mo;D:\blenderDev\product\source\creator\pl.mo;D:\blenderDev\product\source\creator\pt.mo;D:\blenderDev\product\source\creator\pt_BR.mo;D:\blenderDev\product\source\creator\ru.mo;D:\blenderDev\product\source\creator\sr.mo;D:\blenderDev\product\source\creator\sr@latin.mo;D:\blenderDev\product\source\creator\sv.mo;D:\blenderDev\product\source\creator\tr.mo;D:\blenderDev\product\source\creator\uk.mo;D:\blenderDev\product\source\creator\vi.mo;D:\blenderDev\product\source\creator\zh_CN.mo;D:\blenderDev\product\source\creator\zh_TW.mo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\creator\CMakeFiles\locales</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/e3f643136d585f0ddd2e7bc8b86e430f/locales.rule;D:\blenderDev\product\source\creator\ar.mo;D:\blenderDev\product\source\creator\ca.mo;D:\blenderDev\product\source\creator\cs.mo;D:\blenderDev\product\source\creator\de.mo;D:\blenderDev\product\source\creator\eo.mo;D:\blenderDev\product\source\creator\es.mo;D:\blenderDev\product\source\creator\es_ES.mo;D:\blenderDev\product\source\creator\eu.mo;D:\blenderDev\product\source\creator\fa.mo;D:\blenderDev\product\source\creator\fr.mo;D:\blenderDev\product\source\creator\he.mo;D:\blenderDev\product\source\creator\hi.mo;D:\blenderDev\product\source\creator\hr.mo;D:\blenderDev\product\source\creator\hu.mo;D:\blenderDev\product\source\creator\id.mo;D:\blenderDev\product\source\creator\it.mo;D:\blenderDev\product\source\creator\ja.mo;D:\blenderDev\product\source\creator\ko.mo;D:\blenderDev\product\source\creator\ky.mo;D:\blenderDev\product\source\creator\nl.mo;D:\blenderDev\product\source\creator\pl.mo;D:\blenderDev\product\source\creator\pt.mo;D:\blenderDev\product\source\creator\pt_BR.mo;D:\blenderDev\product\source\creator\ru.mo;D:\blenderDev\product\source\creator\sr.mo;D:\blenderDev\product\source\creator\sr@latin.mo;D:\blenderDev\product\source\creator\sv.mo;D:\blenderDev\product\source\creator\tr.mo;D:\blenderDev\product\source\creator\uk.mo;D:\blenderDev\product\source\creator\vi.mo;D:\blenderDev\product\source\creator\zh_CN.mo;D:\blenderDev\product\source\creator\zh_TW.mo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\creator\CMakeFiles\locales</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/e3f643136d585f0ddd2e7bc8b86e430f/locales.rule;D:\blenderDev\product\source\creator\ar.mo;D:\blenderDev\product\source\creator\ca.mo;D:\blenderDev\product\source\creator\cs.mo;D:\blenderDev\product\source\creator\de.mo;D:\blenderDev\product\source\creator\eo.mo;D:\blenderDev\product\source\creator\es.mo;D:\blenderDev\product\source\creator\es_ES.mo;D:\blenderDev\product\source\creator\eu.mo;D:\blenderDev\product\source\creator\fa.mo;D:\blenderDev\product\source\creator\fr.mo;D:\blenderDev\product\source\creator\he.mo;D:\blenderDev\product\source\creator\hi.mo;D:\blenderDev\product\source\creator\hr.mo;D:\blenderDev\product\source\creator\hu.mo;D:\blenderDev\product\source\creator\id.mo;D:\blenderDev\product\source\creator\it.mo;D:\blenderDev\product\source\creator\ja.mo;D:\blenderDev\product\source\creator\ko.mo;D:\blenderDev\product\source\creator\ky.mo;D:\blenderDev\product\source\creator\nl.mo;D:\blenderDev\product\source\creator\pl.mo;D:\blenderDev\product\source\creator\pt.mo;D:\blenderDev\product\source\creator\pt_BR.mo;D:\blenderDev\product\source\creator\ru.mo;D:\blenderDev\product\source\creator\sr.mo;D:\blenderDev\product\source\creator\sr@latin.mo;D:\blenderDev\product\source\creator\sv.mo;D:\blenderDev\product\source\creator\tr.mo;D:\blenderDev\product\source\creator\uk.mo;D:\blenderDev\product\source\creator\vi.mo;D:\blenderDev\product\source\creator\zh_CN.mo;D:\blenderDev\product\source\creator\zh_TW.mo;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\creator\CMakeFiles\locales</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\locales" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/locale/msgfmt.vcxproj">
+      <Project>2ED9766F-EEDE-46BD-B214-C0250B435772</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

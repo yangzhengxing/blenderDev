@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5E999D83-E0B2-4D9B-B6AF-2767BC19580E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_blenkernel</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_blenkernel.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_blenkernel</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_blenkernel.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_blenkernel</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_blenkernel.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_blenkernel</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_blenkernel.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_blenkernel</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_BULLET;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_FRAMESERVER;WITH_HDR;WITH_AVI;WITH_FFMPEG;WITH_PYTHON;WITH_PYTHON_SECURITY;WITH_MOD_FLUID;WITH_SMOKE;WITH_LZO;WITH_LZMA;WITH_GAMEENGINE;WITH_LIBMV;FFTW3=1;WITH_INTERNATIONAL;WITH_FREESTYLE;WITH_LEGACY_DEPSGRAPH;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\modifiers;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\ghost;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\iksolver\extern;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\mikktspace;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\libmv;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\elbeem\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\extern\bullet2\src;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\blender\extern\lzo\minilzo;D:\blenderDev\blender\extern\lzma;D:\blenderDev\blender\extern\recastnavigation;D:\blenderDev\lib\win64_vc12\fftw3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/blenkernel/CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;D:\blenderDev\blender\source\blender\blenkernel\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\blenkernel\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_DerivedMesh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_action.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_addon.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_anim.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_animsys.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_appdir.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_armature.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_autoexec.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_blender.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_bmfont.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_bmfont_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_boids.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_bpath.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_brush.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_bullet.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_bvhutils.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_camera.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_ccg.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_cdderivedmesh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_cloth.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_collision.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_colortools.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_constraint.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_context.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_crazyspace.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_curve.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_customdata.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_customdata_file.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_data_transfer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_deform.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_depsgraph.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_displist.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_dynamicpaint.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_editmesh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_editmesh_bvh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_effect.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_fcurve.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_fluidsim.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_font.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_freestyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_global.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_gpencil.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_group.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_icons.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_idcode.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_idprop.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_image.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_ipo.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_key.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_lamp.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_lattice.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_library.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_library_query.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_linestyle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mask.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_material.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mball.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mball_tessellate.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mesh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mesh_mapping.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_mesh_remap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_modifier.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_movieclip.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_multires.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_nla.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_node.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_object.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_object_deform.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_ocean.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_outliner_treehash.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_packedFile.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_paint.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_particle.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_pbvh.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_pointcache.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_property.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_report.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_rigidbody.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_sca.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_scene.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_screen.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_sequencer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_shrinkwrap.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_sketch.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_smoke.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_softbody.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_sound.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_speaker.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_subsurf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_suggestions.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_text.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_texture.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_tracking.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_unit.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_utildefines.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_world.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_writeavi.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_writeframeserver.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\depsgraph_private.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\nla_private.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\tracking_private.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_inline.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_intern.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\intern\pbvh_intern.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\intern\data_transfer_intern.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_writeffmpeg.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\blenkernel\BKE_navmesh_conversion.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_legacy.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_opensubdiv.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_opensubdiv_converter.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\CCGSubSurf_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\DerivedMesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\action.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\addon.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\anim.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\anim_sys.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\appdir.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\armature.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\armature_update.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\autoexec.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\blender.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\bmfont.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\boids.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\bpath.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\brush.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\bullet.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\bvhutils.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\camera.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\cdderivedmesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\cloth.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\collision.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\colortools.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\constraint.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\context.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\crazyspace.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\curve.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\customdata.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\customdata_file.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\data_transfer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\deform.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\depsgraph.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\displist.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\dynamicpaint.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\editderivedmesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\editmesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\editmesh_bvh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\effect.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\fcurve.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\fluidsim.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\fmodifier.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\font.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\freestyle.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\gpencil.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\group.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\icons.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\idcode.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\idprop.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\image.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\image_gen.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\ipo.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\key.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\lamp.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\lattice.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\library.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\library_query.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\linestyle.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mask_evaluate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mask_rasterize.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\material.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mball.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mball_tessellate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mesh_evaluate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mesh_mapping.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mesh_remap.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\mesh_validate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\modifier.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\modifiers_bmesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\movieclip.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\multires.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\nla.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\node.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\object.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\object_deform.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\object_dupli.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\object_update.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\ocean.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\outliner_treehash.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\packedFile.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\paint.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\particle.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\particle_child.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\particle_distribute.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\particle_system.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\pbvh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\pbvh_bmesh.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\pointcache.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\property.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\report.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\rigidbody.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\sca.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\scene.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\screen.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\seqcache.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\seqeffects.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\seqmodifier.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\sequencer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\shrinkwrap.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\sketch.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\smoke.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\softbody.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\sound.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\speaker.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\subsurf_ccg.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\suggestions.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\text.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\texture.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_auto.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_detect.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_plane_tracker.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_region_tracker.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_solver.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_stabilize.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\tracking_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\unit.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\world.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\writeavi.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\writeframeserver.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\writeffmpeg.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\blenkernel\intern\navmesh_conversion.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

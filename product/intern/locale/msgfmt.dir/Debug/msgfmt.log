@@ -1,0 +1,16 @@
+﻿Build started 2016/4/2 8:22:07.
+     1>Project "D:\blenderDev\product\intern\locale\msgfmt.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/locale/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\locale\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\intern\locale /ID:\blenderDev\lib\win64_vc12\boost\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_INTERNATIONAL /D BOOST_ALL_NO_LIB /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"msgfmt.dir\Debug\\" /Fd"msgfmt.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\locale\msgfmt.cc
+         msgfmt.cc
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\blenderDev\product\bin\Debug\msgfmt.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/blenderDev/product/bin/Debug/msgfmt.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/blenderDev/product/bin/Debug/msgfmt.lib" /MACHINE:X64 /SAFESEH:NO  /machine:x64 /debug msgfmt.dir\Debug\msgfmt.obj
+         msgfmt.vcxproj -> D:\blenderDev\product\bin\Debug\msgfmt.exe
+     1>Done Building Project "D:\blenderDev\product\intern\locale\msgfmt.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.50

@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A27820DB-E3E4-45E0-9340-D986F4810FBA}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/CMakeLists.txt;D:\blenderDev\blender\CMakeLists.txt;D:\blenderDev\blender\build_files\cmake\macros.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\blenderDev\blender\source\blender\blenkernel\BKE_blender.h;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCSourceRuns.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPNG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindZLIB.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindJPEG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindFreetype.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenEXR.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindTIFF.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindBoost.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenImageIO.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenGL.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenMP.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\packaging.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPack.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPackComponent.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\blenderDev\blender\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/CMakeLists.txt;D:\blenderDev\blender\CMakeLists.txt;D:\blenderDev\blender\build_files\cmake\macros.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\blenderDev\blender\source\blender\blenkernel\BKE_blender.h;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCSourceRuns.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPNG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindZLIB.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindJPEG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindFreetype.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenEXR.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindTIFF.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindBoost.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenImageIO.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenGL.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenMP.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\packaging.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPack.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPackComponent.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\blenderDev\blender\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/CMakeLists.txt;D:\blenderDev\blender\CMakeLists.txt;D:\blenderDev\blender\build_files\cmake\macros.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\blenderDev\blender\source\blender\blenkernel\BKE_blender.h;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCSourceRuns.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPNG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindZLIB.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindJPEG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindFreetype.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenEXR.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindTIFF.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindBoost.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenImageIO.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenGL.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenMP.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\packaging.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPack.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPackComponent.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\blenderDev\blender\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/CMakeLists.txt;D:\blenderDev\blender\CMakeLists.txt;D:\blenderDev\blender\build_files\cmake\macros.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystem.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeClDeps.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;D:\blenderDev\product\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;D:\blenderDev\blender\source\blender\blenkernel\BKE_blender.h;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCSourceRuns.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckIncludeFileCXX.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\InstallRequiredSystemLibraries.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPNG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindZLIB.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindJPEG.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindFreetype.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenEXR.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindTIFF.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindBoost.cmake;D:\blenderDev\blender\build_files\cmake\Modules\FindOpenImageIO.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenGL.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindOpenMP.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\FindPackageMessage.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CMakeParseArguments.cmake;D:\blenderDev\blender\build_files\cmake\packaging.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPack.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Modules\CPackComponent.cmake;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\luxrender\windows_deps\bin\CMake\share\cmake-2.8\Templates\CPackConfig.cmake.in;D:\blenderDev\blender\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\8a0e6caa055213f7be1b2621e605a34c\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/8a0e6caa055213f7be1b2621e605a34c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/8a0e6caa055213f7be1b2621e605a34c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/8a0e6caa055213f7be1b2621e605a34c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/8a0e6caa055213f7be1b2621e605a34c/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/avi/bf_avi.vcxproj">
+      <Project>02155C6C-A25A-4027-9691-A44827496973</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/blenfont/bf_blenfont.vcxproj">
+      <Project>3B525A01-1A4D-4518-AD5C-12F9C571CB51</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/blenkernel/bf_blenkernel.vcxproj">
+      <Project>5E999D83-E0B2-4D9B-B6AF-2767BC19580E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/blenlib/bf_blenlib.vcxproj">
+      <Project>87EF0FFA-CEAF-406A-AF1E-0BAF27F41A66</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/blenloader/bf_blenloader.vcxproj">
+      <Project>884B7C23-CD54-4A38-91F5-222B1B9BE235</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/blentranslation/bf_blentranslation.vcxproj">
+      <Project>32E092F4-DE75-4BAE-8C1A-44369A828563</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/bmesh/bf_bmesh.vcxproj">
+      <Project>CC74937E-6D46-4668-94C3-F3B6DBAE79A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/collada/bf_collada.vcxproj">
+      <Project>A641B471-2C72-44AB-9277-98152EED29BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/compositor/bf_compositor.vcxproj">
+      <Project>2D602761-5714-4B65-A24B-CAEFE046EA66</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/depsgraph/bf_depsgraph.vcxproj">
+      <Project>9AB59FC5-7EFC-4D82-9A6B-1E07D5812C9E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesdna/intern/bf_dna.vcxproj">
+      <Project>B53D3646-8C63-4992-86BC-3E2CFFEBA5EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesdna/intern/bf_dna_blenlib.vcxproj">
+      <Project>9AC9876A-952C-4F1A-9706-3BE04CBDAE2D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/animation/bf_editor_animation.vcxproj">
+      <Project>E0360297-AF1B-4739-9A18-FF2651001B44</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/armature/bf_editor_armature.vcxproj">
+      <Project>1A1C4017-49B2-44BD-8D0D-6A752D37F8BC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/curve/bf_editor_curve.vcxproj">
+      <Project>4DB08E5B-C7D8-470E-AA35-5F8EB84BB288</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/datafiles/bf_editor_datafiles.vcxproj">
+      <Project>1500B50C-C306-44BE-9AF3-05547343FF5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/gpencil/bf_editor_gpencil.vcxproj">
+      <Project>3B6AC7F7-FE85-4FDE-B93F-417EAF33F218</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/interface/bf_editor_interface.vcxproj">
+      <Project>DEF23B43-9C62-491E-A503-16D845CF98ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/io/bf_editor_io.vcxproj">
+      <Project>3EE25789-733D-471A-BE3E-C718BC9C272B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/mask/bf_editor_mask.vcxproj">
+      <Project>C108D58D-E794-43BB-861C-BD2F08687AAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/mesh/bf_editor_mesh.vcxproj">
+      <Project>ED11DEE2-952F-4905-9C74-92FDF7CEA630</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/metaball/bf_editor_metaball.vcxproj">
+      <Project>97DA79A1-DE28-450B-A3C2-71700658CAA4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/object/bf_editor_object.vcxproj">
+      <Project>8C558576-71A7-4C0C-BFD9-E05773FED5D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/physics/bf_editor_physics.vcxproj">
+      <Project>58AAD274-2C19-4B8B-B54E-EC78DC0A83CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/render/bf_editor_render.vcxproj">
+      <Project>2C546DEE-644C-4200-9B67-413646F981DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/screen/bf_editor_screen.vcxproj">
+      <Project>A7165B6C-8B36-46C8-B4CF-4CD0DCF34818</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/sculpt_paint/bf_editor_sculpt_paint.vcxproj">
+      <Project>E36DBB45-AB49-4D79-8E5A-F0B2DD241A3C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/sound/bf_editor_sound.vcxproj">
+      <Project>AABC73C9-574D-468C-A82C-2E20D25365C2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_action/bf_editor_space_action.vcxproj">
+      <Project>5F516887-D6F1-4508-9F14-D2B8A23B2E39</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_api/bf_editor_space_api.vcxproj">
+      <Project>821A7A30-B1C9-4C86-8C1B-B41436B3BF51</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_buttons/bf_editor_space_buttons.vcxproj">
+      <Project>35CAFB82-9820-4018-86BF-23D9C5EC4CBC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_clip/bf_editor_space_clip.vcxproj">
+      <Project>7C537295-170A-4786-98A1-3C7CD37A47D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_console/bf_editor_space_console.vcxproj">
+      <Project>25179133-0544-41A4-8DB6-AFB1715685D8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_file/bf_editor_space_file.vcxproj">
+      <Project>22297E07-A692-412A-8C04-C07FADA7F337</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_graph/bf_editor_space_graph.vcxproj">
+      <Project>54062E88-7A54-4F2D-A66D-D5983799CA4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_image/bf_editor_space_image.vcxproj">
+      <Project>2E33542E-84E2-4A3D-846F-5687BEB25224</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_info/bf_editor_space_info.vcxproj">
+      <Project>1041268B-2D06-4F6B-B65D-36571902E6F4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_logic/bf_editor_space_logic.vcxproj">
+      <Project>ADACF78B-5FA2-4509-AE82-A5F4053D2AEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_nla/bf_editor_space_nla.vcxproj">
+      <Project>DC95E69B-AC73-434D-A8B9-6B407B8DB4E0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_node/bf_editor_space_node.vcxproj">
+      <Project>FD1EF432-45A9-4D55-B0E2-8DD668391C78</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_outliner/bf_editor_space_outliner.vcxproj">
+      <Project>1366AB7C-741E-49A8-8B02-A1280D09D3D5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_script/bf_editor_space_script.vcxproj">
+      <Project>C92390A1-B1C5-4DEE-85C7-3C3FD0CB5A76</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_sequencer/bf_editor_space_sequencer.vcxproj">
+      <Project>07869790-7DF6-44C9-856B-8A48CB3AB148</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_text/bf_editor_space_text.vcxproj">
+      <Project>28006FC1-D24D-4B18-87FB-A76613854E62</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_time/bf_editor_space_time.vcxproj">
+      <Project>88977560-43AF-45E0-B8CF-9EB8973AE290</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_userpref/bf_editor_space_userpref.vcxproj">
+      <Project>4170E656-07E1-4577-A4CE-3031552D1C30</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/space_view3d/bf_editor_space_view3d.vcxproj">
+      <Project>B2B7066F-446E-4BFD-A239-1CE4E5289C01</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/transform/bf_editor_transform.vcxproj">
+      <Project>1E1899A8-82FA-43BE-9F25-177858E3DC28</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/util/bf_editor_util.vcxproj">
+      <Project>EA013DD8-8E4C-4F8B-9F8A-585DA19975C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/editors/uvedit/bf_editor_uvedit.vcxproj">
+      <Project>735AE58D-E377-4DC2-B3B8-13261F04B497</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/freestyle/bf_freestyle.vcxproj">
+      <Project>8A655590-32A0-4FB3-8D67-7BD4ED4A39E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/gpu/bf_gpu.vcxproj">
+      <Project>B8677B4A-E88D-430B-B612-C976B60773E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/ikplugin/bf_ikplugin.vcxproj">
+      <Project>45267852-46F5-4ABC-BF61-B83D5AAB9D3E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/imbuf/bf_imbuf.vcxproj">
+      <Project>5DA73EF4-E10F-4539-A56D-178598988DFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/imbuf/intern/cineon/bf_imbuf_cineon.vcxproj">
+      <Project>2F807464-AB2E-4AFA-B3CC-BD112529B8E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/imbuf/intern/dds/bf_imbuf_dds.vcxproj">
+      <Project>69C366B8-009F-4C30-B131-13CBC634D658</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/imbuf/intern/openexr/bf_imbuf_openexr.vcxproj">
+      <Project>5DAFCCF9-4EC7-403C-8FF4-402392301ADF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/imbuf/intern/oiio/bf_imbuf_openimageio.vcxproj">
+      <Project>4AC2EC1D-7324-4ADE-8D31-74A5EFB3F35B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/audaspace/bf_intern_audaspace.vcxproj">
+      <Project>A4FEA1A2-415C-441E-8C19-63587C765239</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/blender/bf_intern_cycles.vcxproj">
+      <Project>F0E1ABA1-8E8D-4AEE-9CBB-B7C29D2707C9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/dualcon/bf_intern_dualcon.vcxproj">
+      <Project>E9A7B235-D1FD-4292-922B-C21B2AA88016</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/eigen/bf_intern_eigen.vcxproj">
+      <Project>43FE12CA-8235-4559-B65B-FDE72837CA0B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/elbeem/bf_intern_elbeem.vcxproj">
+      <Project>DD3D0EFF-92CD-4535-80F0-766A7D60D9C6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/ghost/bf_intern_ghost.vcxproj">
+      <Project>FC15396F-3A35-4B63-90A1-3D42224D0393</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/glew-mx/bf_intern_glew_mx.vcxproj">
+      <Project>9F4DFC3E-6524-4614-9CA2-12042826833C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/guardedalloc/bf_intern_guardedalloc.vcxproj">
+      <Project>49D81B5B-88E5-4B63-9744-82318D569B26</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/iksolver/bf_intern_iksolver.vcxproj">
+      <Project>E28D192C-74DE-4A06-ABFC-B273D109354F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/itasc/bf_intern_itasc.vcxproj">
+      <Project>824AE660-78A5-4A8E-8D99-29F3DFF6E826</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/libmv/bf_intern_libmv.vcxproj">
+      <Project>0C754D7E-47E8-4A00-8434-0C99751F96CE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/locale/bf_intern_locale.vcxproj">
+      <Project>E305FA68-378B-4E10-A93F-B40A97785544</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/memutil/bf_intern_memutil.vcxproj">
+      <Project>0ACA2EDD-4299-49E0-BD5D-B4ED2567CCBE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/mikktspace/bf_intern_mikktspace.vcxproj">
+      <Project>140E9553-4BB2-42B1-A8F0-B1A38AC96EA5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/moto/bf_intern_moto.vcxproj">
+      <Project>E9D70F44-FB1B-46A4-807F-4D71B15EA271</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/opencolorio/bf_intern_opencolorio.vcxproj">
+      <Project>9F7EAB89-AD89-4273-B8C8-1B10696EBC74</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/rigidbody/bf_intern_rigidbody.vcxproj">
+      <Project>8F38C56A-447D-44CA-AD97-0CFB7C7BBF8D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/smoke/bf_intern_smoke.vcxproj">
+      <Project>A1BE76E6-405A-4A40-93B5-75C5D63952D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/string/bf_intern_string.vcxproj">
+      <Project>23FA2D72-1DF1-4CA4-99CD-39BC87812187</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/utfconv/bf_intern_utfconv.vcxproj">
+      <Project>0BC746E9-8F9A-419D-8816-64B6F264A700</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/modifiers/bf_modifiers.vcxproj">
+      <Project>D4C5DE98-BCE3-45C5-BAC6-9B19224F0BC7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/nodes/bf_nodes.vcxproj">
+      <Project>9CD81CC9-AC04-4817-A5C0-F06CB8CF2900</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/physics/bf_physics.vcxproj">
+      <Project>AB2EC623-CEA6-42A9-A58D-708A9165BDA5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/python/intern/bf_python.vcxproj">
+      <Project>B82E9BA8-075E-40BE-8078-7C8B693AD9EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/python/bmesh/bf_python_bmesh.vcxproj">
+      <Project>45CE3BDB-1D97-410E-B5A2-08B8944D808C</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/python/generic/bf_python_ext.vcxproj">
+      <Project>CA2C2149-0D02-4312-9285-476F218A0E25</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/python/mathutils/bf_python_mathutils.vcxproj">
+      <Project>96F48677-7B03-4D56-BCA6-82F53805F0E9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/render/bf_render.vcxproj">
+      <Project>86A3C204-9D3A-4285-A514-186D14F848B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesrna/intern/bf_rna.vcxproj">
+      <Project>5251AEFF-248F-4562-B8EB-45823C084916</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/windowmanager/bf_windowmanager.vcxproj">
+      <Project>FD8D3B36-651C-4F06-A2FC-8C8E60DECA17</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/creator/blender.vcxproj">
+      <Project>254268F5-F865-443F-808C-3DCE74EC2BFD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/creator/blender-launcher.vcxproj">
+      <Project>F83000EF-6239-449C-97FE-0D788D612D44</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/creator/buildinfo.vcxproj">
+      <Project>32392855-AA1F-45BE-9994-DCBA5A793F39</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/creator/buildinfoobj.vcxproj">
+      <Project>1B8305BB-0279-402B-93C4-6F106801EB7F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/bvh/cycles_bvh.vcxproj">
+      <Project>9D31F61A-BB8D-4C69-93B8-A54C28564983</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/device/cycles_device.vcxproj">
+      <Project>AF1C2EA8-BEBA-47EC-AD62-8E30FC2939FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/kernel/cycles_kernel.vcxproj">
+      <Project>5F87137D-70BD-41E7-BBE8-9F8C70F7CF00</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/kernel/osl/cycles_kernel_osl.vcxproj">
+      <Project>60FB2DB2-96FF-4E59-9E72-B3FA694EA86D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/kernel/shaders/cycles_osl_shaders.vcxproj">
+      <Project>EC15B9A5-B0FC-4297-B48D-B79D3B398A05</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/render/cycles_render.vcxproj">
+      <Project>DB472D9A-A072-441F-AEBC-CEAD5077A81B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/subd/cycles_subd.vcxproj">
+      <Project>ECB8247C-CD09-4D7F-B52E-80BA13A71B67</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/cycles/util/cycles_util.vcxproj">
+      <Project>115C9664-4C6B-4A30-AA26-F0A88DCE6FE9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/datatoc/datatoc.vcxproj">
+      <Project>ECF6F94A-F017-4A42-8A03-4291CE3966C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/datatoc/datatoc_icon.vcxproj">
+      <Project>65505CB6-3511-4404-B63B-C62EDA766CF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/bullet2/extern_bullet.vcxproj">
+      <Project>3C97F507-C685-48E4-A08B-6425856E240E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/carve/extern_carve.vcxproj">
+      <Project>FB59C670-D839-44D5-9841-9AE6E9848675</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/ceres/extern_ceres.vcxproj">
+      <Project>D230CA27-E387-4E48-B327-9AA064D179F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/clew/extern_clew.vcxproj">
+      <Project>05EC5F50-3F89-4186-87DC-AECD18A33905</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/cuew/extern_cuew.vcxproj">
+      <Project>D870118C-5591-4866-B4A9-211AC41266A1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/gflags/extern_gflags.vcxproj">
+      <Project>4B4CCFA0-5629-412D-885A-387022F7B7E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/glew/extern_glew.vcxproj">
+      <Project>8A5A55A9-E39D-4420-ADF6-5C5BCDF31081</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/glog/extern_glog.vcxproj">
+      <Project>BBC34537-B4BA-4D5C-AB95-32964DD1D670</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/lzma/extern_lzma.vcxproj">
+      <Project>2FC43422-8AF4-4C17-A018-268EF54FA273</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/lzo/extern_minilzo.vcxproj">
+      <Project>B70FDE96-4F6B-4C7E-A594-2A787B23877E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/libopenjpeg/extern_openjpeg.vcxproj">
+      <Project>F92146DF-F33B-4459-9B0E-5C9AA7A2BF30</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/rangetree/extern_rangetree.vcxproj">
+      <Project>67202E05-54D5-4C60-BC30-30052284E3BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/recastnavigation/extern_recastnavigation.vcxproj">
+      <Project>EC1319FE-FC38-4704-95DE-D71375D6B0D7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/extern/wcwidth/extern_wcwidth.vcxproj">
+      <Project>99299FA4-4F48-4228-8AB3-955943F2E5FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/BlenderRoutines/ge_blen_routines.vcxproj">
+      <Project>FA81D522-9E20-4722-9804-F494013B2795</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Converter/ge_converter.vcxproj">
+      <Project>7051233D-06A1-421C-867B-680FCD71310E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/GameLogic/ge_logic.vcxproj">
+      <Project>44683E38-AF08-4EA2-BA38-5613701721A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Expressions/ge_logic_expressions.vcxproj">
+      <Project>67B1A162-29CE-4B92-AF6D-3E6A339CC45F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Ketsji/ge_logic_ketsji.vcxproj">
+      <Project>408402D3-5378-4B57-A314-4034159E6786</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Network/LoopBackNetwork/ge_logic_loopbacknetwork.vcxproj">
+      <Project>633DC337-596E-40CE-853A-1F497B264A00</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Ketsji/KXNetwork/ge_logic_network.vcxproj">
+      <Project>B220413A-02DA-4E8D-959F-AE3F66974A48</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Network/ge_logic_ngnetwork.vcxproj">
+      <Project>64D939A1-1A53-44A8-9CFF-F6979B5DC27D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Rasterizer/RAS_OpenGLRasterizer/ge_oglrasterizer.vcxproj">
+      <Project>B9E6549F-EC48-4ECD-AF65-849965D1C530</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Physics/Bullet/ge_phys_bullet.vcxproj">
+      <Project>C4623795-B928-43C8-A9F5-D781136898B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Physics/Dummy/ge_phys_dummy.vcxproj">
+      <Project>1D6ED3D1-C4AF-4EAB-9D46-53F4590900B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/Rasterizer/ge_rasterizer.vcxproj">
+      <Project>4815FF44-6856-46D3-8800-8B5FD1FBB656</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/SceneGraph/ge_scenegraph.vcxproj">
+      <Project>E2C1685E-E8AE-41E0-8296-17C0E044EFCB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/gameengine/VideoTexture/ge_videotex.vcxproj">
+      <Project>B3769998-B961-4FDD-822F-E0841BE29668</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesdna/intern/makesdna.vcxproj">
+      <Project>F7AD0BBA-AE68-4DFD-A4A3-622E87BFB4F2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesrna/intern/makesrna.vcxproj">
+      <Project>F9E08163-8D3E-40BB-B74A-6172B6460454</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/intern/locale/msgfmt.vcxproj">
+      <Project>2ED9766F-EEDE-46BD-B214-C0250B435772</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/creator/python_numpy.vcxproj">
+      <Project>71D00A9A-1AF5-47A3-BB74-E09C0DDDF6F6</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

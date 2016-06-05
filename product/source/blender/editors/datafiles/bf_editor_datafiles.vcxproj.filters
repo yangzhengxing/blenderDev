@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\release\datafiles\bfont.pfb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\bfont.ttf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\bmonofont.ttf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\preview.blend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\preview_cycles.blend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\splash.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\splash_2x.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\blender_icons16.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\blender_icons32.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\prvicons.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\add.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\blob.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\blur.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\clay.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\claystrips.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\clone.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\crease.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\darken.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\draw.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\fill.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\flatten.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\grab.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\inflate.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\layer.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\lighten.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\mask.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\mix.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\multiply.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\nudge.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\pinch.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\scrape.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\smear.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\smooth.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\snake_hook.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\soften.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\subtract.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\texdraw.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\texfill.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\texmask.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\thumb.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\twist.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\brushicons\vertexdraw.png.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc01.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc02.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc03.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc04.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc05.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc06.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc07.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc08.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc09.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc10.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc11.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc12.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc13.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc14.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc15.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc16.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc17.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc18.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc19.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc20.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc21.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc22.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc23.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\matcaps\mc24.jpg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\release\datafiles\startup.blend.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\editors\datafiles\CMakeLists.txt">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\bfont.pfb.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\bfont.ttf.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\bmonofont.ttf.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\preview.blend.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\preview_cycles.blend.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\splash.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\splash_2x.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\blender_icons16.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\blender_icons32.png.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\prvicons.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\add.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\blob.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\blur.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\clay.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\claystrips.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\clone.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\crease.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\darken.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\draw.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\fill.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\flatten.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\grab.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\inflate.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\layer.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\lighten.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\mask.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\mix.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\multiply.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\nudge.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\pinch.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\scrape.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\smear.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\smooth.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\snake_hook.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\soften.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\subtract.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\texdraw.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\texfill.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\texmask.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\thumb.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\twist.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bca2bb7e99004fda8f5a4e5bfcc17739\vertexdraw.png.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc01.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc02.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc03.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc04.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc05.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc06.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc07.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc08.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc09.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc10.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc11.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc12.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc13.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc14.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc15.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc16.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc17.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc18.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc19.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc20.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc21.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc22.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc23.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\0728f5fc378254309f61544a2c56e567\mc24.jpg.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\bc12142ecf122ccbc5ab18f10bcaee43\startup.blend.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{47BA5CD3-DCDE-4B65-B9E6-DD67DE9A50DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3A18D33A-727F-462F-97E0-6F4F89D3B75E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

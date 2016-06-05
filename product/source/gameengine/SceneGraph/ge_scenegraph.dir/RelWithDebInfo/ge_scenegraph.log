@@ -1,0 +1,26 @@
+﻿Build started 2016/4/2 9:36:04.
+     1>Project "D:\blenderDev\product\source\gameengine\SceneGraph\ge_scenegraph.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/SceneGraph/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\SceneGraph\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\intern\moto\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_scenegraph.dir\RelWithDebInfo\\" /Fd"ge_scenegraph.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\SceneGraph\SG_BBox.cpp D:\blenderDev\blender\source\gameengine\SceneGraph\SG_Controller.cpp D:\blenderDev\blender\source\gameengine\SceneGraph\SG_IObject.cpp D:\blenderDev\blender\source\gameengine\SceneGraph\SG_Node.cpp D:\blenderDev\blender\source\gameengine\SceneGraph\SG_Spatial.cpp D:\blenderDev\blender\source\gameengine\SceneGraph\SG_Tree.cpp
+         SG_BBox.cpp
+         SG_Controller.cpp
+         SG_IObject.cpp
+         SG_Node.cpp
+         SG_Spatial.cpp
+         SG_Tree.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\ge_scenegraph.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_scenegraph.dir\RelWithDebInfo\SG_BBox.obj
+         ge_scenegraph.dir\RelWithDebInfo\SG_Controller.obj
+         ge_scenegraph.dir\RelWithDebInfo\SG_IObject.obj
+         ge_scenegraph.dir\RelWithDebInfo\SG_Node.obj
+         ge_scenegraph.dir\RelWithDebInfo\SG_Spatial.obj
+         ge_scenegraph.dir\RelWithDebInfo\SG_Tree.obj
+         ge_scenegraph.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\ge_scenegraph.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\SceneGraph\ge_scenegraph.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.69

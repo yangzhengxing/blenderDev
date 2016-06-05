@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9CD81CC9-AC04-4817-A5C0-F06CB8CF2900}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_nodes</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_nodes.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_nodes</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_nodes.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_nodes</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_nodes.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_nodes</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_nodes.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_nodes</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_PYTHON;WITH_INTERNATIONAL;WITH_OPENEXR;WITH_COMPOSITOR;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;WITH_FREESTYLE;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\nodes\composite;D:\blenderDev\blender\source\blender\nodes\intern;D:\blenderDev\blender\source\blender\nodes\shader;D:\blenderDev\blender\source\blender\nodes\texture;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\source\blender\compositor;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/nodes/CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;D:\blenderDev\blender\source\blender\nodes\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\nodes\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\composite\node_composite_util.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\shader\node_shader_util.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\texture\node_texture_util.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_common.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_composite.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_shader.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_texture.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_socket.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\NOD_static_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\intern\node_util.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\intern\node_exec.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\nodes\intern\node_common.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_alphaOver.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_bilateralblur.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_blur.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_brightness.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_channelMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_chromaMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_colorMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_colorSpill.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_colorbalance.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_common.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_composite.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_cornerpin.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_crop.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_curves.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_despeckle.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_doubleEdgeMask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_defocus.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_diffMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_dilate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_directionalblur.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_displace.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_distanceMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_filter.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_flip.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_gamma.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_glare.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_hueSatVal.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_huecorrect.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_idMask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_image.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_inpaint.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_invert.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_keyingscreen.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_keying.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_lensdist.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_levels.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_lummaMatte.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_mapUV.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_mapValue.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_mapRange.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_math.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_mask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_mixrgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_movieclip.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_moviedistortion.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_normal.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_normalize.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_outputFile.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_planetrackdeform.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_premulkey.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_rgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_rotate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_scale.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_sepcombHSVA.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_sepcombRGBA.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_sepcombYCCA.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_sepcombYUVA.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_setalpha.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_splitViewer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_stabilize2d.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_sunbeams.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_texture.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_tonemap.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_trackpos.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_transform.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_translate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_valToRgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_value.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_vecBlur.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_viewer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_zcombine.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_bokehblur.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_bokehimage.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_boxmask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_ellipsemask.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_switch.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_switchview.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_colorcorrection.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\nodes\node_composite_pixelate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\node_composite_tree.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\composite\node_composite_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_camera.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_common.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_curves.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_gamma.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_brightness.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_geom.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_hueSatVal.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_invert.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_lamp.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_mapping.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_material.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_math.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_mixRgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_normal.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_output.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_rgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_sepcombRGB.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_sepcombHSV.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_sepcombXYZ.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_squeeze.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_texture.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_valToRgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_value.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_wireframe.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_wavelength.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_blackbody.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_vectMath.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_vectTransform.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_add_shader.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_ambient_occlusion.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_attribute.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_background.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_anisotropic.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_diffuse.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_glass.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_glossy.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_toon.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_refraction.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_translucent.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_transparent.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_velvet.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bsdf_hair.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_bump.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_emission.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_fresnel.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_geometry.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_holdout.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_layer_weight.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_light_falloff.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_light_path.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_mix_shader.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_normal_map.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_object_info.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_hair_info.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_output_lamp.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_output_material.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_output_world.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_output_linestyle.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_particle_info.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_script.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_subsurface_scattering.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tangent.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_brick.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_checker.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_coord.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_environment.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_gradient.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_image.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_magic.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_musgrave.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_noise.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_pointdensity.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_sky.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_voronoi.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_tex_wave.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_volume_scatter.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_volume_absorption.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_uvAlongStroke.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\nodes\node_shader_uvmap.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\node_shader_tree.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\shader\node_shader_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_at.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_bricks.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_checker.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_common.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_compose.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_coord.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_curves.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_decompose.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_distance.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_hueSatVal.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_image.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_invert.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_math.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_mixRgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_output.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_proc.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_rotate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_scale.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_texture.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_translate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_valToNor.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_valToRgb.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\nodes\node_texture_viewer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\node_texture_tree.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\texture\node_texture_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\intern\node_util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\intern\node_exec.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\intern\node_common.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\nodes\intern\node_socket.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

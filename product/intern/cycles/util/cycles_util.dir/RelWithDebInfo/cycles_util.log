@@ -1,0 +1,42 @@
+﻿Build started 2016/4/2 9:31:10.
+     1>Project "D:\blenderDev\product\intern\cycles\util\cycles_util.vcxproj" on node 5 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/cycles/util/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\cycles\util\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\osl\include /ID:\blenderDev\blender\extern\glog\src\windows /ID:\blenderDev\blender\extern\gflags\src /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include\OpenImageIO /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include\OpenEXR /ID:\blenderDev\blender\intern\cycles\..\atomic /ID:\blenderDev\blender\intern\cycles\util\. /I"D:\blenderDev\blender\intern\cycles\util\..\..\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /Ox /Ob1 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_KERNEL_SSE2 /D WITH_KERNEL_SSE3 /D WITH_KERNEL_SSE41 /D WITH_KERNEL_AVX /D WITH_KERNEL_AVX2 /D BOOST_ALL_NO_LIB /D USE_TBB=0 /D "CCL_NAMESPACE_BEGIN=namespace ccl {" /D "CCL_NAMESPACE_END=}" /D WITH_OSL /D OSL_STATIC_LIBRARY /D CYCLES_STD_UNORDERED_MAP /D WITH_CYCLES_LOGGING /D GOOGLE_GLOG_DLL_DECL= /D CYCLES_GFLAGS_NAMESPACE=gflags /D WITH_BLENDER_GUARDEDALLOC /D WITH_GLEW_MX /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS- /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"cycles_util.dir\RelWithDebInfo\\" /Fd"cycles_util.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\cycles\util\util_aligned_malloc.cpp D:\blenderDev\blender\intern\cycles\util\util_debug.cpp D:\blenderDev\blender\intern\cycles\util\util_logging.cpp D:\blenderDev\blender\intern\cycles\util\util_math_cdf.cpp D:\blenderDev\blender\intern\cycles\util\util_md5.cpp D:\blenderDev\blender\intern\cycles\util\util_path.cpp D:\blenderDev\blender\intern\cycles\util\util_string.cpp D:\blenderDev\blender\intern\cycles\util\util_simd.cpp D:\blenderDev\blender\intern\cycles\util\util_system.cpp D:\blenderDev\blender\intern\cycles\util\util_task.cpp D:\blenderDev\blender\intern\cycles\util\util_time.cpp D:\blenderDev\blender\intern\cycles\util\util_transform.cpp D:\blenderDev\blender\intern\cycles\util\util_guarded_allocator.cpp D:\blenderDev\blender\intern\cycles\util\util_sky_model.cpp
+         util_aligned_malloc.cpp
+         util_debug.cpp
+         util_logging.cpp
+         util_math_cdf.cpp
+         util_md5.cpp
+         util_path.cpp
+         util_string.cpp
+         util_simd.cpp
+         util_system.cpp
+         util_task.cpp
+         util_time.cpp
+         util_transform.cpp
+         util_guarded_allocator.cpp
+         util_sky_model.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\cycles_util.lib" /NOLOGO /MACHINE:X64  /ignore:4221 cycles_util.dir\RelWithDebInfo\util_aligned_malloc.obj
+         cycles_util.dir\RelWithDebInfo\util_debug.obj
+         cycles_util.dir\RelWithDebInfo\util_logging.obj
+         cycles_util.dir\RelWithDebInfo\util_math_cdf.obj
+         cycles_util.dir\RelWithDebInfo\util_md5.obj
+         cycles_util.dir\RelWithDebInfo\util_path.obj
+         cycles_util.dir\RelWithDebInfo\util_string.obj
+         cycles_util.dir\RelWithDebInfo\util_simd.obj
+         cycles_util.dir\RelWithDebInfo\util_system.obj
+         cycles_util.dir\RelWithDebInfo\util_task.obj
+         cycles_util.dir\RelWithDebInfo\util_time.obj
+         cycles_util.dir\RelWithDebInfo\util_transform.obj
+         cycles_util.dir\RelWithDebInfo\util_guarded_allocator.obj
+         cycles_util.dir\RelWithDebInfo\util_sky_model.obj
+         cycles_util.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\cycles_util.lib
+     1>Done Building Project "D:\blenderDev\product\intern\cycles\util\cycles_util.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:35.10

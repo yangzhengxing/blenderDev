@@ -1,0 +1,26 @@
+﻿Build started 2016/4/2 8:25:40.
+     1>Project "D:\blenderDev\product\source\blender\python\generic\bf_python_ext.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/python/generic/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\python\generic\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\python\generic /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_python_ext.dir\Debug\\" /Fd"bf_python_ext.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\python\generic\bgl.c D:\blenderDev\blender\source\blender\python\generic\blf_py_api.c D:\blenderDev\blender\source\blender\python\generic\bpy_internal_import.c D:\blenderDev\blender\source\blender\python\generic\bpy_threads.c D:\blenderDev\blender\source\blender\python\generic\idprop_py_api.c D:\blenderDev\blender\source\blender\python\generic\py_capi_utils.c
+         bgl.c
+         blf_py_api.c
+         bpy_internal_import.c
+         bpy_threads.c
+         idprop_py_api.c
+         py_capi_utils.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_python_ext.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_python_ext.dir\Debug\bgl.obj
+         bf_python_ext.dir\Debug\blf_py_api.obj
+         bf_python_ext.dir\Debug\bpy_internal_import.obj
+         bf_python_ext.dir\Debug\bpy_threads.obj
+         bf_python_ext.dir\Debug\idprop_py_api.obj
+         bf_python_ext.dir\Debug\py_capi_utils.obj
+         bf_python_ext.vcxproj -> D:\blenderDev\product\lib\Debug\bf_python_ext.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\python\generic\bf_python_ext.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.09

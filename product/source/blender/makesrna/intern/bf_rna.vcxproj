@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5251AEFF-248F-4562-B8EB-45823C084916}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_rna</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_rna.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_rna</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_rna.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_rna</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_rna.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_rna</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_rna.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_rna</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_CYCLES;WITH_PYTHON;WITH_GAMEENGINE;WITH_OPENEXR;WITH_OPENIMAGEIO;WITH_TIFF;WITH_OPENJPEG;WITH_DDS;WITH_CINEON;WITH_HDR;WITH_FRAMESERVER;WITH_AUDASPACE;AUD_DEVICE_H=&lt;AUD_C-API.h&gt;;AUD_SPECIAL_H=&lt;AUD_C-API.h&gt;;AUD_SOUND_H=&lt;AUD_C-API.h&gt;;AUD_HANDLE_H=&lt;AUD_C-API.h&gt;;AUD_SEQUENCE_H=&lt;AUD_C-API.h&gt;;AUD_TYPES_H=&lt;AUD_Space.h&gt;;WITH_FFMPEG;WITH_MOD_FLUID;WITH_FFTW3;WITH_SMOKE;WITH_SDL;WITH_OPENAL;WITH_COLLADA;WITH_INTERNATIONAL;WITH_BULLET;WITH_FREESTYLE;WITH_GLU;WITH_GL_PROFILE_COMPAT;GLEW_STATIC;GLEW_NO_ES;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\makesrna\intern;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\source\blender\blenfont;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\bmesh;D:\blenderDev\blender\source\blender\blentranslation;D:\blenderDev\blender\source\blender\depsgraph;D:\blenderDev\blender\source\blender\gpu;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\ikplugin;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\nodes;D:\blenderDev\blender\source\blender\physics;D:\blenderDev\blender\source\blender\windowmanager;D:\blenderDev\blender\source\blender\editors\include;D:\blenderDev\blender\source\blender\render\extern\include;D:\blenderDev\blender\intern\cycles\blender;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\glew-mx;D:\blenderDev\blender\intern\atomic;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\intern\smoke\extern;D:\blenderDev\blender\extern\glew\include;D:\blenderDev\blender\source\blender\python;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\rigidbody;D:\blenderDev\blender\source\blender\freestyle;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/makesrna/intern/CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;D:\blenderDev\blender\source\blender\makesrna\intern\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\makesrna\intern\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\CMakeFiles\97f88ed8123e971ef921632090274397\rna_ID_gen.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating rna_ID_gen.c, rna_action_gen.c, rna_actuator_gen.c, rna_animation_gen.c, rna_animviz_gen.c, rna_armature_gen.c, rna_boid_gen.c, rna_brush_gen.c, rna_camera_gen.c, rna_cloth_gen.c, rna_color_gen.c, rna_constraint_gen.c, rna_context_gen.c, rna_controller_gen.c, rna_curve_gen.c, rna_depsgraph_gen.c, rna_dynamicpaint_gen.c, rna_fcurve_gen.c, rna_fluidsim_gen.c, rna_gpencil_gen.c, rna_group_gen.c, rna_image_gen.c, rna_key_gen.c, rna_lamp_gen.c, rna_lattice_gen.c, rna_linestyle_gen.c, rna_main_gen.c, rna_mask_gen.c, rna_material_gen.c, rna_mesh_gen.c, rna_meta_gen.c, rna_modifier_gen.c, rna_movieclip_gen.c, rna_nla_gen.c, rna_nodetree_gen.c, rna_object_gen.c, rna_object_force_gen.c, rna_packedfile_gen.c, rna_palette_gen.c, rna_particle_gen.c, rna_pose_gen.c, rna_property_gen.c, rna_render_gen.c, rna_rigidbody_gen.c, rna_rna_gen.c, rna_scene_gen.c, rna_screen_gen.c, rna_sculpt_paint_gen.c, rna_sensor_gen.c, rna_sequencer_gen.c, rna_smoke_gen.c, rna_sound_gen.c, rna_space_gen.c, rna_speaker_gen.c, rna_test_gen.c, rna_text_gen.c, rna_texture_gen.c, rna_timeline_gen.c, rna_tracking_gen.c, rna_ui_gen.c, rna_userdef_gen.c, rna_vfont_gen.c, rna_wm_gen.c, rna_world_gen.c, rna_prototypes_gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\..\bin\Debug\makesrna.exe D:/blenderDev/product/source/blender/makesrna/intern/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/product/CMakeFiles/97f88ed8123e971ef921632090274397/rna_ID_gen.c.rule;D:\blenderDev\product\bin\Debug\makesrna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\makesrna\intern\rna_ID_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_action_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_actuator_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animation_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animviz_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_armature_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_boid_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_brush_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_camera_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_cloth_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_color_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_constraint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_context_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_controller_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_curve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_depsgraph_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_dynamicpaint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fcurve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fluidsim_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_gpencil_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_group_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_image_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_key_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lamp_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lattice_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_linestyle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_main_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mask_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_material_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mesh_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_meta_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_modifier_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_movieclip_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nla_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nodetree_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_force_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_packedfile_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_palette_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_particle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_pose_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_property_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_render_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rigidbody_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rna_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_scene_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_screen_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sculpt_paint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sensor_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sequencer_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_smoke_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sound_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_space_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_speaker_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_test_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_text_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_texture_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_timeline_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_tracking_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_ui_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_userdef_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_vfont_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_wm_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_world_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_prototypes_gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating rna_ID_gen.c, rna_action_gen.c, rna_actuator_gen.c, rna_animation_gen.c, rna_animviz_gen.c, rna_armature_gen.c, rna_boid_gen.c, rna_brush_gen.c, rna_camera_gen.c, rna_cloth_gen.c, rna_color_gen.c, rna_constraint_gen.c, rna_context_gen.c, rna_controller_gen.c, rna_curve_gen.c, rna_depsgraph_gen.c, rna_dynamicpaint_gen.c, rna_fcurve_gen.c, rna_fluidsim_gen.c, rna_gpencil_gen.c, rna_group_gen.c, rna_image_gen.c, rna_key_gen.c, rna_lamp_gen.c, rna_lattice_gen.c, rna_linestyle_gen.c, rna_main_gen.c, rna_mask_gen.c, rna_material_gen.c, rna_mesh_gen.c, rna_meta_gen.c, rna_modifier_gen.c, rna_movieclip_gen.c, rna_nla_gen.c, rna_nodetree_gen.c, rna_object_gen.c, rna_object_force_gen.c, rna_packedfile_gen.c, rna_palette_gen.c, rna_particle_gen.c, rna_pose_gen.c, rna_property_gen.c, rna_render_gen.c, rna_rigidbody_gen.c, rna_rna_gen.c, rna_scene_gen.c, rna_screen_gen.c, rna_sculpt_paint_gen.c, rna_sensor_gen.c, rna_sequencer_gen.c, rna_smoke_gen.c, rna_sound_gen.c, rna_space_gen.c, rna_speaker_gen.c, rna_test_gen.c, rna_text_gen.c, rna_texture_gen.c, rna_timeline_gen.c, rna_tracking_gen.c, rna_ui_gen.c, rna_userdef_gen.c, rna_vfont_gen.c, rna_wm_gen.c, rna_world_gen.c, rna_prototypes_gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\..\bin\Release\makesrna.exe D:/blenderDev/product/source/blender/makesrna/intern/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/product/CMakeFiles/97f88ed8123e971ef921632090274397/rna_ID_gen.c.rule;D:\blenderDev\product\bin\Release\makesrna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\makesrna\intern\rna_ID_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_action_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_actuator_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animation_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animviz_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_armature_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_boid_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_brush_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_camera_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_cloth_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_color_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_constraint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_context_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_controller_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_curve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_depsgraph_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_dynamicpaint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fcurve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fluidsim_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_gpencil_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_group_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_image_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_key_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lamp_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lattice_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_linestyle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_main_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mask_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_material_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mesh_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_meta_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_modifier_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_movieclip_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nla_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nodetree_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_force_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_packedfile_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_palette_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_particle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_pose_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_property_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_render_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rigidbody_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rna_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_scene_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_screen_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sculpt_paint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sensor_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sequencer_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_smoke_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sound_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_space_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_speaker_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_test_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_text_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_texture_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_timeline_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_tracking_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_ui_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_userdef_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_vfont_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_wm_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_world_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_prototypes_gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating rna_ID_gen.c, rna_action_gen.c, rna_actuator_gen.c, rna_animation_gen.c, rna_animviz_gen.c, rna_armature_gen.c, rna_boid_gen.c, rna_brush_gen.c, rna_camera_gen.c, rna_cloth_gen.c, rna_color_gen.c, rna_constraint_gen.c, rna_context_gen.c, rna_controller_gen.c, rna_curve_gen.c, rna_depsgraph_gen.c, rna_dynamicpaint_gen.c, rna_fcurve_gen.c, rna_fluidsim_gen.c, rna_gpencil_gen.c, rna_group_gen.c, rna_image_gen.c, rna_key_gen.c, rna_lamp_gen.c, rna_lattice_gen.c, rna_linestyle_gen.c, rna_main_gen.c, rna_mask_gen.c, rna_material_gen.c, rna_mesh_gen.c, rna_meta_gen.c, rna_modifier_gen.c, rna_movieclip_gen.c, rna_nla_gen.c, rna_nodetree_gen.c, rna_object_gen.c, rna_object_force_gen.c, rna_packedfile_gen.c, rna_palette_gen.c, rna_particle_gen.c, rna_pose_gen.c, rna_property_gen.c, rna_render_gen.c, rna_rigidbody_gen.c, rna_rna_gen.c, rna_scene_gen.c, rna_screen_gen.c, rna_sculpt_paint_gen.c, rna_sensor_gen.c, rna_sequencer_gen.c, rna_smoke_gen.c, rna_sound_gen.c, rna_space_gen.c, rna_speaker_gen.c, rna_test_gen.c, rna_text_gen.c, rna_texture_gen.c, rna_timeline_gen.c, rna_tracking_gen.c, rna_ui_gen.c, rna_userdef_gen.c, rna_vfont_gen.c, rna_wm_gen.c, rna_world_gen.c, rna_prototypes_gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\..\bin\MinSizeRel\makesrna.exe D:/blenderDev/product/source/blender/makesrna/intern/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/product/CMakeFiles/97f88ed8123e971ef921632090274397/rna_ID_gen.c.rule;D:\blenderDev\product\bin\MinSizeRel\makesrna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\makesrna\intern\rna_ID_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_action_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_actuator_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animation_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animviz_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_armature_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_boid_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_brush_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_camera_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_cloth_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_color_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_constraint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_context_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_controller_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_curve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_depsgraph_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_dynamicpaint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fcurve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fluidsim_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_gpencil_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_group_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_image_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_key_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lamp_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lattice_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_linestyle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_main_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mask_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_material_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mesh_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_meta_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_modifier_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_movieclip_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nla_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nodetree_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_force_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_packedfile_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_palette_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_particle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_pose_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_property_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_render_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rigidbody_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rna_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_scene_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_screen_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sculpt_paint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sensor_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sequencer_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_smoke_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sound_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_space_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_speaker_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_test_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_text_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_texture_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_timeline_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_tracking_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_ui_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_userdef_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_vfont_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_wm_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_world_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_prototypes_gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating rna_ID_gen.c, rna_action_gen.c, rna_actuator_gen.c, rna_animation_gen.c, rna_animviz_gen.c, rna_armature_gen.c, rna_boid_gen.c, rna_brush_gen.c, rna_camera_gen.c, rna_cloth_gen.c, rna_color_gen.c, rna_constraint_gen.c, rna_context_gen.c, rna_controller_gen.c, rna_curve_gen.c, rna_depsgraph_gen.c, rna_dynamicpaint_gen.c, rna_fcurve_gen.c, rna_fluidsim_gen.c, rna_gpencil_gen.c, rna_group_gen.c, rna_image_gen.c, rna_key_gen.c, rna_lamp_gen.c, rna_lattice_gen.c, rna_linestyle_gen.c, rna_main_gen.c, rna_mask_gen.c, rna_material_gen.c, rna_mesh_gen.c, rna_meta_gen.c, rna_modifier_gen.c, rna_movieclip_gen.c, rna_nla_gen.c, rna_nodetree_gen.c, rna_object_gen.c, rna_object_force_gen.c, rna_packedfile_gen.c, rna_palette_gen.c, rna_particle_gen.c, rna_pose_gen.c, rna_property_gen.c, rna_render_gen.c, rna_rigidbody_gen.c, rna_rna_gen.c, rna_scene_gen.c, rna_screen_gen.c, rna_sculpt_paint_gen.c, rna_sensor_gen.c, rna_sequencer_gen.c, rna_smoke_gen.c, rna_sound_gen.c, rna_space_gen.c, rna_speaker_gen.c, rna_test_gen.c, rna_text_gen.c, rna_texture_gen.c, rna_timeline_gen.c, rna_tracking_gen.c, rna_ui_gen.c, rna_userdef_gen.c, rna_vfont_gen.c, rna_wm_gen.c, rna_world_gen.c, rna_prototypes_gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\..\bin\RelWithDebInfo\makesrna.exe D:/blenderDev/product/source/blender/makesrna/intern/
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/product/CMakeFiles/97f88ed8123e971ef921632090274397/rna_ID_gen.c.rule;D:\blenderDev\product\bin\RelWithDebInfo\makesrna.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\makesrna\intern\rna_ID_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_action_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_actuator_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animation_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_animviz_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_armature_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_boid_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_brush_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_camera_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_cloth_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_color_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_constraint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_context_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_controller_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_curve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_depsgraph_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_dynamicpaint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fcurve_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_fluidsim_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_gpencil_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_group_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_image_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_key_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lamp_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_lattice_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_linestyle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_main_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mask_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_material_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_mesh_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_meta_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_modifier_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_movieclip_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nla_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_nodetree_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_object_force_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_packedfile_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_palette_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_particle_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_pose_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_property_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_render_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rigidbody_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_rna_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_scene_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_screen_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sculpt_paint_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sensor_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sequencer_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_smoke_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_sound_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_space_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_speaker_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_test_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_text_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_texture_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_timeline_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_tracking_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_ui_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_userdef_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_vfont_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_wm_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_world_gen.c;D:\blenderDev\product\source\blender\makesrna\intern\rna_prototypes_gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rna_prototypes_gen.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\RNA_access.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\RNA_define.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\RNA_documentation.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\RNA_enum_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\RNA_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\intern\rna_internal.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\intern\rna_internal_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\makesrna\intern\rna_mesh_utils.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\makesrna\intern\rna_access.c"  />
+    <ClCompile Include="rna_ID_gen.c"  />
+    <ClCompile Include="rna_action_gen.c"  />
+    <ClCompile Include="rna_actuator_gen.c"  />
+    <ClCompile Include="rna_animation_gen.c"  />
+    <ClCompile Include="rna_animviz_gen.c"  />
+    <ClCompile Include="rna_armature_gen.c"  />
+    <ClCompile Include="rna_boid_gen.c"  />
+    <ClCompile Include="rna_brush_gen.c"  />
+    <ClCompile Include="rna_camera_gen.c"  />
+    <ClCompile Include="rna_cloth_gen.c"  />
+    <ClCompile Include="rna_color_gen.c"  />
+    <ClCompile Include="rna_constraint_gen.c"  />
+    <ClCompile Include="rna_context_gen.c"  />
+    <ClCompile Include="rna_controller_gen.c"  />
+    <ClCompile Include="rna_curve_gen.c"  />
+    <ClCompile Include="rna_depsgraph_gen.c"  />
+    <ClCompile Include="rna_dynamicpaint_gen.c"  />
+    <ClCompile Include="rna_fcurve_gen.c"  />
+    <ClCompile Include="rna_fluidsim_gen.c"  />
+    <ClCompile Include="rna_gpencil_gen.c"  />
+    <ClCompile Include="rna_group_gen.c"  />
+    <ClCompile Include="rna_image_gen.c"  />
+    <ClCompile Include="rna_key_gen.c"  />
+    <ClCompile Include="rna_lamp_gen.c"  />
+    <ClCompile Include="rna_lattice_gen.c"  />
+    <ClCompile Include="rna_linestyle_gen.c"  />
+    <ClCompile Include="rna_main_gen.c"  />
+    <ClCompile Include="rna_mask_gen.c"  />
+    <ClCompile Include="rna_material_gen.c"  />
+    <ClCompile Include="rna_mesh_gen.c"  />
+    <ClCompile Include="rna_meta_gen.c"  />
+    <ClCompile Include="rna_modifier_gen.c"  />
+    <ClCompile Include="rna_movieclip_gen.c"  />
+    <ClCompile Include="rna_nla_gen.c"  />
+    <ClCompile Include="rna_nodetree_gen.c"  />
+    <ClCompile Include="rna_object_gen.c"  />
+    <ClCompile Include="rna_object_force_gen.c"  />
+    <ClCompile Include="rna_packedfile_gen.c"  />
+    <ClCompile Include="rna_palette_gen.c"  />
+    <ClCompile Include="rna_particle_gen.c"  />
+    <ClCompile Include="rna_pose_gen.c"  />
+    <ClCompile Include="rna_property_gen.c"  />
+    <ClCompile Include="rna_render_gen.c"  />
+    <ClCompile Include="rna_rigidbody_gen.c"  />
+    <ClCompile Include="rna_rna_gen.c"  />
+    <ClCompile Include="rna_scene_gen.c"  />
+    <ClCompile Include="rna_screen_gen.c"  />
+    <ClCompile Include="rna_sculpt_paint_gen.c"  />
+    <ClCompile Include="rna_sensor_gen.c"  />
+    <ClCompile Include="rna_sequencer_gen.c"  />
+    <ClCompile Include="rna_smoke_gen.c"  />
+    <ClCompile Include="rna_sound_gen.c"  />
+    <ClCompile Include="rna_space_gen.c"  />
+    <ClCompile Include="rna_speaker_gen.c"  />
+    <ClCompile Include="rna_test_gen.c"  />
+    <ClCompile Include="rna_text_gen.c"  />
+    <ClCompile Include="rna_texture_gen.c"  />
+    <ClCompile Include="rna_timeline_gen.c"  />
+    <ClCompile Include="rna_tracking_gen.c"  />
+    <ClCompile Include="rna_ui_gen.c"  />
+    <ClCompile Include="rna_userdef_gen.c"  />
+    <ClCompile Include="rna_vfont_gen.c"  />
+    <ClCompile Include="rna_wm_gen.c"  />
+    <ClCompile Include="rna_world_gen.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/blenderDev/product/source/blender/makesrna/intern/makesrna.vcxproj">
+      <Project>F9E08163-8D3E-40BB-B74A-6172B6460454</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A4FEA1A2-415C-441E-8C19-63587C765239}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_intern_audaspace</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_intern_audaspace.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_intern_audaspace</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_intern_audaspace.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_intern_audaspace</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_intern_audaspace.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_intern_audaspace</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_intern_audaspace.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_intern_audaspace</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_FFMPEG;WITH_SDL;WITH_OPENAL;WITH_PYTHON;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\intern\audaspace;D:\blenderDev\blender\intern\audaspace\FX;D:\blenderDev\blender\intern\audaspace\intern;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\audaspace\ffmpeg;D:\blenderDev\blender\intern\audaspace\SDL;D:\blenderDev\blender\intern\audaspace\OpenAL;D:\blenderDev\blender\intern\audaspace\Python;D:\blenderDev\lib\win64_vc12\boost\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;D:\blenderDev\lib\win64_vc12\sdl\include;D:\blenderDev\lib\win64_vc12\openal\include;D:\blenderDev\lib\win64_vc12\python\include\python3.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\intern\audaspace\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/intern/audaspace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/intern/audaspace/CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/intern/audaspace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/intern/audaspace/CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/intern/audaspace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/intern/audaspace/CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/intern/audaspace/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/intern/audaspace/CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;D:\blenderDev\blender\intern\audaspace\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\intern\audaspace\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_3DMath.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_AnimateableProperty.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Buffer.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_BufferReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_C-API.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ChannelMapperFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ChannelMapperReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterFunctions.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_FileFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_FileWriter.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_I3DDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_I3DHandle.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_IDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_IFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_IHandle.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ILockable.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_IReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_IWriter.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_JOSResampleFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_JOSResampleReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_LinearResampleFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_LinearResampleReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Mixer.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_MixerFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_MutexLock.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_NULLDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_PyInit.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ReadDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ResampleFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ResampleReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Sequencer.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerEntry.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerHandle.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Set.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SilenceFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SilenceReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SinusFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SinusReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SoftwareDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Space.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_StreamBufferFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_AccumulatorFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_BandpassCalculator.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_BaseIIRFilterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ButterworthCalculator.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ButterworthFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_CallbackIIRFilterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DelayFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DelayReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DoubleFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DoubleReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_IDynamicIIRFilterCalculator.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DynamicIIRFilterFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DynamicIIRFilterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EffectFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EffectReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EnvelopeFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_FaderFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_FaderReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_HighpassCalculator.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_HighpassFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_IIRFilterFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_IIRFilterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LimiterFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LimiterReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LoopFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LoopReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LowpassCalculator.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LowpassFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PingPongFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PitchFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PitchReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_RectifyFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ReverseFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ReverseReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SquareFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SumFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SuperposeFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SuperposeReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_VolumeFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGFactory.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGReader.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGWriter.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\SDL\AUD_SDLDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\OpenAL\AUD_OpenALDevice.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\audaspace\Python\AUD_PyAPI.h" />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_AccumulatorFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_BandpassCalculator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_BaseIIRFilterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ButterworthCalculator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ButterworthFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_CallbackIIRFilterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DelayFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DelayReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DoubleFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DoubleReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DynamicIIRFilterFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_DynamicIIRFilterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EffectFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EffectReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_EnvelopeFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_FaderFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_FaderReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_HighpassCalculator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_HighpassFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_IIRFilterFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_IIRFilterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LimiterFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LimiterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LoopFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LoopReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LowpassCalculator.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_LowpassFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PingPongFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PitchFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_PitchReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_RectifyFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ReverseFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_ReverseReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SquareFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SumFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SuperposeFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_SuperposeReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\FX\AUD_VolumeFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_AnimateableProperty.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Buffer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_BufferReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_C-API.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ChannelMapperFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ChannelMapperReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterFunctions.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ConverterReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_FileFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_FileWriter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_JOSResampleFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_JOSResampleReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_LinearResampleFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_LinearResampleReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Mixer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_MixerFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_NULLDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ReadDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_ResampleReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Sequencer.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerEntry.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerHandle.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SequencerReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_Set.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SilenceFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SilenceReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SinusFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SinusReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_SoftwareDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\intern\AUD_StreamBufferFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGFactory.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGReader.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\ffmpeg\AUD_FFMPEGWriter.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\SDL\AUD_SDLDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\OpenAL\AUD_OpenALDevice.cpp"  />
+    <ClCompile Include="D:\blenderDev\blender\intern\audaspace\Python\AUD_PyAPI.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

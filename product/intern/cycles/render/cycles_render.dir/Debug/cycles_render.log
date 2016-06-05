@@ -1,0 +1,62 @@
+﻿Build started 2016/4/2 8:26:12.
+     1>Project "D:\blenderDev\product\intern\cycles\render\cycles_render.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/intern/cycles/render/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\intern\cycles\render\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\osl\include /ID:\blenderDev\blender\extern\glog\src\windows /ID:\blenderDev\blender\extern\gflags\src /ID:\blenderDev\lib\win64_vc12\boost\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include /ID:\blenderDev\blender\..\lib\win64_vc12\openimageio\include\OpenImageIO /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include /ID:\blenderDev\blender\..\lib\win64_vc12\openexr\include\OpenEXR /ID:\blenderDev\blender\intern\cycles\..\atomic /ID:\blenderDev\blender\intern\cycles\render\. /ID:\blenderDev\blender\intern\cycles\render\..\device /ID:\blenderDev\blender\intern\cycles\render\..\kernel /ID:\blenderDev\blender\intern\cycles\render\..\kernel\svm /ID:\blenderDev\blender\intern\cycles\render\..\kernel\osl /ID:\blenderDev\blender\intern\cycles\render\..\bvh /ID:\blenderDev\blender\intern\cycles\render\..\util /I"D:\blenderDev\blender\intern\cycles\render\..\..\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D BOOST_NO_RTTI /D BOOST_NO_TYPEID /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_KERNEL_SSE2 /D WITH_KERNEL_SSE3 /D WITH_KERNEL_SSE41 /D WITH_KERNEL_AVX /D WITH_KERNEL_AVX2 /D BOOST_ALL_NO_LIB /D USE_TBB=0 /D "CCL_NAMESPACE_BEGIN=namespace ccl {" /D "CCL_NAMESPACE_END=}" /D WITH_OSL /D OSL_STATIC_LIBRARY /D CYCLES_STD_UNORDERED_MAP /D WITH_CYCLES_LOGGING /D GOOGLE_GLOG_DLL_DECL= /D CYCLES_GFLAGS_NAMESPACE=gflags /D WITH_BLENDER_GUARDEDALLOC /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS- /fp:fast /Zc:wchar_t /Zc:forScope /GR- /openmp /Fo"cycles_render.dir\Debug\\" /Fd"cycles_render.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\intern\cycles\render\attribute.cpp D:\blenderDev\blender\intern\cycles\render\background.cpp D:\blenderDev\blender\intern\cycles\render\bake.cpp D:\blenderDev\blender\intern\cycles\render\buffers.cpp D:\blenderDev\blender\intern\cycles\render\camera.cpp D:\blenderDev\blender\intern\cycles\render\film.cpp D:\blenderDev\blender\intern\cycles\render\graph.cpp D:\blenderDev\blender\intern\cycles\render\image.cpp D:\blenderDev\blender\intern\cycles\render\integrator.cpp D:\blenderDev\blender\intern\cycles\render\light.cpp D:\blenderDev\blender\intern\cycles\render\mesh.cpp D:\blenderDev\blender\intern\cycles\render\mesh_displace.cpp D:\blenderDev\blender\intern\cycles\render\nodes.cpp D:\blenderDev\blender\intern\cycles\render\object.cpp D:\blenderDev\blender\intern\cycles\render\osl.cpp D:\blenderDev\blender\intern\cycles\render\particles.cpp D:\blenderDev\blender\intern\cycles\render\curves.cpp D:\blenderDev\blender\intern\cycles\render\scene.cpp D:\blenderDev\blender\intern\cycles\render\session.cpp D:\blenderDev\blender\intern\cycles\render\shader.cpp D:\blenderDev\blender\intern\cycles\render\sobol.cpp D:\blenderDev\blender\intern\cycles\render\svm.cpp D:\blenderDev\blender\intern\cycles\render\tables.cpp D:\blenderDev\blender\intern\cycles\render\tile.cpp
+         attribute.cpp
+         background.cpp
+         bake.cpp
+         buffers.cpp
+         camera.cpp
+         film.cpp
+         graph.cpp
+         image.cpp
+         integrator.cpp
+         light.cpp
+         mesh.cpp
+         mesh_displace.cpp
+         nodes.cpp
+         object.cpp
+         osl.cpp
+         particles.cpp
+         curves.cpp
+         scene.cpp
+         session.cpp
+         shader.cpp
+         sobol.cpp
+         svm.cpp
+         tables.cpp
+         tile.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\cycles_render.lib" /NOLOGO /MACHINE:X64  /ignore:4221 cycles_render.dir\Debug\attribute.obj
+         cycles_render.dir\Debug\background.obj
+         cycles_render.dir\Debug\bake.obj
+         cycles_render.dir\Debug\buffers.obj
+         cycles_render.dir\Debug\camera.obj
+         cycles_render.dir\Debug\film.obj
+         cycles_render.dir\Debug\graph.obj
+         cycles_render.dir\Debug\image.obj
+         cycles_render.dir\Debug\integrator.obj
+         cycles_render.dir\Debug\light.obj
+         cycles_render.dir\Debug\mesh.obj
+         cycles_render.dir\Debug\mesh_displace.obj
+         cycles_render.dir\Debug\nodes.obj
+         cycles_render.dir\Debug\object.obj
+         cycles_render.dir\Debug\osl.obj
+         cycles_render.dir\Debug\particles.obj
+         cycles_render.dir\Debug\curves.obj
+         cycles_render.dir\Debug\scene.obj
+         cycles_render.dir\Debug\session.obj
+         cycles_render.dir\Debug\shader.obj
+         cycles_render.dir\Debug\sobol.obj
+         cycles_render.dir\Debug\svm.obj
+         cycles_render.dir\Debug\tables.obj
+         cycles_render.dir\Debug\tile.obj
+         cycles_render.vcxproj -> D:\blenderDev\product\lib\Debug\cycles_render.lib
+     1>Done Building Project "D:\blenderDev\product\intern\cycles\render\cycles_render.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:19.01

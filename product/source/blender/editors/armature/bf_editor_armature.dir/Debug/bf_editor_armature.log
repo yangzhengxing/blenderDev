@@ -1,0 +1,54 @@
+﻿Build started 2016/4/2 8:22:45.
+     1>Project "D:\blenderDev\product\source\blender\editors\armature\bf_editor_armature.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/armature/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\armature\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\eigen /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_INTERNATIONAL /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_armature.dir\Debug\\" /Fd"bf_editor_armature.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\armature\armature_add.c D:\blenderDev\blender\source\blender\editors\armature\armature_edit.c D:\blenderDev\blender\source\blender\editors\armature\armature_naming.c D:\blenderDev\blender\source\blender\editors\armature\armature_ops.c D:\blenderDev\blender\source\blender\editors\armature\armature_relations.c D:\blenderDev\blender\source\blender\editors\armature\armature_select.c D:\blenderDev\blender\source\blender\editors\armature\armature_skinning.c D:\blenderDev\blender\source\blender\editors\armature\armature_utils.c D:\blenderDev\blender\source\blender\editors\armature\editarmature_generate.c D:\blenderDev\blender\source\blender\editors\armature\editarmature_retarget.c D:\blenderDev\blender\source\blender\editors\armature\editarmature_sketch.c D:\blenderDev\blender\source\blender\editors\armature\meshlaplacian.c D:\blenderDev\blender\source\blender\editors\armature\pose_edit.c D:\blenderDev\blender\source\blender\editors\armature\pose_lib.c D:\blenderDev\blender\source\blender\editors\armature\pose_group.c D:\blenderDev\blender\source\blender\editors\armature\pose_select.c D:\blenderDev\blender\source\blender\editors\armature\pose_slide.c D:\blenderDev\blender\source\blender\editors\armature\pose_transform.c D:\blenderDev\blender\source\blender\editors\armature\pose_utils.c D:\blenderDev\blender\source\blender\editors\armature\reeb.c
+         armature_add.c
+         armature_edit.c
+         armature_naming.c
+         armature_ops.c
+         armature_relations.c
+         armature_select.c
+         armature_skinning.c
+         armature_utils.c
+         editarmature_generate.c
+         editarmature_retarget.c
+         editarmature_sketch.c
+         meshlaplacian.c
+         pose_edit.c
+         pose_lib.c
+         pose_group.c
+         pose_select.c
+         pose_slide.c
+         pose_transform.c
+         pose_utils.c
+         reeb.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\bf_editor_armature.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_armature.dir\Debug\armature_add.obj
+         bf_editor_armature.dir\Debug\armature_edit.obj
+         bf_editor_armature.dir\Debug\armature_naming.obj
+         bf_editor_armature.dir\Debug\armature_ops.obj
+         bf_editor_armature.dir\Debug\armature_relations.obj
+         bf_editor_armature.dir\Debug\armature_select.obj
+         bf_editor_armature.dir\Debug\armature_skinning.obj
+         bf_editor_armature.dir\Debug\armature_utils.obj
+         bf_editor_armature.dir\Debug\editarmature_generate.obj
+         bf_editor_armature.dir\Debug\editarmature_retarget.obj
+         bf_editor_armature.dir\Debug\editarmature_sketch.obj
+         bf_editor_armature.dir\Debug\meshlaplacian.obj
+         bf_editor_armature.dir\Debug\pose_edit.obj
+         bf_editor_armature.dir\Debug\pose_lib.obj
+         bf_editor_armature.dir\Debug\pose_group.obj
+         bf_editor_armature.dir\Debug\pose_select.obj
+         bf_editor_armature.dir\Debug\pose_slide.obj
+         bf_editor_armature.dir\Debug\pose_transform.obj
+         bf_editor_armature.dir\Debug\pose_utils.obj
+         bf_editor_armature.dir\Debug\reeb.obj
+         bf_editor_armature.vcxproj -> D:\blenderDev\product\lib\Debug\bf_editor_armature.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\armature\bf_editor_armature.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.41

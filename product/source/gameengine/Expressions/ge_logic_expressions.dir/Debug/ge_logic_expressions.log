@@ -1,0 +1,54 @@
+﻿Build started 2016/4/2 8:28:51.
+     1>Project "D:\blenderDev\product\source\gameengine\Expressions\ge_logic_expressions.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/Expressions/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\Expressions\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\intern\moto\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_logic_expressions.dir\Debug\\" /Fd"ge_logic_expressions.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\Expressions\intern\BoolValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\ConstExpr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\EmptyValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\ErrorValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\Expression.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\FloatValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\IdentifierExpr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\IfExpr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\InputParser.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\IntValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\HashedPtr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\ListValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\Operator1Expr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\Operator2Expr.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\PyObjectPlus.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\StringValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\Value.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\VectorValue.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\ListWrapper.cpp D:\blenderDev\blender\source\gameengine\Expressions\intern\PythonCallBack.cpp
+         BoolValue.cpp
+         ConstExpr.cpp
+         EmptyValue.cpp
+         ErrorValue.cpp
+         Expression.cpp
+         FloatValue.cpp
+         IdentifierExpr.cpp
+         IfExpr.cpp
+         InputParser.cpp
+         IntValue.cpp
+         HashedPtr.cpp
+         ListValue.cpp
+         Operator1Expr.cpp
+         Operator2Expr.cpp
+         PyObjectPlus.cpp
+         StringValue.cpp
+         Value.cpp
+         VectorValue.cpp
+         ListWrapper.cpp
+         PythonCallBack.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\ge_logic_expressions.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_logic_expressions.dir\Debug\BoolValue.obj
+         ge_logic_expressions.dir\Debug\ConstExpr.obj
+         ge_logic_expressions.dir\Debug\EmptyValue.obj
+         ge_logic_expressions.dir\Debug\ErrorValue.obj
+         ge_logic_expressions.dir\Debug\Expression.obj
+         ge_logic_expressions.dir\Debug\FloatValue.obj
+         ge_logic_expressions.dir\Debug\IdentifierExpr.obj
+         ge_logic_expressions.dir\Debug\IfExpr.obj
+         ge_logic_expressions.dir\Debug\InputParser.obj
+         ge_logic_expressions.dir\Debug\IntValue.obj
+         ge_logic_expressions.dir\Debug\HashedPtr.obj
+         ge_logic_expressions.dir\Debug\ListValue.obj
+         ge_logic_expressions.dir\Debug\Operator1Expr.obj
+         ge_logic_expressions.dir\Debug\Operator2Expr.obj
+         ge_logic_expressions.dir\Debug\PyObjectPlus.obj
+         ge_logic_expressions.dir\Debug\StringValue.obj
+         ge_logic_expressions.dir\Debug\Value.obj
+         ge_logic_expressions.dir\Debug\VectorValue.obj
+         ge_logic_expressions.dir\Debug\ListWrapper.obj
+         ge_logic_expressions.dir\Debug\PythonCallBack.obj
+         ge_logic_expressions.vcxproj -> D:\blenderDev\product\lib\Debug\ge_logic_expressions.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\Expressions\ge_logic_expressions.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.09

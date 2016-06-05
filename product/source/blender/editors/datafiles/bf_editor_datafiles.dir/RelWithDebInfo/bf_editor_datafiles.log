@@ -1,0 +1,215 @@
+﻿Build started 2016/4/2 9:21:47.
+     1>Project "D:\blenderDev\product\source\blender\editors\datafiles\bf_editor_datafiles.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/datafiles/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\datafiles\CMakeFiles\generate.stamp is up-to-date.
+         Generating ../../../../release/datafiles/bfont.pfb.c
+         Generating ../../../../release/datafiles/bfont.ttf.c
+         Generating ../../../../release/datafiles/bmonofont.ttf.c
+         Generating ../../../../release/datafiles/preview.blend.c
+         Generating ../../../../release/datafiles/preview_cycles.blend.c
+         Generating ../../../../release/datafiles/splash.png.c
+         Generating ../../../../release/datafiles/splash_2x.png.c
+         Generating ../../../../release/datafiles/blender_icons16.png, ../../../../release/datafiles/blender_icons16.png.c
+         Generating ../../../../release/datafiles/blender_icons32.png, ../../../../release/datafiles/blender_icons32.png.c
+         Generating ../../../../release/datafiles/prvicons.png.c
+         Generating ../../../../release/datafiles/brushicons/add.png.c
+         Generating ../../../../release/datafiles/brushicons/blob.png.c
+         Generating ../../../../release/datafiles/brushicons/blur.png.c
+         Generating ../../../../release/datafiles/brushicons/clay.png.c
+         Generating ../../../../release/datafiles/brushicons/claystrips.png.c
+         Generating ../../../../release/datafiles/brushicons/clone.png.c
+         Generating ../../../../release/datafiles/brushicons/crease.png.c
+         Generating ../../../../release/datafiles/brushicons/darken.png.c
+         Generating ../../../../release/datafiles/brushicons/draw.png.c
+         Generating ../../../../release/datafiles/brushicons/fill.png.c
+         Generating ../../../../release/datafiles/brushicons/flatten.png.c
+         Generating ../../../../release/datafiles/brushicons/grab.png.c
+         Generating ../../../../release/datafiles/brushicons/inflate.png.c
+         Generating ../../../../release/datafiles/brushicons/layer.png.c
+         Generating ../../../../release/datafiles/brushicons/lighten.png.c
+         Generating ../../../../release/datafiles/brushicons/mask.png.c
+         Generating ../../../../release/datafiles/brushicons/mix.png.c
+         Generating ../../../../release/datafiles/brushicons/multiply.png.c
+         Generating ../../../../release/datafiles/brushicons/nudge.png.c
+         Generating ../../../../release/datafiles/brushicons/pinch.png.c
+         Generating ../../../../release/datafiles/brushicons/scrape.png.c
+         Generating ../../../../release/datafiles/brushicons/smear.png.c
+         Generating ../../../../release/datafiles/brushicons/smooth.png.c
+         Generating ../../../../release/datafiles/brushicons/snake_hook.png.c
+         Generating ../../../../release/datafiles/brushicons/soften.png.c
+         Generating ../../../../release/datafiles/brushicons/subtract.png.c
+         Generating ../../../../release/datafiles/brushicons/texdraw.png.c
+         Generating ../../../../release/datafiles/brushicons/texfill.png.c
+         Generating ../../../../release/datafiles/brushicons/texmask.png.c
+         Generating ../../../../release/datafiles/brushicons/thumb.png.c
+         Generating ../../../../release/datafiles/brushicons/twist.png.c
+         Generating ../../../../release/datafiles/brushicons/vertexdraw.png.c
+         Generating ../../../../release/datafiles/matcaps/mc01.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc02.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc03.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc04.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc05.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc06.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc07.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc08.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc09.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc10.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc11.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc12.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc13.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc14.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc15.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc16.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc17.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc18.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc19.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc20.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc21.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc22.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc23.jpg.c
+         Generating ../../../../release/datafiles/matcaps/mc24.jpg.c
+         Generating ../../../../release/datafiles/startup.blend.c
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_datafiles.dir\RelWithDebInfo\\" /Fd"bf_editor_datafiles.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J ..\..\..\..\release\datafiles\bfont.pfb.c ..\..\..\..\release\datafiles\bfont.ttf.c ..\..\..\..\release\datafiles\bmonofont.ttf.c ..\..\..\..\release\datafiles\preview.blend.c ..\..\..\..\release\datafiles\preview_cycles.blend.c ..\..\..\..\release\datafiles\splash.png.c ..\..\..\..\release\datafiles\splash_2x.png.c ..\..\..\..\release\datafiles\blender_icons16.png.c ..\..\..\..\release\datafiles\blender_icons32.png.c ..\..\..\..\release\datafiles\prvicons.png.c ..\..\..\..\release\datafiles\brushicons\add.png.c ..\..\..\..\release\datafiles\brushicons\blob.png.c ..\..\..\..\release\datafiles\brushicons\blur.png.c ..\..\..\..\release\datafiles\brushicons\clay.png.c ..\..\..\..\release\datafiles\brushicons\claystrips.png.c ..\..\..\..\release\datafiles\brushicons\clone.png.c ..\..\..\..\release\datafiles\brushicons\crease.png.c ..\..\..\..\release\datafiles\brushicons\darken.png.c ..\..\..\..\release\datafiles\brushicons\draw.png.c ..\..\..\..\release\datafiles\brushicons\fill.png.c ..\..\..\..\release\datafiles\brushicons\flatten.png.c ..\..\..\..\release\datafiles\brushicons\grab.png.c ..\..\..\..\release\datafiles\brushicons\inflate.png.c ..\..\..\..\release\datafiles\brushicons\layer.png.c ..\..\..\..\release\datafiles\brushicons\lighten.png.c ..\..\..\..\release\datafiles\brushicons\mask.png.c ..\..\..\..\release\datafiles\brushicons\mix.png.c ..\..\..\..\release\datafiles\brushicons\multiply.png.c ..\..\..\..\release\datafiles\brushicons\nudge.png.c ..\..\..\..\release\datafiles\brushicons\pinch.png.c ..\..\..\..\release\datafiles\brushicons\scrape.png.c ..\..\..\..\release\datafiles\brushicons\smear.png.c ..\..\..\..\release\datafiles\brushicons\smooth.png.c ..\..\..\..\release\datafiles\brushicons\snake_hook.png.c ..\..\..\..\release\datafiles\brushicons\soften.png.c ..\..\..\..\release\datafiles\brushicons\subtract.png.c ..\..\..\..\release\datafiles\brushicons\texdraw.png.c ..\..\..\..\release\datafiles\brushicons\texfill.png.c ..\..\..\..\release\datafiles\brushicons\texmask.png.c ..\..\..\..\release\datafiles\brushicons\thumb.png.c ..\..\..\..\release\datafiles\brushicons\twist.png.c ..\..\..\..\release\datafiles\brushicons\vertexdraw.png.c ..\..\..\..\release\datafiles\matcaps\mc01.jpg.c ..\..\..\..\release\datafiles\matcaps\mc02.jpg.c ..\..\..\..\release\datafiles\matcaps\mc03.jpg.c ..\..\..\..\release\datafiles\matcaps\mc04.jpg.c ..\..\..\..\release\datafiles\matcaps\mc05.jpg.c ..\..\..\..\release\datafiles\matcaps\mc06.jpg.c ..\..\..\..\release\datafiles\matcaps\mc07.jpg.c ..\..\..\..\release\datafiles\matcaps\mc08.jpg.c ..\..\..\..\release\datafiles\matcaps\mc09.jpg.c ..\..\..\..\release\datafiles\matcaps\mc10.jpg.c ..\..\..\..\release\datafiles\matcaps\mc11.jpg.c ..\..\..\..\release\datafiles\matcaps\mc12.jpg.c ..\..\..\..\release\datafiles\matcaps\mc13.jpg.c ..\..\..\..\release\datafiles\matcaps\mc14.jpg.c ..\..\..\..\release\datafiles\matcaps\mc15.jpg.c ..\..\..\..\release\datafiles\matcaps\mc16.jpg.c ..\..\..\..\release\datafiles\matcaps\mc17.jpg.c ..\..\..\..\release\datafiles\matcaps\mc18.jpg.c ..\..\..\..\release\datafiles\matcaps\mc19.jpg.c ..\..\..\..\release\datafiles\matcaps\mc20.jpg.c ..\..\..\..\release\datafiles\matcaps\mc21.jpg.c ..\..\..\..\release\datafiles\matcaps\mc22.jpg.c ..\..\..\..\release\datafiles\matcaps\mc23.jpg.c ..\..\..\..\release\datafiles\matcaps\mc24.jpg.c ..\..\..\..\release\datafiles\startup.blend.c
+         bfont.pfb.c
+         bfont.ttf.c
+         bmonofont.ttf.c
+         preview.blend.c
+         preview_cycles.blend.c
+         splash.png.c
+         splash_2x.png.c
+         blender_icons16.png.c
+         blender_icons32.png.c
+         prvicons.png.c
+         add.png.c
+         blob.png.c
+         blur.png.c
+         clay.png.c
+         claystrips.png.c
+         clone.png.c
+         crease.png.c
+         darken.png.c
+         draw.png.c
+         fill.png.c
+         flatten.png.c
+         grab.png.c
+         inflate.png.c
+         layer.png.c
+         lighten.png.c
+         mask.png.c
+         mix.png.c
+         multiply.png.c
+         nudge.png.c
+         pinch.png.c
+         scrape.png.c
+         smear.png.c
+         smooth.png.c
+         snake_hook.png.c
+         soften.png.c
+         subtract.png.c
+         texdraw.png.c
+         texfill.png.c
+         texmask.png.c
+         thumb.png.c
+         twist.png.c
+         vertexdraw.png.c
+         mc01.jpg.c
+         mc02.jpg.c
+         mc03.jpg.c
+         mc04.jpg.c
+         mc05.jpg.c
+         mc06.jpg.c
+         mc07.jpg.c
+         mc08.jpg.c
+         mc09.jpg.c
+         mc10.jpg.c
+         mc11.jpg.c
+         mc12.jpg.c
+         mc13.jpg.c
+         mc14.jpg.c
+         mc15.jpg.c
+         mc16.jpg.c
+         mc17.jpg.c
+         mc18.jpg.c
+         mc19.jpg.c
+         mc20.jpg.c
+         mc21.jpg.c
+         mc22.jpg.c
+         mc23.jpg.c
+         mc24.jpg.c
+         startup.blend.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_datafiles.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_datafiles.dir\RelWithDebInfo\bfont.pfb.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\bfont.ttf.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\bmonofont.ttf.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\preview.blend.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\preview_cycles.blend.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\splash.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\splash_2x.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\blender_icons16.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\blender_icons32.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\prvicons.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\add.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\blob.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\blur.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\clay.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\claystrips.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\clone.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\crease.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\darken.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\draw.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\fill.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\flatten.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\grab.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\inflate.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\layer.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\lighten.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mask.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mix.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\multiply.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\nudge.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\pinch.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\scrape.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\smear.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\smooth.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\snake_hook.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\soften.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\subtract.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\texdraw.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\texfill.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\texmask.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\thumb.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\twist.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\vertexdraw.png.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc01.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc02.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc03.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc04.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc05.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc06.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc07.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc08.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc09.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc10.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc11.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc12.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc13.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc14.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc15.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc16.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc17.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc18.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc19.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc20.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc21.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc22.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc23.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\mc24.jpg.obj
+         bf_editor_datafiles.dir\RelWithDebInfo\startup.blend.obj
+         bf_editor_datafiles.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_datafiles.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\datafiles\bf_editor_datafiles.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:15.75

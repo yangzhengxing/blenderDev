@@ -1,0 +1,24 @@
+﻿Build started 2016/4/2 9:22:11.
+     1>Project "D:\blenderDev\product\source\blender\editors\space_image\bf_editor_space_image.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/editors/space_image/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\editors\space_image\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\blenfont /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blentranslation /ID:\blenderDev\blender\source\blender\bmesh /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\makesrna /ID:\blenderDev\blender\source\blender\render\extern\include /ID:\blenderDev\blender\source\blender\windowmanager /ID:\blenderDev\blender\intern\guardedalloc /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_INTERNATIONAL /D WITH_OPENIMAGEIO /D WITH_OPENJPEG /D WITH_OPENEXR /D WITH_TIFF /D WITH_CINEON /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"bf_editor_space_image.dir\RelWithDebInfo\\" /Fd"bf_editor_space_image.dir\RelWithDebInfo\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\editors\space_image\image_buttons.c D:\blenderDev\blender\source\blender\editors\space_image\image_draw.c D:\blenderDev\blender\source\blender\editors\space_image\image_edit.c D:\blenderDev\blender\source\blender\editors\space_image\image_ops.c D:\blenderDev\blender\source\blender\editors\space_image\space_image.c
+         image_buttons.c
+         image_draw.c
+         image_edit.c
+         image_ops.c
+         space_image.c
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_space_image.lib" /NOLOGO /MACHINE:X64  /ignore:4221 bf_editor_space_image.dir\RelWithDebInfo\image_buttons.obj
+         bf_editor_space_image.dir\RelWithDebInfo\image_draw.obj
+         bf_editor_space_image.dir\RelWithDebInfo\image_edit.obj
+         bf_editor_space_image.dir\RelWithDebInfo\image_ops.obj
+         bf_editor_space_image.dir\RelWithDebInfo\space_image.obj
+         bf_editor_space_image.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\bf_editor_space_image.lib
+     1>Done Building Project "D:\blenderDev\product\source\blender\editors\space_image\bf_editor_space_image.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.84

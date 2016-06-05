@@ -1,0 +1,9 @@
+﻿Build started 2016/4/3 16:42:07.
+     1>Project "D:\blenderDev\product\source\creator\buildinfo.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Generating _buildinfo.h
+     1>Done Building Project "D:\blenderDev\product\source\creator\buildinfo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.11

@@ -1,0 +1,20 @@
+﻿Build started 2016/4/2 8:22:06.
+     1>Project "D:\blenderDev\product\source\blender\datatoc\datatoc_icon.vcxproj" on node 4 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/blender/datatoc/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\blender\datatoc\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\blender\source\blender\datatoc\..\blenlib /ID:\blenderDev\blender\source\blender\datatoc\..\..\..\intern\utfconv /ID:\blenderDev\lib\win64_vc12\png\include /ID:\blenderDev\blender\..\lib\win64_vc12\zlib\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D USE_STANDALONE /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"datatoc_icon.dir\Debug\\" /Fd"datatoc_icon.dir\Debug\vc120.pdb" /Gd /TC /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\blender\datatoc\datatoc_icon.c D:\blenderDev\blender\source\blender\blenlib\intern\winstuff_dir.c D:\blenderDev\blender\intern\utfconv\utfconv.c
+         datatoc_icon.c
+         winstuff_dir.c
+         utfconv.c
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\blenderDev\product\bin\Debug\datatoc_icon.exe" /INCREMENTAL /NOLOGO D:\blenderDev\lib\win64_vc12\png\lib\libpng.lib D:\blenderDev\blender\..\lib\win64_vc12\zlib\lib\libz_st.lib D:\blenderDev\blender\..\lib\win64_vc12\zlib\lib\libz_st.lib /NODEFAULTLIB:msvcrt.lib /NODEFAULTLIB:msvcmrt.lib /NODEFAULTLIB:msvcurt.lib /NODEFAULTLIB:msvcrtd.lib /NODEFAULTLIB:libcmt.lib /NODEFAULTLIB:libc.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/blenderDev/product/bin/Debug/datatoc_icon.pdb" /SUBSYSTEM:CONSOLE /STACK:"2097152" /OPT:NOREF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/blenderDev/product/bin/Debug/datatoc_icon.lib" /MACHINE:X64 /SAFESEH:NO  /machine:x64 /ignore:4049 /ignore:4217 /ignore:4221 /debug /IGNORE:4099 datatoc_icon.dir\Debug\datatoc_icon.obj
+         datatoc_icon.dir\Debug\winstuff_dir.obj
+         datatoc_icon.dir\Debug\utfconv.obj
+         datatoc_icon.vcxproj -> D:\blenderDev\product\bin\Debug\datatoc_icon.exe
+     1>Done Building Project "D:\blenderDev\product\source\blender\datatoc\datatoc_icon.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.16

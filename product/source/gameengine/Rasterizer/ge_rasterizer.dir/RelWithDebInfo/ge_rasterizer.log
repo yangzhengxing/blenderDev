@@ -1,0 +1,36 @@
+﻿Build started 2016/4/2 9:35:57.
+     1>Project "D:\blenderDev\product\source\gameengine\Rasterizer\ge_rasterizer.vcxproj" on node 3 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/Rasterizer/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\Rasterizer\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\Rasterizer /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\Ketsji /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\intern\container /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\intern\moto\include /ID:\blenderDev\blender\extern\glew\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_rasterizer.dir\RelWithDebInfo\\" /Fd"ge_rasterizer.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_2DFilterManager.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_BucketManager.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_FramingManager.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_IPolygonMaterial.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_MaterialBucket.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_MeshObject.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_Polygon.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_TexVert.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_texmatrix.cpp D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_ICanvas.cpp
+         RAS_2DFilterManager.cpp
+         RAS_BucketManager.cpp
+         RAS_FramingManager.cpp
+         RAS_IPolygonMaterial.cpp
+         RAS_MaterialBucket.cpp
+         RAS_MeshObject.cpp
+         RAS_Polygon.cpp
+         RAS_TexVert.cpp
+         RAS_texmatrix.cpp
+         RAS_ICanvas.cpp
+     1>D:\blenderDev\blender\source\blender\blenkernel\BKE_main.h(57): warning C4200: nonstandard extension used : zero-sized array in struct/union (D:\blenderDev\blender\source\gameengine\Rasterizer\RAS_ICanvas.cpp)
+                 Cannot generate copy-ctor or copy-assignment operator when UDT contains a zero-sized array
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\ge_rasterizer.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_rasterizer.dir\RelWithDebInfo\RAS_2DFilterManager.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_BucketManager.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_FramingManager.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_IPolygonMaterial.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_MaterialBucket.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_MeshObject.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_Polygon.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_TexVert.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_texmatrix.obj
+         ge_rasterizer.dir\RelWithDebInfo\RAS_ICanvas.obj
+         ge_rasterizer.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\ge_rasterizer.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\Rasterizer\ge_rasterizer.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.05

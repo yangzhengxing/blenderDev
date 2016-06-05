@@ -1,0 +1,100 @@
+﻿Build started 2016/4/2 9:35:10.
+     1>Project "D:\blenderDev\product\source\gameengine\GameLogic\ge_logic.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/GameLogic/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\GameLogic\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\GameLogic /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\Rasterizer /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\intern\container /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\intern\ghost /ID:\blenderDev\blender\intern\moto\include /ID:\blenderDev\lib\win64_vc12\sdl\include /Zi /nologo /W3 /WX- /MP /O2 /Ob1 /D WIN32 /D _WINDOWS /D NDEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D WITH_SDL /D NDEBUG /D "CMAKE_INTDIR=\"RelWithDebInfo\"" /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_logic.dir\RelWithDebInfo\\" /Fd"ge_logic.dir\RelWithDebInfo\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\GameLogic\SCA_2DFilterActuator.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ANDController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ActuatorEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ActuatorSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_AlwaysEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_AlwaysSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_BasicEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_DelaySensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_EventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ExpressionController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_IActuator.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_IController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_IInputDevice.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ILogicBrick.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_IObject.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_IScene.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ISensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_JoystickManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_JoystickSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_KeyboardManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_KeyboardSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_LogicManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_MouseManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_MouseSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_NANDController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_NORController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_ORController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PropertyActuator.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PropertyEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PropertySensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PythonController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PythonJoystick.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PythonKeyboard.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_PythonMouse.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_RandomActuator.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_RandomEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_RandomNumberGenerator.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_RandomSensor.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_TimeEventManager.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_XNORController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\SCA_XORController.cpp D:\blenderDev\blender\source\gameengine\GameLogic\Joystick\SCA_Joystick.cpp D:\blenderDev\blender\source\gameengine\GameLogic\Joystick\SCA_JoystickEvents.cpp
+         SCA_2DFilterActuator.cpp
+         SCA_ANDController.cpp
+         SCA_ActuatorEventManager.cpp
+         SCA_ActuatorSensor.cpp
+         SCA_AlwaysEventManager.cpp
+         SCA_AlwaysSensor.cpp
+         SCA_BasicEventManager.cpp
+         SCA_DelaySensor.cpp
+         SCA_EventManager.cpp
+         SCA_ExpressionController.cpp
+         SCA_IActuator.cpp
+         SCA_IController.cpp
+         SCA_IInputDevice.cpp
+         SCA_ILogicBrick.cpp
+         SCA_IObject.cpp
+         SCA_IScene.cpp
+         SCA_ISensor.cpp
+         SCA_JoystickManager.cpp
+         SCA_JoystickSensor.cpp
+         SCA_KeyboardManager.cpp
+         SCA_KeyboardSensor.cpp
+         SCA_LogicManager.cpp
+         SCA_MouseManager.cpp
+         SCA_MouseSensor.cpp
+         SCA_NANDController.cpp
+         SCA_NORController.cpp
+         SCA_ORController.cpp
+         SCA_PropertyActuator.cpp
+         SCA_PropertyEventManager.cpp
+         SCA_PropertySensor.cpp
+         SCA_PythonController.cpp
+         SCA_PythonJoystick.cpp
+         SCA_PythonKeyboard.cpp
+         SCA_PythonMouse.cpp
+         SCA_RandomActuator.cpp
+         SCA_RandomEventManager.cpp
+         SCA_RandomNumberGenerator.cpp
+         SCA_RandomSensor.cpp
+         SCA_TimeEventManager.cpp
+         SCA_XNORController.cpp
+         SCA_XORController.cpp
+         SCA_Joystick.cpp
+         SCA_JoystickEvents.cpp
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\RelWithDebInfo\ge_logic.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_logic.dir\RelWithDebInfo\SCA_2DFilterActuator.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ANDController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ActuatorEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ActuatorSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_AlwaysEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_AlwaysSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_BasicEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_DelaySensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_EventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ExpressionController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_IActuator.obj
+         ge_logic.dir\RelWithDebInfo\SCA_IController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_IInputDevice.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ILogicBrick.obj
+         ge_logic.dir\RelWithDebInfo\SCA_IObject.obj
+         ge_logic.dir\RelWithDebInfo\SCA_IScene.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ISensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_JoystickManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_JoystickSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_KeyboardManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_KeyboardSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_LogicManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_MouseManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_MouseSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_NANDController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_NORController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_ORController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PropertyActuator.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PropertyEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PropertySensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PythonController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PythonJoystick.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PythonKeyboard.obj
+         ge_logic.dir\RelWithDebInfo\SCA_PythonMouse.obj
+         ge_logic.dir\RelWithDebInfo\SCA_RandomActuator.obj
+         ge_logic.dir\RelWithDebInfo\SCA_RandomEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_RandomNumberGenerator.obj
+         ge_logic.dir\RelWithDebInfo\SCA_RandomSensor.obj
+         ge_logic.dir\RelWithDebInfo\SCA_TimeEventManager.obj
+         ge_logic.dir\RelWithDebInfo\SCA_XNORController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_XORController.obj
+         ge_logic.dir\RelWithDebInfo\SCA_Joystick.obj
+         ge_logic.dir\RelWithDebInfo\SCA_JoystickEvents.obj
+         ge_logic.vcxproj -> D:\blenderDev\product\lib\RelWithDebInfo\ge_logic.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\GameLogic\ge_logic.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:16.97

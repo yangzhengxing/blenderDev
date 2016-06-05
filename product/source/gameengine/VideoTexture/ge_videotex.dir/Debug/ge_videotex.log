@@ -1,0 +1,50 @@
+﻿Build started 2016/4/2 8:29:12.
+     1>Project "D:\blenderDev\product\source\gameengine\VideoTexture\ge_videotex.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/source/gameengine/VideoTexture/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\source\gameengine\VideoTexture\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /ID:\blenderDev\lib\win64_vc12\pthreads\include /ID:\blenderDev\lib\win64_vc12\python\include\python3.5 /ID:\blenderDev\blender\source\gameengine\VideoTexture /ID:\blenderDev\blender\source\gameengine\BlenderRoutines /ID:\blenderDev\blender\source\gameengine\Expressions /ID:\blenderDev\blender\source\gameengine\GameLogic /ID:\blenderDev\blender\source\gameengine\Ketsji /ID:\blenderDev\blender\source\gameengine\Rasterizer /ID:\blenderDev\blender\source\gameengine\Rasterizer\RAS_OpenGLRasterizer /ID:\blenderDev\blender\source\gameengine\SceneGraph /ID:\blenderDev\blender\source\blender\blenkernel /ID:\blenderDev\blender\source\blender\blenlib /ID:\blenderDev\blender\source\blender\editors\include /ID:\blenderDev\blender\source\blender\gpu /ID:\blenderDev\blender\source\blender\imbuf /ID:\blenderDev\blender\source\blender\makesdna /ID:\blenderDev\blender\source\blender\python /ID:\blenderDev\blender\source\blender\python\generic /ID:\blenderDev\blender\intern\container /ID:\blenderDev\blender\intern\ffmpeg /I"D:\blenderDev\blender\intern\glew-mx" /ID:\blenderDev\blender\intern\guardedalloc /ID:\blenderDev\blender\intern\string /ID:\blenderDev\blender\intern\moto\include /ID:\blenderDev\blender\extern\glew\include /ID:\blenderDev\lib\win64_vc12\ffmpeg\include /ID:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D WIN32 /D _CRT_NONSTDC_NO_DEPRECATE /D _CRT_SECURE_NO_DEPRECATE /D _SCL_SECURE_NO_DEPRECATE /D _CONSOLE /D _LIB /D _ALLOW_KEYWORD_MACROS /D _WIN32_WINNT=0x600 /D OIIO_STATIC_BUILD /D __SSE__ /D __MMX__ /D __SSE2__ /D __LITTLE_ENDIAN__ /D WITH_PYTHON /D WITH_GLU /D WITH_GL_PROFILE_COMPAT /D GLEW_STATIC /D GLEW_NO_ES /D WITH_FFMPEG /D DEBUG /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /openmp /Fo"ge_videotex.dir\Debug\\" /Fd"ge_videotex.dir\Debug\vc120.pdb" /Gd /TP /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /errorReport:prompt /we4013 /we4431  /w34062 /J D:\blenderDev\blender\source\gameengine\VideoTexture\Exception.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\FilterBase.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\FilterBlueScreen.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\FilterColor.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\FilterNormal.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\FilterSource.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\ImageBase.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\ImageBuff.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\ImageMix.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\ImageRender.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\ImageViewport.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\PyTypeList.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\Texture.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\VideoBase.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\VideoFFmpeg.cpp D:\blenderDev\blender\source\gameengine\VideoTexture\blendVideoTex.cpp
+         Exception.cpp
+         FilterBase.cpp
+         FilterBlueScreen.cpp
+         FilterColor.cpp
+         FilterNormal.cpp
+         FilterSource.cpp
+         ImageBase.cpp
+         ImageBuff.cpp
+         ImageMix.cpp
+         ImageRender.cpp
+         ImageViewport.cpp
+         PyTypeList.cpp
+         Texture.cpp
+         VideoBase.cpp
+         VideoFFmpeg.cpp
+         blendVideoTex.cpp
+     1>D:\blenderDev\blender\source\gameengine\VideoTexture\VideoFFmpeg.cpp(401): warning C4996: 'avpicture_deinterlace': was declared deprecated
+                 D:\blenderDev\lib\win64_vc12\ffmpeg\include\libavcodec/avcodec.h(4505) : see declaration of 'avpicture_deinterlace'
+     1>D:\blenderDev\blender\source\gameengine\VideoTexture\VideoFFmpeg.cpp(1066): warning C4996: 'avpicture_deinterlace': was declared deprecated
+                 D:\blenderDev\lib\win64_vc12\ffmpeg\include\libavcodec/avcodec.h(4505) : see declaration of 'avpicture_deinterlace'
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"D:\blenderDev\product\lib\Debug\ge_videotex.lib" /NOLOGO /MACHINE:X64  /ignore:4221 ge_videotex.dir\Debug\Exception.obj
+         ge_videotex.dir\Debug\FilterBase.obj
+         ge_videotex.dir\Debug\FilterBlueScreen.obj
+         ge_videotex.dir\Debug\FilterColor.obj
+         ge_videotex.dir\Debug\FilterNormal.obj
+         ge_videotex.dir\Debug\FilterSource.obj
+         ge_videotex.dir\Debug\ImageBase.obj
+         ge_videotex.dir\Debug\ImageBuff.obj
+         ge_videotex.dir\Debug\ImageMix.obj
+         ge_videotex.dir\Debug\ImageRender.obj
+         ge_videotex.dir\Debug\ImageViewport.obj
+         ge_videotex.dir\Debug\PyTypeList.obj
+         ge_videotex.dir\Debug\Texture.obj
+         ge_videotex.dir\Debug\VideoBase.obj
+         ge_videotex.dir\Debug\VideoFFmpeg.obj
+         ge_videotex.dir\Debug\blendVideoTex.obj
+         ge_videotex.vcxproj -> D:\blenderDev\product\lib\Debug\ge_videotex.lib
+     1>Done Building Project "D:\blenderDev\product\source\gameengine\VideoTexture\ge_videotex.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.68

@@ -1,0 +1,11 @@
+﻿Build started 2016/4/2 9:37:36.
+     1>Project "D:\blenderDev\product\ALL_BUILD.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule D:/blenderDev/blender/CMakeLists.txt
+         CMake does not need to re-run because D:\blenderDev\product\CMakeFiles\generate.stamp is up-to-date.
+         Build all projects
+     1>Done Building Project "D:\blenderDev\product\ALL_BUILD.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.44

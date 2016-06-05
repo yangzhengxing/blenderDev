@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5DA73EF4-E10F-4539-A56D-178598988DFE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bf_imbuf</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\lib\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_imbuf.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bf_imbuf</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\lib\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_imbuf.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bf_imbuf</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\lib\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_imbuf.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bf_imbuf</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\lib\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_imbuf.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bf_imbuf</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;DEBUG;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;DEBUG;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /w34062 /J %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4146;4065;4127;4181;4200;4244;4267;4305;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatSpecificWarningsAsErrors>4013;4431</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_CONSOLE;_LIB;_ALLOW_KEYWORD_MACROS;_WIN32_WINNT=0x600;OIIO_STATIC_BUILD;__SSE__;__MMX__;__SSE2__;__LITTLE_ENDIAN__;WITH_OPENEXR;WITH_TIFF;WITH_OPENIMAGEIO;WITH_OPENJPEG;OPJ_STATIC;WITH_AVI;WITH_FFMPEG;WITH_DDS;WITH_CINEON;WITH_HDR;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\blenderDev\lib\win64_vc12\pthreads\include;D:\blenderDev\blender\source\blender\imbuf;D:\blenderDev\blender\source\blender\blenkernel;D:\blenderDev\blender\source\blender\blenlib;D:\blenderDev\blender\source\blender\blenloader;D:\blenderDev\blender\source\blender\makesdna;D:\blenderDev\blender\source\blender\makesrna;D:\blenderDev\blender\intern\guardedalloc;D:\blenderDev\blender\intern\memutil;D:\blenderDev\blender\source\blender\avi;D:\blenderDev\blender\intern\ffmpeg;D:\blenderDev\blender\intern\opencolorio;D:\blenderDev\blender\intern\utfconv;D:\blenderDev\lib\win64_vc12\jpeg\include;D:\blenderDev\lib\win64_vc12\png\include;D:\blenderDev\lib\win64_vc12\zlib\include;D:\blenderDev\lib\win64_vc12\tiff\include;D:\blenderDev\blender\extern\libopenjpeg;D:\blenderDev\lib\win64_vc12\ffmpeg\include;D:\blenderDev\lib\win64_vc12\ffmpeg\include\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\luxrender\windows_deps\bin\CMake\bin\cmake.exe -HD:/blenderDev/blender -BD:/blenderDev/product --check-stamp-file D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/blenderDev/blender/source/blender/imbuf/CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;D:\blenderDev\blender\source\blender\imbuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\blenderDev\product\source\blender\imbuf\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\colormanagement_inline.c" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\IMB_colormanagement.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\IMB_imbuf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\IMB_imbuf_types.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\IMB_moviecache.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\IMB_thumbs.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_allocimbuf.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_anim.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_colormanagement_intern.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_filetype.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_filter.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_indexer.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\IMB_metadata.h" />
+    <ClInclude Include="D:\blenderDev\blender\source\blender\imbuf\intern\imbuf.h" />
+    <ClInclude Include="D:\blenderDev\blender\intern\ffmpeg\ffmpeg_compat.h" />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\allocimbuf.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\anim_movie.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\bmp.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\cache.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\colormanagement.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\divers.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\filetype.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\filter.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\imageprocess.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\indexer.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\iris.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\jpeg.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\metadata.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\module.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\moviecache.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\png.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\readimage.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\rectop.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\rotate.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\scaling.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\stereoimbuf.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\targa.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\thumbs.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\thumbs_blend.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\thumbs_font.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\util.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\writeimage.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\tiff.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\jp2.c"  />
+    <ClCompile Include="D:\blenderDev\blender\source\blender\imbuf\intern\radiance_hdr.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/blenderDev/product/ZERO_CHECK.vcxproj">
+      <Project>DCD46D79-246B-4A0B-B128-3719E363CEF1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
